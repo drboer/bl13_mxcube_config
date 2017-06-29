@@ -1,0 +1,6 @@
+<procedure>
+  <username>Beam Commands</username>
+  <doorname>bl13/door/01</doorname>
+  <command type="sardana" cmdtype="macro" name="Autofocus">autofocus</command>
+</procedure>
+

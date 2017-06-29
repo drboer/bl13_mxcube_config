@@ -1,0 +1,8 @@
+<device class="ALBABackLight">
+  <username>Back</username>
+  <channel type="sardana" taurusname="bl13/eh/diff" name="ln2cover">LN2CoverOpen</channel>
+  <channel type="sardana" taurusname="bl13/ct/eps-plc-01" polling="events" name="actuator">backlight</channel>
+  <channel type="sardana" taurusname="blight" polling="events" name="light_level">Brightness</channel>
+  <channel type="sardana" taurusname="blight" polling="events" name="state">State</channel>
+  <limits>0,30</limits>
+</device>

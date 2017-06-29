@@ -1,0 +1,5 @@
+<device class="PoolMotor">
+  <username>Omega</username>
+  <tangoname>omega</tangoname>
+  <resolution>0.003</resolution>
+</device>

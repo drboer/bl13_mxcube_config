@@ -1,0 +1,10 @@
+<device class="TangoDCMotor">
+  <username>Kappa</username>
+  <tangoname>motor/eh_ipap_ctrl/6</tangoname>
+  <alias>kappa</alias>
+  <motor_name>kappa</motor_name>
+  <channel type="tango" polling="200" name="position">Position</channel>
+  <channel type="tango" polling="200" name="state">State</channel>
+  <interval>200</interval>
+  <threshold>0.001</threshold>
+</device>

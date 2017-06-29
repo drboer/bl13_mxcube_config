@@ -1,0 +1,12 @@
+<device class="TangoDCMotor">
+  <username>BStop Z</username>
+  <tangoname>motor/eh_ipap_ctrl/14</tangoname>
+  <alias>bstopz</alias>
+  <motor_name>BStop Z</motor_name>
+  <taurusname>bstopz</taurusname>
+  <channel type="tango" polling="200" name="position">Position</channel>
+  <channel type="tango" polling="200" name="state">State</channel>
+  <command type="tango" name="Stop">Stop</command>
+  <interval>200</interval>
+  <threshold>0.001</threshold>
+</device>

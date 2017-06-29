@@ -1,0 +1,18 @@
+<object class = "Session" role = "session">  
+  <synchrotron_name>ALBA</synchrotron_name>	
+  <endstation_name>Xaloc</endstation_name>
+  <beamline_name>Xaloc</beamline_name>
+  <file_info>
+    <file_suffix>cbf</file_suffix>
+    <precision>'05'</precision>    
+    <!-- base_directory>/beamlines/bl13/projects/cycle2017-I</base_directory -->
+    <base_directory>/tmp/mxcube_tests</base_directory>
+    <raw_data_folder_name>RAW_DATA</raw_data_folder_name>
+    <!-- processed_data_base_directory>/beamlines/bl13/projects/cycle2017-I</processed_data_base_directory -->
+    <processed_data_base_directory>/tmp/mxcube_tests</processed_data_base_directory>
+    <processed_data_folder_name>PROCESSED_DATA</processed_data_folder_name>
+    <!-- archive_base_directory>/beamlines/bl13/projects/cycle2017-I/ispyb</archive_base_directory -->
+    <archive_base_directory>/tmp/mxcube_tests/ispyb</archive_base_directory>
+    <archive_folder>victest</archive_folder>
+  </file_info>
+</object>

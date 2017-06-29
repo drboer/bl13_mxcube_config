@@ -1,0 +1,10 @@
+<device class="TangoDCMotor">
+  <username>KappaPhi (Dummy)</username>
+  <tangoname>mot38</tangoname>
+  <alias>mot38</alias>
+  <motor_name>mot38</motor_name>
+  <channel type="tango" polling="200" name="position">Position</channel>
+  <channel type="tango" polling="200" name="state">State</channel>
+  <interval>200</interval>
+  <threshold>0.001</threshold>
+</device>

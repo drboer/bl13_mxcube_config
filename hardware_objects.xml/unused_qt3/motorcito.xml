@@ -1,0 +1,12 @@
+<device class="SardanaMotorcito">
+  <username>Motorcito</username>
+  <doorname>door/mxcube/1</doorname>
+  <taurusname>mot38</taurusname>
+  <tangoname>mot38</tangoname>
+  <alias>motorcito</alias>
+  <motor_name>Motorcito</motor_name>
+  <channel type="sardana" name="position" polling="200">position</channel>
+  <channel type="sardana" name="state" polling="1000">State</channel>
+  <command type="sardana" name="move">umv mot38 %f</command>
+  <command type="sardana" taurusname="mot38" name="pove">DefinePosition</command>
+</device>

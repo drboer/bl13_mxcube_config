@@ -1,0 +1,10 @@
+<object class="SardanaXfeSpectrum">
+  <doorname>door/mxcube/1</doorname>
+  <command type="sardana" name="configure">senv ActiveMntGrp mg_fluodet</command>
+  <command type="sardana" name="acquire">ct %s</command>
+  <channel type="sardana" taurusname="fluodet_timer" name="spectro">spectrum</channel>
+
+  <!-- doorname>door/mxcube/1</doorname>
+  <command type="sardana" name="configure">wm mot38</command>
+  <command type="sardana" name="acquire">mv mot38 %s</command -->
+</object>

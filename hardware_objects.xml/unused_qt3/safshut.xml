@@ -1,0 +1,7 @@
+<device class="XalocSafetyShutter">
+  <username>Safety Shutter</username>
+  <channel type="sardana" taurusname="pshu" name="safshut" polling="events">Value</channel>
+  <channel type="sardana" taurusname="slowshu" name="slowshut" polling="events">Value</channel>
+  <channel type="sardana" taurusname="pshu" name="state" polling="events">State</channel>
+  <channel type="sardana" taurusname="pshu" name="status">Status</channel>
+</device>

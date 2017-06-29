@@ -1,0 +1,17 @@
+<equipment class="BeamInfo">
+    <taurusname>bl13/ct/variables</taurusname>
+    <!--
+    <device hwrid="/eh1/diff-aperture" role="aperture"/>
+    -->
+  
+    <channel type="sardana" name="BeamPositionHorizontal">BEAMX</channel>
+    <channel type="sardana" name="BeamPositionVertical">BEAMY</channel>
+    <!--
+    <channel type="exporter" name="BeamPositionHorizontal">BeamPositionHorizontal</channel>
+    <channel type="exporter" name="BeamPositionVertical">BeamPositionVertical</channel>
+    <channel type="exporter" name="BeamSizeMicrons">BeamSizeMicrons</channel>
+    <channel type="exporter" name="BeamShapeEllipse">BeamShapeEllipse</channel> 
+    -->
+    <beam_divergence_horizontal>230.0</beam_divergence_horizontal>
+    <beam_divergence_vertical>150.0</beam_divergence_vertical>
+</equipment>

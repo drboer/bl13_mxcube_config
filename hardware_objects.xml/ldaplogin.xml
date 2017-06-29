@@ -1,0 +1,5 @@
+<procedure class="LdapLogin">
+  <ldaphost>ldap01.cells.es</ldaphost> 
+  <ldapport>389</ldapport>
+  <ldapdc>xaloc</ldapdc>
+</procedure>

@@ -1,0 +1,55 @@
+<equipment class = "ALBACats">
+
+  <username>Cats</username>
+  <tangoname>bl13/eh/cats</tangoname>    
+
+  <!-- specify the number of lids here to support different models-->
+  <no_of_lids>3</no_of_lids>
+  <samples_per_puck>10</samples_per_puck>
+  <useUpdateTimer>False</useUpdateTimer>
+ 
+  <channel type="tango" tangoname="bl13/eh/diff" name="shifts">MountingPosition</channel>
+  <channel type="tango" tangoname="bl13/eh/supervisor" name="phase">CurrentPhase</channel>
+  <command type="tango" tangoname="bl13/eh/supervisor" name="go_transfer">GoTransferPhase</command>
+  <channel type="tango" tangoname="bl13/eh/supervisor" name="super_state">State</channel>
+
+  <channel type="tango" name="_chnState" polling="1000">State</channel>
+  <channel type="tango" name="_chnStatus" polling="1000">Status</channel>
+  
+  <channel type="tango" name="_chnBasket1State" polling="1000">di_Cassette1Presence</channel>
+  <channel type="tango" name="_chnBasket2State" polling="1000">di_Cassette2Presence</channel>
+  <channel type="tango" name="_chnBasket3State" polling="1000">di_Cassette3Presence</channel>
+  <channel type="tango" name="_chnBasket4State" polling="1000">di_Cassette4Presence</channel>
+  <channel type="tango" name="_chnBasket5State" polling="1000">di_Cassette5Presence</channel>
+  <channel type="tango" name="_chnBasket6State" polling="1000">di_Cassette6Presence</channel>
+  <channel type="tango" name="_chnBasket7State" polling="1000">di_Cassette7Presence</channel>
+  <channel type="tango" name="_chnBasket8State" polling="1000">di_Cassette8Presence</channel>
+  <channel type="tango" name="_chnBasket9State" polling="1000">di_Cassette9Presence</channel>
+
+  <channel type="tango" name="_chnTotalLidState" polling="1000">di_AllLidsClosed</channel>
+
+  <channel type="tango" name="_chnPowered" polling="1000">Powered</channel>
+  <channel type="tango" name="_chnMessage" polling="1000">Message</channel>
+  <channel type="tango" name="_chnNumLoadedSample" polling="1000">NumSampleOnDiff</channel>
+  <channel type="tango" name="_chnLidLoadedSample" polling="1000">LidSampleOnDiff</channel>
+  <channel type="tango" name="_chnSampleBarcode" polling="1000">Barcode</channel>
+  <channel type="tango" name="_chnPathRunning" polling="1000">PathRunning</channel>
+  <channel type="tango" name="_chnSampleIsDetected" polling="1000">di_PRI4_SOM</channel>
+
+  <command type="tango" name="_cmdLoad">put</command>
+  <command type="tango" name="_cmdUnload">get</command>
+  <command type="tango" name="_cmdChainedLoad">getput</command>
+
+  <command type="tango" name="_cmdLoadHT">put_HT</command>
+  <command type="tango" name="_cmdUnloadHT">get_HT</command>
+  <command type="tango" name="_cmdChainedLoadHT">getput_HT</command>
+
+  <command type="tango" name="_cmdLoadBarcode">put_bcrd</command>
+  <command type="tango" name="_cmdChainedLoadBarcode">getput_bcrd</command>
+
+  <command type="tango" name="_cmdAbort">abort</command>
+
+  <command type="tango" name="_cmdScanSample">barcode</command>
+
+</equipment>
+

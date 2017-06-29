@@ -1,0 +1,31 @@
+<!-- Q: redundant? -->
+<!-- <?xml version="1.0" encoding="iso-8859-1"?> -->
+<equipment class="XalocMiniDiff">
+    <username>Goniometer</username>
+    <phiy_direction>1</phiy_direction>
+    
+    <device role="camera" hwrid="/camera"></device>
+    <device role="calibration" hwrid="/calibration"></device>
+    <samplechanger>/cats</samplechanger>
+
+    <motors>
+        <phi-shutter>
+            <device role="phi" hwrid="/omega"></device>
+            <device role="phiz" hwrid="/omegaz"></device>  
+            <device role="kappa" hwrid="/kappa"></device>  
+            <device role="kappa_phi" hwrid="/kappaphi"></device>  
+        </phi-shutter>
+        <sample>
+            <device role="zoom" hwrid="/zoom"></device>
+            <device role="focus" hwrid="/omegay"></device>
+            <device role="phiy" hwrid="/omegax"></device>  
+            <device role="sampx" hwrid="/centx"></device>
+            <device role="sampy" hwrid="/centy"></device>
+            <device role="light" hwrid="/lightmot"></device>
+        </sample>
+    </motors>
+    <wagolight>/blight</wagolight>
+    <channel type="tango" tangoname="bl13/ct/variables" name="beamInfoX">XProjFitFWHM</channel>
+    <channel type="tango" tangoname="bl13/ct/variables" name="beamInfoY">YProjFitFWHM</channel>
+    <!-- command type="sardana" name="getBeamInfo"></command-->
+</equipment>

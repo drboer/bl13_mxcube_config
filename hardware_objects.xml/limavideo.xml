@@ -1,0 +1,16 @@
+<device class="Qt4_TangoLimaVideo">
+<!-- device class="Qt4_LimaVideo"-->
+   <type>basler</type>
+   <encoding>yuv422p</encoding>
+   <!--encoding>y8</encoding-->
+   <!--address>84.89.227.6</address-->
+
+   <address>84.89.227.72</address>
+   <tangoname>bl13/eh/basler_oav</tangoname> 
+
+   <!-- gain>0.3</gain -->
+   <scale>0.5</scale>
+   <exposure>0.01</exposure>
+   <mirror>(False, False)</mirror>
+   <interval>30</interval>
+</device>

@@ -1,0 +1,9 @@
+<device class = "AlbaMachCurrent">
+  <username>Mach</username>
+  <tangoname>mach/ct/gateway</tangoname>
+  <taurusname>mach/ct/gateway</taurusname>
+  <channel type="sardana" name="Current" polling="1000">Current</channel>
+  <channel type="sardana" name="TopUpRemaining">TopUpRemaining</channel>
+  <channel type="sardana" name="Status">Status</channel>
+
+</device>

@@ -1,0 +1,5 @@
+<device class="XalocLightMotor">
+  <username>Back Light Motor</username>
+  <taurusname>blight</taurusname>
+  <channel type="sardana" name="intensity" polling="events">Brightness</channel>
+</device>

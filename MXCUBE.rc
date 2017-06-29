@@ -1,0 +1,16 @@
+#!/bin/bash
+echo "MXCUBE.rc: Exporting MXCuBE specific variables" 1>&2
+
+export INSTITUTE=ALBA
+export MXCUBE_ROOT=/homelocal/sicilia/MXCuBE/mxcube
+export MXCUBE_XML_PATH=/homelocal/sicilia/MXCuBE/local/hardware_objects.xml
+export MXCUBE_GUI_PATH=/homelocal/sicilia/MXCuBE/local/guis.yml
+export MXCUBE_LOG_PATH=/tmp/mxcube
+
+# Local qt version
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/qt/lib:/usr/local/lib64
+
+# Include xaloc specific python code needed by MXCuBE
+export PYTHONPATH=$PYTHONPATH:$MXCUBE_ROOT/Bricks/widgets/QLed
+source /homelocal/sicilia/etc/Lima/BASLER.rc
+
