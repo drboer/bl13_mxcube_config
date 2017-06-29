@@ -1,3 +1,6 @@
+BL13-Xaloc MXCuBE configuration
+===============================
+
 This project contains the configuration files to run MXCuBE and related applications @ BL13-Xaloc beamline.
 
 The repository contains:
