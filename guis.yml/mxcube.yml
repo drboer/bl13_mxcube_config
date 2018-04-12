@@ -25,8 +25,8 @@
             - {comment: '', defaultValue: '', hidden: false, name: autoSessionUsers,
               oldValue: '', type: string, value: ''}
             - {comment: '', defaultValue: fx ifx ih im ix ls mx opid, hidden: false,
-              name: codes, oldValue: fx ifx ih im ix ls mx opid, type: string, value: av
-                opbl}
+              name: codes, oldValue: fx ifx ih im ix ls mx opid, type: string, value: u
+                mx uind-}
             - {comment: '', defaultValue: '', hidden: false, name: dbConnection, oldValue: '',
               type: string, value: /dbconnection}
             - {comment: Set fixed height in pixels, defaultValue: -1, hidden: false,
@@ -205,6 +205,8 @@
             properties:
             - {comment: '', defaultValue: /beamline-setup, hidden: false, name: beamline_setup,
               oldValue: /beamline-setup, type: string, value: /beamline-setup}
+            - {comment: '', defaultValue: 1, hidden: false, name: enableQueueAutoSave,
+              oldValue: 1, type: boolean, value: 1}
             - {comment: Set fixed height in pixels, defaultValue: -1, hidden: false,
               name: fixedHeight, oldValue: -1, type: integer, value: -1}
             - {comment: Set fixed width in pixels, defaultValue: -1, hidden: false,
@@ -225,6 +227,8 @@
               type: string, value: /queue}
             - {comment: '', defaultValue: /queue-model, hidden: false, name: queue_model,
               oldValue: /queue-model, type: string, value: /queue-model}
+            - {comment: '', defaultValue: /redis, hidden: false, name: redis_client,
+              oldValue: /redis, type: string, value: /redis}
             - {comment: '', defaultValue: Sample changer, hidden: false, name: scOneName,
               oldValue: Sample changer, type: string, value: Sample changer}
             - {comment: '', defaultValue: Plate, hidden: false, name: scTwoName, oldValue: Plate,
@@ -2416,6 +2420,23 @@
         value: default
       type: tab
     - children:
+      - children: []
+        connections: []
+        name: icon0
+        properties:
+        - choices: [none, top center, top left, top right, bottom center, bottom left,
+            bottom right, center, hcenter, vcenter, left, right]
+          comment: ''
+          defaultValue: none
+          hidden: false
+          name: alignment
+          oldValue: null
+          type: combo
+          value: none
+        - {comment: '', defaultValue: /homelocal/sicilia/MXCuBE/mxcube/BlissFramework/Icons/alba_logo.png,
+          filter: /homelocal/sicilia/MXCuBE/mxcube/BlissFramework/Icons/esrf_logo.png,
+          hidden: false, name: filename, oldValue: null, type: file, value: /homelocal/sicilia/MXCuBE/mxcube/BlissFramework/Icons/alba_logo.png}
+        type: icon
       - brick: {class: Qt4_ALBA_MachineInfoBrick, name: machinfo_brick}
         children: []
         connections: []
