@@ -26,7 +26,7 @@
 
   <object href="/supervisor" role="beamline-supervisor"/>
   
-  <sample_centring>False</sample_centring>
+  <sample_centring>True</sample_centring>
 
   <!--object href="/minikappa-correction" role="minikappa_correction"/-->
   <beaminfo>/beam-info</beaminfo>
@@ -36,9 +36,14 @@
   <omegaReference>{"motor_name": "phiz", "position":-0.0175, "camera_axis":"y","direction": -1}</omegaReference>
   <gridDirection>{"fast": (1, 0), "slow": (0, -1)}</gridDirection>
   <reversingRotation>True</reversingRotation>
-  <phaseList>("Transfer", "Centring", "DataCollection", "BeamLocation")</phaseList>
+
+  <phase_list>("Transfer", "Centring", "Collect", "BeamView")</phase_list>
+
+  <channel type="sardana" taurusname="bl13/eh/supervisor" name="CurrentPhase">CurrentPhase</channel>
 
   <channel type="sardana" taurusname="bl13/eh/diff" polling="500" name="State">State</channel>
   <used_channels>State,CurrentPhase</used_channels>
+
+  <delay_state_polling>0.2</delay_state_polling>
 
 </equipment>

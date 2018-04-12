@@ -8,9 +8,9 @@
    <address>84.89.227.72</address>
    <tangoname>bl13/eh/basler_oav</tangoname> 
 
-   <!-- gain>0.3</gain -->
+   <gain>0.24</gain>
    <scale>0.5</scale>
-   <exposure>0.01</exposure>
+   <exposure>0.08</exposure>
    <mirror>(False, False)</mirror>
    <interval>30</interval>
 </device>

@@ -3,7 +3,7 @@
   <object href="/detector-distance" role="distance_motor"/>
 
   <tangoname>bl13/eh/pilatuslima</tangoname>
-  <tangospecific>bl13/eh/pilatusspecific</tangospecific>
+  <device_specific>bl13/eh/pilatusspecific</device_specific>
 
   <manufacturer>DECTRIS</manufacturer>
   <model>6M_F</model>
@@ -16,5 +16,8 @@
   <default_exposure_time>0.1</default_exposure_time>
   <minimum_exposure_time>0.08</minimum_exposure_time>
   <exposure_limits>0.08,1000</exposure_limits>
+
+  <channel type="tango" tangoname="bl13/ct/variables" name="beamx">beamx</channel>
+  <channel type="tango" tangoname="bl13/ct/variables" name="beamy">beamy</channel>
 
 </object>

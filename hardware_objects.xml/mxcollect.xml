@@ -19,9 +19,15 @@
   <object href="/mach-info" role="machine_info"/>
   <object href="/beam-info" role="beam_info"/>
 
-  <doorname>door/mxcube/1</doorname>
+  <doorname>bl13/door/05</doorname>
   <command type="sardana" name="ni_configure">ni660x_configure_collect</command>
   <command type="sardana" name="ni_unconfigure">ni660x_unconfigure_collect</command>
+
+  <object href="/flux" role="flux"/>
+  <channel type="tango" tangoname="kappa" name="kappapos">position</channel>
+  <channel type="tango" tangoname="phi" name="phipos">position</channel>
+  <channel type="tango" tangoname="bl13/ct/variables" name="beamx">beamx</channel>
+  <channel type="tango" tangoname="bl13/ct/variables" name="beamy">beamy</channel>
 
   <undulator>
      <type>ivu21</type>

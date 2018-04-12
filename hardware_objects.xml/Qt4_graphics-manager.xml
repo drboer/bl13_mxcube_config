@@ -2,5 +2,5 @@
    <object href="/mini-diff" role="diffractometer"/>
    <object href="/beam-info" role="beam_info"/>
    <object href="/limavideo" role="camera"/>
-   <magnification_toolo>{"scale": 3, "area_size": 100}</magnification_toolo>
+   <!-- magnification_tool>{"scale": 3, "area_size": 100}</magnification_tool  -->
 </object>

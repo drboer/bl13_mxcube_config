@@ -1,66 +1,21 @@
 <equipment class = "ALBACatsMaint">
   <username>CatsMaint</username>
-  <taurusname>bl13/eh/cats</taurusname>    
+  <tangoname>bl13/eh/cats</tangoname>    
   
   <!--  COMMANDS -->
 
   <channel type="tango" tangoname="bl13/eh/diff" name="shifts">MountingPosition</channel>
 
-  <command type="sardana" name="_cmdPowerOn">powerOn</command>
-  <command type="sardana" name="_cmdPowerOff">powerOff</command>
-
-  <command type="sardana" name="_cmdRegulOn">regulOn</command>
-  <command type="sardana" name="_cmdOpenLid1">openlid1</command>
-  <command type="sardana" name="_cmdCloseLid1">closelid1</command>
-  <command type="sardana" name="_cmdOpenLid2">openlid2</command>
-  <command type="sardana" name="_cmdCloseLid2">closelid2</command>
-  <command type="sardana" name="_cmdOpenLid3">openlid3</command>
-  <command type="sardana" name="_cmdCloseLid3">closelid3</command>
-
-  <command type="sardana" name="_cmdOpenTool">opentool</command>
-  <command type="sardana" name="_cmdCloseTool">closetool</command>
-  <command type="sardana" name="_cmdCalibration">calibration</command>
-
-  <command type="sardana" name="_cmdMagnetOn">magneton</command>
-  <command type="sardana" name="_cmdMagnetOff">magnetoff</command>
-
-
-  <command type="sardana" name="_cmdReset">reset</command>
-  <command type="sardana" name="_cmdBack">back</command>
-  <command type="sardana" name="_cmdSafe">safe</command>
-
-  <command type="sardana" name="_cmdSoak">soak</command>
-  <command type="sardana" name="_cmdDry">dry</command>
-  <command type="sardana" name="_cmdHome">home</command>
-  <command type="sardana" name="_cmdPanic">panic</command>
-  <command type="sardana" name="_cmdPause">pause</command>
-  <command type="sardana" name="_cmdRestart">restart</command>
-  <command type="sardana" name="_cmdResetParameters">reset_parameters</command>
-  <command type="sardana" name="_cmdClearMemory">clear_memory</command>
-  <command type="sardana" name="_cmdResetMotion">resetmotion</command>
-
-  <command type="sardana" name="_cmdAbort">abort</command>
-
-  <command type="sardana" name="_cmdSendOperation">send_op_cmd</command>
+  <command type="tango" name="_cmdCalibration">calibration</command>
+  <command type="tango" name="_cmdPanic">panic</command>
+  <command type="tango" name="_cmdPause">pause</command>
+  <command type="tango" name="_cmdRestart">restart</command>
+  <command type="tango" name="_cmdSendOperation">send_op_cmd</command>
 
   <!--  CHANNELS -->
 
-  <channel type="sardana" name="_chnLid1State" polling="2000">di_Lid1Open</channel>
-  <channel type="sardana" name="_chnLid2State" polling="2000">di_Lid2Open</channel>
-  <channel type="sardana" name="_chnLid3State" polling="2000">di_Lid3Open</channel>
-
-  <channel type="sardana" name="_chnLid1State" polling="2000">di_Lid1Open</channel>
-  <channel type="sardana" name="_chnLid2State" polling="2000">di_Lid2Open</channel>
-  <channel type="sardana" name="_chnLid3State" polling="2000">di_Lid3Open</channel>
-
-  <channel type="sardana" name="_chnPowered" polling="2000">Powered</channel>
-  <channel type="sardana" name="_chnLN2RegulationDewar1" polling="2000">LN2Regulating</channel>
-  <channel type="sardana" name="_chnPathRunning" polling="2000">PathRunning</channel>
-  <channel type="sardana" name="_chnToolOpenClose" polling="2000">ToolOpenClose</channel>
-  <channel type="sardana" name="_chnMessage" polling="2000">Message</channel>
-  <channel type="sardana" name="_chnBarcode" polling="2000">Barcode</channel>
-
-  <channel type="sardana" name="_chnAtHome" polling="2000">do_PRO6_RAH</channel>
+  <channel type="tango" name="_chnBarcode" polling="2000">Barcode</channel>
+  <channel type="tango" name="_chnAtHome" polling="2000">do_PRO6_RAH</channel>
 
 </equipment>
 
