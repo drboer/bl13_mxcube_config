@@ -6,7 +6,9 @@
       name: Qt4_CatsSimpleBrick0
       properties:
       - {comment: '', defaultValue: '5', hidden: false, name: basketCount, oldValue: '5',
-        type: string, value: '9:3'}
+        type: string, value: '9:3:16:8'}
+      - {comment: '', defaultValue: Basket, hidden: false, name: basketLabel, oldValue: Basket,
+        type: string, value: Basket}
       - {comment: '', defaultValue: 22, hidden: false, name: defaultHolderLength,
         oldValue: 22, type: integer, value: 22}
       - {comment: '', defaultValue: 1, hidden: false, name: doubleClickLoads, oldValue: 1,

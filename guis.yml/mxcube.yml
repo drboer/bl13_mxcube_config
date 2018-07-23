@@ -103,15 +103,7 @@
               slot: enable_widget}
             - {receiver: attenuators_brick, receiverWindow: mxCuBE, signal: enable_widgets,
               slot: enable_widget}
-            - {receiver: camera_brick, receiverWindow: mxCuBE, signal: enable_widgets,
-              slot: enable_widget}
             - {receiver: energy_brick, receiverWindow: mxCuBE, signal: enable_widgets,
-              slot: enable_widget}
-            - {receiver: graphics_manager_brick, receiverWindow: mxCuBE, signal: enable_widgets,
-              slot: enable_widget}
-            - {receiver: graphics_tools_brick, receiverWindow: mxCuBE, signal: enable_widgets,
-              slot: enable_widget}
-            - {receiver: hutchmenu_brick, receiverWindow: mxCuBE, signal: enable_widgets,
               slot: enable_widget}
             - {receiver: omega_brick, receiverWindow: mxCuBE, signal: enable_widgets,
               slot: enable_widget}
@@ -126,78 +118,6 @@
             - {receiver: shutters_brick, receiverWindow: mxCuBE, signal: enable_widgets,
               slot: enable_widget}
             - {receiver: slits_brick, receiverWindow: mxCuBE, signal: enable_widgets,
-              slot: enable_widget}
-            - {receiver: zoom_brick, receiverWindow: mxCuBE, signal: enable_widgets,
-              slot: enable_widget}
-            - {receiver: Qt4_ALBA_LoginBrick0, receiverWindow: mxCuBE, signal: enable_widgets,
-              slot: enable_widget}
-            - {receiver: task_tollbox_brick, receiverWindow: mxCuBE, signal: selection_changed,
-              slot: selection_changed}
-            - {receiver: parameters_tab, receiverWindow: mxCuBE, signal: hide_sample_centring_tab,
-              slot: hidePage_Sample_centring}
-            - {receiver: parameters_tab, receiverWindow: mxCuBE, signal: hide_sample_tab,
-              slot: hidePage_Sample}
-            - {receiver: parameters_tab, receiverWindow: mxCuBE, signal: hide_dc_parameters_tab,
-              slot: hidePage_Data_collection}
-            - {receiver: parameters_tab, receiverWindow: mxCuBE, signal: hide_dcg_tab,
-              slot: hidePage_Data_collection_group}
-            - {receiver: parameters_tab, receiverWindow: mxCuBE, signal: hide_char_parameters_tab,
-              slot: hidePage_Characterisation}
-            - {receiver: parameters_tab, receiverWindow: mxCuBE, signal: hide_energy_scan_tab,
-              slot: hidePage_Energy_scan}
-            - {receiver: parameters_tab, receiverWindow: mxCuBE, signal: hide_advanced_tab,
-              slot: hidePage_Advanced}
-            - {receiver: parameters_tab, receiverWindow: mxCuBE, signal: hide_xrf_spectrum_tab,
-              slot: hidePage_XRF_spectrum}
-            - {receiver: dc_parameters_brick, receiverWindow: mxCuBE, signal: populate_dc_parameter_widget,
-              slot: populate_dc_parameter_widget}
-            - {receiver: dcgroup_brick, receiverWindow: mxCuBE, signal: populate_dc_group_widget,
-              slot: populate_dc_group_widget}
-            - {receiver: sample_details_brick, receiverWindow: mxCuBE, signal: populate_sample_details,
-              slot: populate_sample_details}
-            - {receiver: char_parameters_brick, receiverWindow: mxCuBE, signal: populate_char_parameter_widget,
-              slot: populate_char_parameter_widget}
-            - {receiver: energy_scan_brick, receiverWindow: mxCuBE, signal: populate_energy_scan_widget,
-              slot: populate_parameter_widget}
-            - {receiver: xrf_spectrum_parameters, receiverWindow: mxCuBE, signal: populate_xrf_spectrum_widget,
-              slot: populate_xrf_widget}
-            - {receiver: advanced_brick, receiverWindow: mxCuBE, signal: populate_advanced_widget,
-              slot: populate_advanced_widget}
-            - {receiver: parameters_tab, receiverWindow: mxCuBE, signal: hide_sample_changer_tab,
-              slot: hidePage_Sample_Changer}
-            - {receiver: parameters_tab, receiverWindow: mxCuBE, signal: hide_plate_manipulator_tab,
-              slot: hidePage_Plate_Manipulator}
-            - {receiver: task_tollbox_brick, receiverWindow: mxCuBE, signal: get_tree_brick,
-              slot: set_tree_brick}
-            - {receiver: aperture_brick, receiverWindow: mxCuBE, signal: enable_widgets,
-              slot: enable_widget}
-            - {receiver: attenuators_brick, receiverWindow: mxCuBE, signal: enable_widgets,
-              slot: enable_widget}
-            - {receiver: camera_brick, receiverWindow: mxCuBE, signal: enable_widgets,
-              slot: enable_widget}
-            - {receiver: energy_brick, receiverWindow: mxCuBE, signal: enable_widgets,
-              slot: enable_widget}
-            - {receiver: graphics_manager_brick, receiverWindow: mxCuBE, signal: enable_widgets,
-              slot: enable_widget}
-            - {receiver: graphics_tools_brick, receiverWindow: mxCuBE, signal: enable_widgets,
-              slot: enable_widget}
-            - {receiver: hutchmenu_brick, receiverWindow: mxCuBE, signal: enable_widgets,
-              slot: enable_widget}
-            - {receiver: omega_brick, receiverWindow: mxCuBE, signal: enable_widgets,
-              slot: enable_widget}
-            - {receiver: phase_brick, receiverWindow: mxCuBE, signal: enable_widgets,
-              slot: enable_widget}
-            - {receiver: plate_brick, receiverWindow: mxCuBE, signal: enable_widgets,
-              slot: enable_widget}
-            - {receiver: resolution_brick, receiverWindow: mxCuBE, signal: enable_widgets,
-              slot: enable_widget}
-            - {receiver: cats_simple_brick, receiverWindow: mxCuBE, signal: enable_widgets,
-              slot: enable_widget}
-            - {receiver: shutters_brick, receiverWindow: mxCuBE, signal: enable_widgets,
-              slot: enable_widget}
-            - {receiver: slits_brick, receiverWindow: mxCuBE, signal: enable_widgets,
-              slot: enable_widget}
-            - {receiver: zoom_brick, receiverWindow: mxCuBE, signal: enable_widgets,
               slot: enable_widget}
             - {receiver: Qt4_ALBA_LoginBrick0, receiverWindow: mxCuBE, signal: enable_widgets,
               slot: enable_widget}
@@ -627,11 +547,11 @@
                       - {comment: '', defaultValue: 1, hidden: false, name: displayScale,
                         oldValue: 1, type: boolean, value: 1}
                       - {comment: Set fixed height in pixels, defaultValue: -1, hidden: false,
-                        name: fixedHeight, oldValue: -1, type: integer, value: 519}
+                        name: fixedHeight, oldValue: -1, type: integer, value: 670}
                       - {comment: '', defaultValue: '', hidden: false, name: fixedSize,
                         oldValue: '', type: string, value: '-1'}
                       - {comment: Set fixed width in pixels, defaultValue: -1, hidden: false,
-                        name: fixedWidth, oldValue: -1, type: integer, value: 695}
+                        name: fixedWidth, oldValue: -1, type: integer, value: 900}
                       - {comment: '', defaultValue: '9', hidden: false, name: fontSize,
                         oldValue: '9', type: string, value: '9'}
                       - {comment: Draw a frame around the widget, defaultValue: 0,
@@ -1428,7 +1348,9 @@
                 name: cats_simple_brick
                 properties:
                 - {comment: '', defaultValue: '5', hidden: false, name: basketCount,
-                  oldValue: '5', type: string, value: '9:3'}
+                  oldValue: '5', type: string, value: '9:3:16:8'}
+                - {comment: '', defaultValue: Basket, hidden: false, name: basketLabel,
+                  oldValue: null, type: string, value: Basket}
                 - {comment: '', defaultValue: 22, hidden: false, name: defaultHolderLength,
                   oldValue: 22, type: integer, value: 22}
                 - {comment: '', defaultValue: 1, hidden: false, name: doubleClickLoads,
@@ -1466,7 +1388,7 @@
                 name: cats_maint_brick
                 properties:
                 - {comment: '', defaultValue: '', hidden: false, name: cats, oldValue: '',
-                  type: string, value: ''}
+                  type: string, value: /cats}
                 - {comment: Set fixed height in pixels, defaultValue: -1, hidden: false,
                   name: fixedHeight, oldValue: -1, type: integer, value: -1}
                 - {comment: Set fixed width in pixels, defaultValue: -1, hidden: false,
@@ -2434,7 +2356,7 @@
           type: combo
           value: none
         - {comment: '', defaultValue: /homelocal/sicilia/MXCuBE/mxcube/BlissFramework/Icons/alba_logo.png,
-          filter: /homelocal/sicilia/MXCuBE/mxcube/BlissFramework/Icons/esrf_logo.png,
+          filter: /homelocal/sicilia/MXCuBE/mxcube/BlissFramework/Icons/alba_logo.png,
           hidden: false, name: filename, oldValue: null, type: file, value: /homelocal/sicilia/MXCuBE/mxcube/BlissFramework/Icons/alba_logo.png}
         type: icon
       - brick: {class: Qt4_ALBA_MachineInfoBrick, name: machinfo_brick}
