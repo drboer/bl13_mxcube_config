@@ -5,16 +5,22 @@
 
   <!-- specify the number of lids here to support different models-->
   <no_of_lids>3</no_of_lids>
-  <samples_per_puck>10</samples_per_puck>
+
+  <!-- samples_per_puck>10</samples_per_puck NOT USED ANYMORE -->
+
   <useUpdateTimer>False</useUpdateTimer>
+
+  <unipuck_tool>5</unipuck_tool> <!-- can be unipuck: 1   or double/gripper:  5 -->
  
   <auto_prepare_diff>True</auto_prepare_diff>
 
   <channel type="tango" tangoname="bl13/eh/diff" name="shifts">MountingPosition</channel>
-  <channel type="tango" tangoname="bl13/eh/supervisor" name="phase">CurrentPhase</channel>
   <command type="tango" tangoname="bl13/eh/supervisor" name="go_transfer">GoTransferPhase</command>
   <command type="tango" tangoname="bl13/eh/supervisor" name="go_sampleview">GoSampleViewPhase</command>
+  <channel type="tango" tangoname="bl13/eh/supervisor" name="phase">CurrentPhase</channel>
+  <channel type="tango" tangoname="bl13/eh/supervisor" name="super_abort">Abort</channel>
   <channel type="tango" tangoname="bl13/eh/supervisor" name="super_state">State</channel>
+  <channel type="tango" tangoname="bl13/eh/supervisor" name="detdist_position">DetDistance</channel>
 
   <channel type="tango" name="_chnSampleIsDetected" polling="1000">di_PRI4_SOM</channel>
   <channel type="tango" name="_chnPathSafe" polling="1000">PathSafe</channel>

@@ -6,6 +6,8 @@
   <object href="/Qt4_graphics-manager" role="graphics_manager"/>
   <object href="/dbconnection" role="lims_client"/>
 
+  <object href="/auto-processing" role="auto_processing"/>
+
   <object href="/fastshut" role="fast_shutter"/>
   <object href="/slowshut" role="slow_shutter"/>
   <object href="/photonshut" role="photon_shutter"/>

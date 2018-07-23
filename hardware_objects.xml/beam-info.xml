@@ -1,8 +1,8 @@
 <equipment class="ALBABeamInfo">
     <taurusname>bl13/ct/variables</taurusname>
   
-    <channel type="sardana" name="BeamPositionHorizontal">BEAMX</channel>
-    <channel type="sardana" name="BeamPositionVertical">BEAMY</channel>
+    <channel type="sardana" name="BeamPositionHorizontal">ImageCenterX</channel>
+    <channel type="sardana" name="BeamPositionVertical">ImageCenterY</channel>
     <channel type="sardana" name="BeamWidth">BeamWidth</channel>
     <channel type="sardana" name="BeamHeight">BeamHeight</channel>
     
