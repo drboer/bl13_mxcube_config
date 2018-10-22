@@ -3,12 +3,13 @@
   <!--   the value in ldap homeDirectory is used for the three base directories -->
   <!--      base_directory, base_process_directory, base_archive_directory -->
   <!--   check the code in ALBA/ALBAISPyBClient.py -->
-  <synchrotron_name>ALBA</synchrotron_name>	
+  <synchrotron_name>ALBA</synchrotron_name>
   <endstation_name>MX-XALOC</endstation_name>
   <beamline_name>MX-XALOC</beamline_name>
+
   <file_info>
      <file_suffix>cbf</file_suffix>
-     <precision>'05'</precision>    
+     <precision>'04'</precision>    
      <!-- base_directory>/beamlines/bl13/projects/cycle2017-I</base_directory -->
 
      <!-- ATTENTION - base directory is obtained from ldap user home directory. Following lines are ignored -->
