@@ -25,8 +25,8 @@
             - {comment: '', defaultValue: '', hidden: false, name: autoSessionUsers,
               oldValue: '', type: string, value: ''}
             - {comment: '', defaultValue: fx ifx ih im ix ls mx opid, hidden: false,
-              name: codes, oldValue: fx ifx ih im ix ls mx opid, type: string, value: u
-                mx uind-}
+              name: codes, oldValue: fx ifx ih im ix ls mx opid, type: string, value: mx
+                u uind-}
             - {comment: '', defaultValue: '', hidden: false, name: dbConnection, oldValue: '',
               type: string, value: /dbconnection}
             - {comment: Set fixed height in pixels, defaultValue: -1, hidden: false,
@@ -139,6 +139,8 @@
               type: boolean, value: 0}
             - {comment: '', defaultValue: '', hidden: false, name: hwobj_state_machine,
               oldValue: '', type: string, value: ''}
+            - {comment: '', defaultValue: '', hidden: false, name: hwobj_unittest,
+              oldValue: '', type: string, value: ''}
             - {comment: Allow to control brick in all modes, defaultValue: 0, hidden: false,
               name: instanceAllowAlways, oldValue: 0, type: boolean, value: 0}
             - {comment: Allow to control brick in slave mode, defaultValue: 0, hidden: false,
@@ -153,6 +155,8 @@
               oldValue: Sample changer, type: string, value: Sample changer}
             - {comment: '', defaultValue: Plate, hidden: false, name: scTwoName, oldValue: Plate,
               type: string, value: Plate}
+            - {comment: '', defaultValue: 1, hidden: false, name: useCentringMethods,
+              oldValue: 1, type: boolean, value: 1}
             - {comment: '', defaultValue: 1, hidden: false, name: useFilterWidget,
               oldValue: 1, type: boolean, value: 1}
             - {comment: '', defaultValue: 1, hidden: false, name: useHistoryView,
@@ -233,6 +237,8 @@
                     connections: []
                     name: omega_brick
                     properties:
+                    - {comment: '', defaultValue: 2, hidden: false, name: decimals,
+                      oldValue: 2, type: integer, value: 2}
                     - {comment: '', defaultValue: 180 90 45 30 10, hidden: false,
                       name: defaultSteps, oldValue: 180 90 45 30 10, type: string,
                       value: ''}
@@ -676,8 +682,6 @@
                     connections: []
                     name: hutchmenu_brick
                     properties:
-                    - {comment: '', defaultValue: '', hidden: false, name: collection,
-                      oldValue: '', type: string, value: /Qt4_mxcollect}
                     - {comment: '', defaultValue: 1, hidden: false, name: enableAutoCenter,
                       oldValue: 1, type: boolean, value: 1}
                     - {comment: '', defaultValue: 1, hidden: false, name: enableAutoFocus,
@@ -1053,6 +1057,8 @@
                   value: 0}
                 - {comment: '', defaultValue: /queue-model, hidden: false, name: queue_model,
                   oldValue: /queue-model, type: string, value: /queue-model}
+                - {comment: '', defaultValue: 0, hidden: false, name: useCompression,
+                  oldValue: 0, type: boolean, value: 0}
                 - {comment: '', defaultValue: 0, hidden: false, name: useOscStartCbox,
                   oldValue: 0, type: boolean, value: 0}
                 type: Qt4_TaskToolBoxBrick
@@ -1350,7 +1356,7 @@
                 - {comment: '', defaultValue: '5', hidden: false, name: basketCount,
                   oldValue: '5', type: string, value: '9:3:16:8'}
                 - {comment: '', defaultValue: Basket, hidden: false, name: basketLabel,
-                  oldValue: null, type: string, value: Basket}
+                  oldValue: Basket, type: string, value: Basket}
                 - {comment: '', defaultValue: 22, hidden: false, name: defaultHolderLength,
                   oldValue: 22, type: integer, value: 22}
                 - {comment: '', defaultValue: 1, hidden: false, name: doubleClickLoads,
@@ -2088,6 +2094,26 @@
             type: string, value: ''}
           - {comment: '', defaultValue: 1, hidden: false, name: margin, oldValue: null,
             type: integer, value: 1}
+          - {comment: '', defaultValue: 0, hidden: false, name: newdialog_Advanced,
+            oldValue: null, type: boolean, value: 0}
+          - {comment: '', defaultValue: 0, hidden: false, name: newdialog_Characterisation,
+            oldValue: null, type: boolean, value: 0}
+          - {comment: '', defaultValue: 0, hidden: false, name: newdialog_Data_collection,
+            oldValue: null, type: boolean, value: 0}
+          - {comment: '', defaultValue: 0, hidden: false, name: newdialog_Data_collection_group,
+            oldValue: null, type: boolean, value: 0}
+          - {comment: '', defaultValue: 0, hidden: false, name: newdialog_Energy_scan,
+            oldValue: null, type: boolean, value: 0}
+          - {comment: '', defaultValue: 0, hidden: false, name: newdialog_Plate_Manipulator,
+            oldValue: null, type: boolean, value: 0}
+          - {comment: '', defaultValue: 0, hidden: false, name: newdialog_Sample,
+            oldValue: null, type: boolean, value: 0}
+          - {comment: '', defaultValue: 0, hidden: false, name: newdialog_Sample_Changer,
+            oldValue: null, type: boolean, value: 0}
+          - {comment: '', defaultValue: 0, hidden: false, name: newdialog_Sample_centring,
+            oldValue: null, type: boolean, value: 0}
+          - {comment: '', defaultValue: 0, hidden: false, name: newdialog_XRF_spectrum,
+            oldValue: null, type: boolean, value: 0}
           - choices: [plain, raised, sunken, default]
             comment: ''
             defaultValue: default
@@ -2322,6 +2348,10 @@
         type: string, value: ''}
       - {comment: '', defaultValue: 5, hidden: false, name: margin, oldValue: null,
         type: integer, value: 5}
+      - {comment: '', defaultValue: 0, hidden: false, name: newdialog_Collect, oldValue: null,
+        type: boolean, value: 0}
+      - {comment: '', defaultValue: 0, hidden: false, name: newdialog_Log, oldValue: null,
+        type: boolean, value: 0}
       - choices: [plain, raised, sunken, default]
         comment: ''
         defaultValue: default
@@ -2341,346 +2371,6 @@
         type: combo
         value: default
       type: tab
-    - children:
-      - children: []
-        connections: []
-        name: icon0
-        properties:
-        - choices: [none, top center, top left, top right, bottom center, bottom left,
-            bottom right, center, hcenter, vcenter, left, right]
-          comment: ''
-          defaultValue: none
-          hidden: false
-          name: alignment
-          oldValue: null
-          type: combo
-          value: none
-        - {comment: '', defaultValue: /homelocal/sicilia/MXCuBE/mxcube/BlissFramework/Icons/alba_logo.png,
-          filter: /homelocal/sicilia/MXCuBE/mxcube/BlissFramework/Icons/alba_logo.png,
-          hidden: false, name: filename, oldValue: null, type: file, value: /homelocal/sicilia/MXCuBE/mxcube/BlissFramework/Icons/alba_logo.png}
-        type: icon
-      - brick: {class: Qt4_ALBA_MachineInfoBrick, name: machinfo_brick}
-        children: []
-        connections: []
-        name: machinfo_brick
-        properties:
-        - {comment: Set fixed height in pixels, defaultValue: -1, hidden: false, name: fixedHeight,
-          oldValue: -1, type: integer, value: -1}
-        - {comment: Set fixed width in pixels, defaultValue: -1, hidden: false, name: fixedWidth,
-          oldValue: -1, type: integer, value: -1}
-        - {comment: '', defaultValue: '9', hidden: false, name: fontSize, oldValue: '9',
-          type: string, value: '9'}
-        - {comment: '', defaultValue: '###.#', formatString: '%3.1f', formatStringLength: 5,
-          hidden: false, name: formatString, oldValue: '###.#', type: formatString,
-          value: '###.#'}
-        - {comment: Draw a frame around the widget, defaultValue: 0, hidden: false,
-          name: frame, oldValue: 0, type: boolean, value: 0}
-        - {comment: Hide widget, defaultValue: 0, hidden: false, name: hide, oldValue: 0,
-          type: boolean, value: 0}
-        - {comment: Allow to control brick in all modes, defaultValue: 0, hidden: false,
-          name: instanceAllowAlways, oldValue: 0, type: boolean, value: 0}
-        - {comment: Allow to control brick in slave mode, defaultValue: 0, hidden: false,
-          name: instanceAllowConnected, oldValue: 0, type: boolean, value: 0}
-        - {comment: '', defaultValue: '', hidden: false, name: mnemonic, oldValue: '',
-          type: string, value: /mach-info}
-        type: Qt4_ALBA_MachineInfoBrick
-      - brick: {class: Qt4_EnergyBrick, name: energy_brick}
-        children: []
-        connections: []
-        name: energy_brick
-        properties:
-        - {comment: '', defaultValue: '##.####', formatString: '%2.3f', formatStringLength: 6,
-          hidden: false, name: angFormatString, oldValue: '##.####', type: formatString,
-          value: '##.###'}
-        - choices: [keV, Ang]
-          comment: ''
-          defaultValue: keV
-          hidden: false
-          name: defaultMode
-          oldValue: keV
-          type: combo
-          value: keV
-        - {comment: '', defaultValue: 0, hidden: false, name: displayStatus, oldValue: 0,
-          type: boolean, value: 0}
-        - {comment: Set fixed height in pixels, defaultValue: -1, hidden: false, name: fixedHeight,
-          oldValue: -1, type: integer, value: -1}
-        - {comment: Set fixed width in pixels, defaultValue: -1, hidden: false, name: fixedWidth,
-          oldValue: -1, type: integer, value: -1}
-        - {comment: '', defaultValue: '9', hidden: false, name: fontSize, oldValue: '9',
-          type: string, value: '9'}
-        - {comment: Draw a frame around the widget, defaultValue: 0, hidden: false,
-          name: frame, oldValue: 0, type: boolean, value: 1}
-        - {comment: Hide widget, defaultValue: 0, hidden: false, name: hide, oldValue: 0,
-          type: boolean, value: 0}
-        - {comment: Allow to control brick in all modes, defaultValue: 0, hidden: false,
-          name: instanceAllowAlways, oldValue: 0, type: boolean, value: 0}
-        - {comment: Allow to control brick in slave mode, defaultValue: 0, hidden: false,
-          name: instanceAllowConnected, oldValue: 0, type: boolean, value: 0}
-        - {comment: '', defaultValue: '##.####', formatString: '%3.4f', formatStringLength: 8,
-          hidden: false, name: kevFormatString, oldValue: '##.####', type: formatString,
-          value: '###.####'}
-        - {comment: '', defaultValue: '', hidden: false, name: mnemonic, oldValue: '',
-          type: string, value: /energy}
-        type: Qt4_EnergyBrick
-      - brick: {class: Qt4_AttenuatorsBrick, name: attenuators_brick}
-        children: []
-        connections: []
-        name: attenuators_brick
-        properties:
-        - {comment: Set fixed height in pixels, defaultValue: -1, hidden: false, name: fixedHeight,
-          oldValue: -1, type: integer, value: -1}
-        - {comment: Set fixed width in pixels, defaultValue: -1, hidden: false, name: fixedWidth,
-          oldValue: -1, type: integer, value: -1}
-        - {comment: '', defaultValue: '9', hidden: false, name: fontSize, oldValue: '9',
-          type: string, value: '9'}
-        - {comment: '', defaultValue: '###.##', formatString: '%3.2f', formatStringLength: 6,
-          hidden: false, name: formatString, oldValue: '###.##', type: formatString,
-          value: '###.##'}
-        - {comment: Draw a frame around the widget, defaultValue: 0, hidden: false,
-          name: frame, oldValue: 0, type: boolean, value: 1}
-        - {comment: Hide widget, defaultValue: 0, hidden: false, name: hide, oldValue: 0,
-          type: boolean, value: 0}
-        - {comment: Allow to control brick in all modes, defaultValue: 0, hidden: false,
-          name: instanceAllowAlways, oldValue: 0, type: boolean, value: 0}
-        - {comment: Allow to control brick in slave mode, defaultValue: 0, hidden: false,
-          name: instanceAllowConnected, oldValue: 0, type: boolean, value: 0}
-        - {comment: '', defaultValue: '', hidden: false, name: mnemonic, oldValue: '',
-          type: string, value: /transmission}
-        - {comment: '', defaultValue: '', hidden: false, name: mockup_mnemonic, oldValue: '',
-          type: string, value: ''}
-        type: Qt4_AttenuatorsBrick
-      - brick: {class: Qt4_ResolutionBrick, name: resolution_brick}
-        children: []
-        connections: []
-        name: resolution_brick
-        properties:
-        - {comment: '', defaultValue: '##.###', formatString: '%2.3f', formatStringLength: 6,
-          hidden: false, name: angFormatString, oldValue: '##.###', type: formatString,
-          value: '##.###'}
-        - choices: [Ang, mm]
-          comment: ''
-          defaultValue: Ang
-          hidden: false
-          name: defaultMode
-          oldValue: Ang
-          type: combo
-          value: Ang
-        - {comment: '', defaultValue: '', hidden: false, name: detectorDistance, oldValue: '',
-          type: string, value: /detector-distance}
-        - {comment: '', defaultValue: '', hidden: false, name: doorInterlock, oldValue: '',
-          type: string, value: /door-interlock}
-        - {comment: '', defaultValue: '', hidden: false, name: energy, oldValue: '',
-          type: string, value: /energy}
-        - {comment: Set fixed height in pixels, defaultValue: -1, hidden: false, name: fixedHeight,
-          oldValue: -1, type: integer, value: -1}
-        - {comment: Set fixed width in pixels, defaultValue: -1, hidden: false, name: fixedWidth,
-          oldValue: -1, type: integer, value: -1}
-        - {comment: '', defaultValue: '9', hidden: false, name: fontSize, oldValue: '9',
-          type: string, value: '9'}
-        - {comment: Draw a frame around the widget, defaultValue: 0, hidden: false,
-          name: frame, oldValue: 0, type: boolean, value: 1}
-        - {comment: Hide widget, defaultValue: 0, hidden: false, name: hide, oldValue: 0,
-          type: boolean, value: 0}
-        - {comment: Allow to control brick in all modes, defaultValue: 0, hidden: false,
-          name: instanceAllowAlways, oldValue: 0, type: boolean, value: 0}
-        - {comment: Allow to control brick in slave mode, defaultValue: 0, hidden: false,
-          name: instanceAllowConnected, oldValue: 0, type: boolean, value: 0}
-        - {comment: '', defaultValue: '###.##', formatString: '%3.2f', formatStringLength: 6,
-          hidden: false, name: mmFormatString, oldValue: '###.##', type: formatString,
-          value: '###.##'}
-        - {comment: '', defaultValue: '', hidden: false, name: resolution, oldValue: '',
-          type: string, value: /resolution}
-        type: Qt4_ResolutionBrick
-      - brick: {class: Qt4_MotorSpinBoxBrick, name: bstopz_motor}
-        children: []
-        connections: []
-        name: bstopz_motor
-        properties:
-        - {comment: '', defaultValue: 180 90 45 30 10, hidden: false, name: defaultSteps,
-          oldValue: 180 90 45 30 10, type: string, value: 180 90 45 30 10}
-        - {comment: '', defaultValue: '', hidden: false, name: delta, oldValue: '',
-          type: string, value: ''}
-        - {comment: '', defaultValue: 0, hidden: false, name: enableSliderTracking,
-          oldValue: 0, type: boolean, value: 0}
-        - {comment: Set fixed height in pixels, defaultValue: -1, hidden: false, name: fixedHeight,
-          oldValue: -1, type: integer, value: -1}
-        - {comment: Set fixed width in pixels, defaultValue: -1, hidden: false, name: fixedWidth,
-          oldValue: -1, type: integer, value: -1}
-        - {comment: '', defaultValue: '9', hidden: false, name: fontSize, oldValue: '9',
-          type: string, value: '9'}
-        - {comment: '', defaultValue: +##.##, formatString: '%+2.2f', formatStringLength: 5,
-          hidden: false, name: formatString, oldValue: +##.##, type: formatString,
-          value: +##.##}
-        - {comment: Draw a frame around the widget, defaultValue: 0, hidden: false,
-          name: frame, oldValue: 0, type: boolean, value: 0}
-        - {comment: '', defaultValue: '', hidden: false, name: helpDecrease, oldValue: '',
-          type: string, value: ''}
-        - {comment: '', defaultValue: '', hidden: false, name: helpIncrease, oldValue: '',
-          type: string, value: ''}
-        - {comment: Hide widget, defaultValue: 0, hidden: false, name: hide, oldValue: 0,
-          type: boolean, value: 0}
-        - {comment: '', defaultValue: 0, hidden: false, name: hideInUser, oldValue: 0,
-          type: boolean, value: 0}
-        - {comment: '', defaultValue: '', hidden: false, name: icons, oldValue: '',
-          type: string, value: ''}
-        - {comment: Allow to control brick in all modes, defaultValue: 0, hidden: false,
-          name: instanceAllowAlways, oldValue: 0, type: boolean, value: 0}
-        - {comment: Allow to control brick in slave mode, defaultValue: 0, hidden: false,
-          name: instanceAllowConnected, oldValue: 0, type: boolean, value: 0}
-        - {comment: '', defaultValue: 0, hidden: false, name: invertButtons, oldValue: 0,
-          type: boolean, value: 0}
-        - {comment: '', defaultValue: '', hidden: false, name: label, oldValue: '',
-          type: string, value: ''}
-        - {comment: '', defaultValue: '', hidden: false, name: mnemonic, oldValue: '',
-          type: string, value: /bstopz}
-        - {comment: '', defaultValue: 1, hidden: false, name: showLabel, oldValue: 1,
-          type: boolean, value: 1}
-        - {comment: '', defaultValue: 1, hidden: false, name: showMoveButtons, oldValue: 1,
-          type: boolean, value: 0}
-        - {comment: '', defaultValue: 1, hidden: false, name: showPosition, oldValue: 1,
-          type: boolean, value: 1}
-        - {comment: '', defaultValue: 0, hidden: false, name: showSlider, oldValue: 0,
-          type: boolean, value: 0}
-        - {comment: '', defaultValue: 1, hidden: false, name: showStep, oldValue: 1,
-          type: boolean, value: 0}
-        - {comment: '', defaultValue: 0, hidden: false, name: showStepList, oldValue: 0,
-          type: boolean, value: 0}
-        - {comment: '', defaultValue: 1, hidden: false, name: showStop, oldValue: 1,
-          type: boolean, value: 1}
-        type: Qt4_MotorSpinBoxBrick
-      - children: []
-        connections: []
-        name: vspacer1
-        properties:
-        - choices: [none, top center, top left, top right, bottom center, bottom left,
-            bottom right, center, hcenter, vcenter, left, right]
-          comment: ''
-          defaultValue: none
-          hidden: false
-          name: alignment
-          oldValue: null
-          type: combo
-          value: none
-        - {comment: '', defaultValue: 0, hidden: false, name: fixed_size, oldValue: null,
-          type: boolean, value: 0}
-        - {comment: '', defaultValue: 100, hidden: false, name: size, oldValue: null,
-          type: integer, value: 100}
-        type: vspacer
-      - brick: {class: Qt4_ALBA_ShuttersBrick, name: shutters_brick}
-        children: []
-        connections: []
-        name: shutters_brick
-        properties:
-        - {comment: '', defaultValue: '', hidden: false, name: fast_shutter, oldValue: '',
-          type: string, value: /fastshut}
-        - {comment: Set fixed height in pixels, defaultValue: -1, hidden: false, name: fixedHeight,
-          oldValue: -1, type: integer, value: -1}
-        - {comment: Set fixed width in pixels, defaultValue: -1, hidden: false, name: fixedWidth,
-          oldValue: -1, type: integer, value: -1}
-        - {comment: '', defaultValue: '9', hidden: false, name: fontSize, oldValue: '9',
-          type: string, value: '9'}
-        - {comment: Draw a frame around the widget, defaultValue: 0, hidden: false,
-          name: frame, oldValue: 0, type: boolean, value: 0}
-        - {comment: '', defaultValue: '', hidden: false, name: frontend, oldValue: '',
-          type: string, value: /frontend}
-        - {comment: Hide widget, defaultValue: 0, hidden: false, name: hide, oldValue: 0,
-          type: boolean, value: 0}
-        - {comment: Allow to control brick in all modes, defaultValue: 0, hidden: false,
-          name: instanceAllowAlways, oldValue: 0, type: boolean, value: 0}
-        - {comment: Allow to control brick in slave mode, defaultValue: 0, hidden: false,
-          name: instanceAllowConnected, oldValue: 0, type: boolean, value: 0}
-        - {comment: '', defaultValue: '', hidden: false, name: led_size, oldValue: '',
-          type: string, value: '25'}
-        - {comment: '', defaultValue: '', hidden: false, name: photon_shutter, oldValue: '',
-          type: string, value: /photonshut}
-        - {comment: '', defaultValue: '', hidden: false, name: slow_shutter, oldValue: '',
-          type: string, value: /slowshut}
-        type: Qt4_ALBA_ShuttersBrick
-      - brick: {class: Qt4_ALBA_ActuatorBrick, name: actuator_brick}
-        children: []
-        connections: []
-        name: actuator_brick
-        properties:
-        - {comment: Set fixed height in pixels, defaultValue: -1, hidden: false, name: fixedHeight,
-          oldValue: -1, type: integer, value: -1}
-        - {comment: Set fixed width in pixels, defaultValue: -1, hidden: false, name: fixedWidth,
-          oldValue: -1, type: integer, value: -1}
-        - {comment: '', defaultValue: '9', hidden: false, name: fontSize, oldValue: '9',
-          type: string, value: '9'}
-        - {comment: Draw a frame around the widget, defaultValue: 0, hidden: false,
-          name: frame, oldValue: 0, type: boolean, value: 0}
-        - {comment: Hide widget, defaultValue: 0, hidden: false, name: hide, oldValue: 0,
-          type: boolean, value: 0}
-        - {comment: '', defaultValue: '', hidden: false, name: in_cmd_name, oldValue: '',
-          type: string, value: Open}
-        - {comment: Allow to control brick in all modes, defaultValue: 0, hidden: false,
-          name: instanceAllowAlways, oldValue: 0, type: boolean, value: 0}
-        - {comment: Allow to control brick in slave mode, defaultValue: 0, hidden: false,
-          name: instanceAllowConnected, oldValue: 0, type: boolean, value: 0}
-        - {comment: '', defaultValue: '', hidden: false, name: mnemonic, oldValue: '',
-          type: string, value: /photonshut}
-        - {comment: '', defaultValue: '', hidden: false, name: out_cmd_name, oldValue: '',
-          type: string, value: Close}
-        type: Qt4_ALBA_ActuatorBrick
-      connections: []
-      name: right_info_hbox
-      properties:
-      - choices: [none, top center, top left, top right, bottom center, bottom left,
-          bottom right, center, hcenter, vcenter, left, right]
-        comment: ''
-        defaultValue: none
-        hidden: false
-        name: alignment
-        oldValue: null
-        type: combo
-        value: none
-      - {comment: '', defaultValue: null, hidden: false, name: color, oldValue: null,
-        type: color, value: null}
-      - {comment: '', defaultValue: -1, hidden: false, name: fixedheight, oldValue: null,
-        type: integer, value: -1}
-      - {comment: '', defaultValue: -1, hidden: false, name: fixedwidth, oldValue: null,
-        type: integer, value: -1}
-      - choices: [Box, Panel, StyledPanel, HLine, VLine, default]
-        comment: ''
-        defaultValue: default
-        hidden: false
-        name: frameshape
-        oldValue: null
-        type: combo
-        value: default
-      - choices: [fixed, expanding, default]
-        comment: ''
-        defaultValue: default
-        hidden: false
-        name: hsizepolicy
-        oldValue: null
-        type: combo
-        value: default
-      - {comment: '', defaultValue: '', hidden: false, name: icon, oldValue: null,
-        type: string, value: ''}
-      - {comment: '', defaultValue: '', hidden: false, name: label, oldValue: null,
-        type: string, value: ''}
-      - {comment: '', defaultValue: 0, hidden: false, name: margin, oldValue: null,
-        type: integer, value: 0}
-      - choices: [plain, raised, sunken, default]
-        comment: ''
-        defaultValue: default
-        hidden: false
-        name: shadowstyle
-        oldValue: null
-        type: combo
-        value: default
-      - {comment: '', defaultValue: 0, hidden: false, name: spacing, oldValue: null,
-        type: integer, value: 0}
-      - choices: [fixed, expanding, default]
-        comment: ''
-        defaultValue: default
-        hidden: false
-        name: vsizepolicy
-        oldValue: null
-        type: combo
-        value: default
-      type: vbox
     connections: []
     name: main
     properties:
@@ -2793,7 +2483,7 @@
       - {comment: Allow to control brick in slave mode, defaultValue: 0, hidden: false,
         name: instanceAllowConnected, oldValue: 0, type: boolean, value: 0}
       - {comment: '', defaultValue: -1, hidden: false, name: maxLogLines, oldValue: -1,
-        type: integer, value: -1}
+        type: integer, value: 10}
       type: !!python/unicode 'Qt4_LogBarBrick'
     connections: []
     name: hbox4
@@ -2891,6 +2581,385 @@
     type: boolean, value: 1}
   signals:
     enableExpertModeSignal: !!python/tuple []
+    isHidden: !!python/tuple []
+    isShown: !!python/tuple []
+    quit: !!python/tuple []
+  type: window
+- children:
+  - children:
+    - children: []
+      connections: []
+      name: icon0
+      properties:
+      - choices: [none, top center, top left, top right, bottom center, bottom left,
+          bottom right, center, hcenter, vcenter, left, right]
+        comment: ''
+        defaultValue: none
+        hidden: false
+        name: alignment
+        oldValue: null
+        type: combo
+        value: none
+      - {comment: '', defaultValue: /homelocal/sicilia/MXCuBE/mxcube/BlissFramework/Icons/alba_logo.png,
+        filter: /homelocal/sicilia/MXCuBE/mxcube/BlissFramework/Icons/alba_logo.png,
+        hidden: false, name: filename, oldValue: null, type: file, value: /homelocal/sicilia/MXCuBE/mxcube/BlissFramework/Icons/alba_logo.png}
+      type: icon
+    - brick: {class: Qt4_ALBA_MachineInfoBrick, name: machinfo_brick}
+      children: []
+      connections: []
+      name: machinfo_brick
+      properties:
+      - {comment: Set fixed height in pixels, defaultValue: -1, hidden: false, name: fixedHeight,
+        oldValue: -1, type: integer, value: -1}
+      - {comment: Set fixed width in pixels, defaultValue: -1, hidden: false, name: fixedWidth,
+        oldValue: -1, type: integer, value: -1}
+      - {comment: '', defaultValue: '9', hidden: false, name: fontSize, oldValue: '9',
+        type: string, value: '9'}
+      - {comment: '', defaultValue: '###.#', formatString: '%3.1f', formatStringLength: 5,
+        hidden: false, name: formatString, oldValue: '###.#', type: formatString,
+        value: '###.#'}
+      - {comment: Draw a frame around the widget, defaultValue: 0, hidden: false,
+        name: frame, oldValue: 0, type: boolean, value: 0}
+      - {comment: Hide widget, defaultValue: 0, hidden: false, name: hide, oldValue: 0,
+        type: boolean, value: 0}
+      - {comment: Allow to control brick in all modes, defaultValue: 0, hidden: false,
+        name: instanceAllowAlways, oldValue: 0, type: boolean, value: 0}
+      - {comment: Allow to control brick in slave mode, defaultValue: 0, hidden: false,
+        name: instanceAllowConnected, oldValue: 0, type: boolean, value: 0}
+      - {comment: '', defaultValue: '', hidden: false, name: mnemonic, oldValue: '',
+        type: string, value: /mach-info}
+      type: Qt4_ALBA_MachineInfoBrick
+    - brick: {class: Qt4_EnergyBrick, name: energy_brick}
+      children: []
+      connections: []
+      name: energy_brick
+      properties:
+      - {comment: '', defaultValue: '##.####', formatString: '%2.3f', formatStringLength: 6,
+        hidden: false, name: angFormatString, oldValue: '##.####', type: formatString,
+        value: '##.###'}
+      - choices: [keV, Ang]
+        comment: ''
+        defaultValue: keV
+        hidden: false
+        name: defaultMode
+        oldValue: keV
+        type: combo
+        value: keV
+      - {comment: '', defaultValue: 0, hidden: false, name: displayStatus, oldValue: 0,
+        type: boolean, value: 0}
+      - {comment: Set fixed height in pixels, defaultValue: -1, hidden: false, name: fixedHeight,
+        oldValue: -1, type: integer, value: -1}
+      - {comment: Set fixed width in pixels, defaultValue: -1, hidden: false, name: fixedWidth,
+        oldValue: -1, type: integer, value: -1}
+      - {comment: '', defaultValue: '9', hidden: false, name: fontSize, oldValue: '9',
+        type: string, value: '9'}
+      - {comment: Draw a frame around the widget, defaultValue: 0, hidden: false,
+        name: frame, oldValue: 0, type: boolean, value: 1}
+      - {comment: Hide widget, defaultValue: 0, hidden: false, name: hide, oldValue: 0,
+        type: boolean, value: 0}
+      - {comment: Allow to control brick in all modes, defaultValue: 0, hidden: false,
+        name: instanceAllowAlways, oldValue: 0, type: boolean, value: 0}
+      - {comment: Allow to control brick in slave mode, defaultValue: 0, hidden: false,
+        name: instanceAllowConnected, oldValue: 0, type: boolean, value: 0}
+      - {comment: '', defaultValue: '##.####', formatString: '%3.4f', formatStringLength: 8,
+        hidden: false, name: kevFormatString, oldValue: '##.####', type: formatString,
+        value: '###.####'}
+      - {comment: '', defaultValue: '', hidden: false, name: mnemonic, oldValue: '',
+        type: string, value: /energy}
+      type: Qt4_EnergyBrick
+    - brick: {class: Qt4_AttenuatorsBrick, name: attenuators_brick}
+      children: []
+      connections: []
+      name: attenuators_brick
+      properties:
+      - {comment: Set fixed height in pixels, defaultValue: -1, hidden: false, name: fixedHeight,
+        oldValue: -1, type: integer, value: -1}
+      - {comment: Set fixed width in pixels, defaultValue: -1, hidden: false, name: fixedWidth,
+        oldValue: -1, type: integer, value: -1}
+      - {comment: '', defaultValue: '9', hidden: false, name: fontSize, oldValue: '9',
+        type: string, value: '9'}
+      - {comment: '', defaultValue: '###.##', formatString: '%3.2f', formatStringLength: 6,
+        hidden: false, name: formatString, oldValue: '###.##', type: formatString,
+        value: '###.##'}
+      - {comment: Draw a frame around the widget, defaultValue: 0, hidden: false,
+        name: frame, oldValue: 0, type: boolean, value: 1}
+      - {comment: Hide widget, defaultValue: 0, hidden: false, name: hide, oldValue: 0,
+        type: boolean, value: 0}
+      - {comment: Allow to control brick in all modes, defaultValue: 0, hidden: false,
+        name: instanceAllowAlways, oldValue: 0, type: boolean, value: 0}
+      - {comment: Allow to control brick in slave mode, defaultValue: 0, hidden: false,
+        name: instanceAllowConnected, oldValue: 0, type: boolean, value: 0}
+      - {comment: '', defaultValue: '', hidden: false, name: mnemonic, oldValue: '',
+        type: string, value: /transmission}
+      - {comment: '', defaultValue: '', hidden: false, name: mockup_mnemonic, oldValue: '',
+        type: string, value: ''}
+      type: Qt4_AttenuatorsBrick
+    - brick: {class: Qt4_ResolutionBrick, name: resolution_brick}
+      children: []
+      connections: []
+      name: resolution_brick
+      properties:
+      - {comment: '', defaultValue: '##.###', formatString: '%2.3f', formatStringLength: 6,
+        hidden: false, name: angFormatString, oldValue: '##.###', type: formatString,
+        value: '##.###'}
+      - choices: [Ang, mm]
+        comment: ''
+        defaultValue: Ang
+        hidden: false
+        name: defaultMode
+        oldValue: Ang
+        type: combo
+        value: Ang
+      - {comment: '', defaultValue: '', hidden: false, name: detectorDistance, oldValue: '',
+        type: string, value: /detector-distance}
+      - {comment: '', defaultValue: '', hidden: false, name: doorInterlock, oldValue: '',
+        type: string, value: ''}
+      - {comment: '', defaultValue: '', hidden: false, name: energy, oldValue: '',
+        type: string, value: /energy}
+      - {comment: Set fixed height in pixels, defaultValue: -1, hidden: false, name: fixedHeight,
+        oldValue: -1, type: integer, value: -1}
+      - {comment: Set fixed width in pixels, defaultValue: -1, hidden: false, name: fixedWidth,
+        oldValue: -1, type: integer, value: -1}
+      - {comment: '', defaultValue: '9', hidden: false, name: fontSize, oldValue: '9',
+        type: string, value: '9'}
+      - {comment: Draw a frame around the widget, defaultValue: 0, hidden: false,
+        name: frame, oldValue: 0, type: boolean, value: 1}
+      - {comment: Hide widget, defaultValue: 0, hidden: false, name: hide, oldValue: 0,
+        type: boolean, value: 0}
+      - {comment: Allow to control brick in all modes, defaultValue: 0, hidden: false,
+        name: instanceAllowAlways, oldValue: 0, type: boolean, value: 0}
+      - {comment: Allow to control brick in slave mode, defaultValue: 0, hidden: false,
+        name: instanceAllowConnected, oldValue: 0, type: boolean, value: 0}
+      - {comment: '', defaultValue: '###.##', formatString: '%3.2f', formatStringLength: 6,
+        hidden: false, name: mmFormatString, oldValue: '###.##', type: formatString,
+        value: '###.##'}
+      - {comment: '', defaultValue: '', hidden: false, name: resolution, oldValue: '',
+        type: string, value: /resolution}
+      type: Qt4_ResolutionBrick
+    - brick: {class: Qt4_MotorSpinBoxBrick, name: bstopz_motor}
+      children: []
+      connections: []
+      name: bstopz_motor
+      properties:
+      - {comment: '', defaultValue: 2, hidden: false, name: decimals, oldValue: 2,
+        type: integer, value: 2}
+      - {comment: '', defaultValue: 180 90 45 30 10, hidden: false, name: defaultSteps,
+        oldValue: 180 90 45 30 10, type: string, value: 180 90 45 30 10}
+      - {comment: '', defaultValue: '', hidden: false, name: delta, oldValue: '',
+        type: string, value: ''}
+      - {comment: '', defaultValue: 0, hidden: false, name: enableSliderTracking,
+        oldValue: 0, type: boolean, value: 0}
+      - {comment: Set fixed height in pixels, defaultValue: -1, hidden: false, name: fixedHeight,
+        oldValue: -1, type: integer, value: -1}
+      - {comment: Set fixed width in pixels, defaultValue: -1, hidden: false, name: fixedWidth,
+        oldValue: -1, type: integer, value: -1}
+      - {comment: '', defaultValue: '9', hidden: false, name: fontSize, oldValue: '9',
+        type: string, value: '9'}
+      - {comment: '', defaultValue: +##.##, formatString: '%+2.2f', formatStringLength: 5,
+        hidden: false, name: formatString, oldValue: +##.##, type: formatString, value: +##.##}
+      - {comment: Draw a frame around the widget, defaultValue: 0, hidden: false,
+        name: frame, oldValue: 0, type: boolean, value: 0}
+      - {comment: '', defaultValue: '', hidden: false, name: helpDecrease, oldValue: '',
+        type: string, value: ''}
+      - {comment: '', defaultValue: '', hidden: false, name: helpIncrease, oldValue: '',
+        type: string, value: ''}
+      - {comment: Hide widget, defaultValue: 0, hidden: false, name: hide, oldValue: 0,
+        type: boolean, value: 0}
+      - {comment: '', defaultValue: 0, hidden: false, name: hideInUser, oldValue: 0,
+        type: boolean, value: 0}
+      - {comment: '', defaultValue: '', hidden: false, name: icons, oldValue: '',
+        type: string, value: ''}
+      - {comment: Allow to control brick in all modes, defaultValue: 0, hidden: false,
+        name: instanceAllowAlways, oldValue: 0, type: boolean, value: 0}
+      - {comment: Allow to control brick in slave mode, defaultValue: 0, hidden: false,
+        name: instanceAllowConnected, oldValue: 0, type: boolean, value: 0}
+      - {comment: '', defaultValue: 0, hidden: false, name: invertButtons, oldValue: 0,
+        type: boolean, value: 0}
+      - {comment: '', defaultValue: '', hidden: false, name: label, oldValue: '',
+        type: string, value: ''}
+      - {comment: '', defaultValue: '', hidden: false, name: mnemonic, oldValue: '',
+        type: string, value: /bstopz}
+      - {comment: '', defaultValue: 1, hidden: false, name: showLabel, oldValue: 1,
+        type: boolean, value: 1}
+      - {comment: '', defaultValue: 1, hidden: false, name: showMoveButtons, oldValue: 1,
+        type: boolean, value: 0}
+      - {comment: '', defaultValue: 1, hidden: false, name: showPosition, oldValue: 1,
+        type: boolean, value: 1}
+      - {comment: '', defaultValue: 0, hidden: false, name: showSlider, oldValue: 0,
+        type: boolean, value: 0}
+      - {comment: '', defaultValue: 1, hidden: false, name: showStep, oldValue: 1,
+        type: boolean, value: 0}
+      - {comment: '', defaultValue: 0, hidden: false, name: showStepList, oldValue: 0,
+        type: boolean, value: 0}
+      - {comment: '', defaultValue: 1, hidden: false, name: showStop, oldValue: 1,
+        type: boolean, value: 1}
+      type: Qt4_MotorSpinBoxBrick
+    - children: []
+      connections: []
+      name: vspacer1
+      properties:
+      - choices: [none, top center, top left, top right, bottom center, bottom left,
+          bottom right, center, hcenter, vcenter, left, right]
+        comment: ''
+        defaultValue: none
+        hidden: false
+        name: alignment
+        oldValue: null
+        type: combo
+        value: none
+      - {comment: '', defaultValue: 0, hidden: false, name: fixed_size, oldValue: null,
+        type: boolean, value: 0}
+      - {comment: '', defaultValue: 100, hidden: false, name: size, oldValue: null,
+        type: integer, value: 100}
+      type: vspacer
+    - brick: {class: Qt4_ALBA_ShuttersBrick, name: shutters_brick}
+      children: []
+      connections: []
+      name: shutters_brick
+      properties:
+      - {comment: '', defaultValue: '', hidden: false, name: fast_shutter, oldValue: '',
+        type: string, value: /fastshut}
+      - {comment: Set fixed height in pixels, defaultValue: -1, hidden: false, name: fixedHeight,
+        oldValue: -1, type: integer, value: -1}
+      - {comment: Set fixed width in pixels, defaultValue: -1, hidden: false, name: fixedWidth,
+        oldValue: -1, type: integer, value: -1}
+      - {comment: '', defaultValue: '9', hidden: false, name: fontSize, oldValue: '9',
+        type: string, value: '9'}
+      - {comment: Draw a frame around the widget, defaultValue: 0, hidden: false,
+        name: frame, oldValue: 0, type: boolean, value: 0}
+      - {comment: '', defaultValue: '', hidden: false, name: frontend, oldValue: '',
+        type: string, value: /frontend}
+      - {comment: Hide widget, defaultValue: 0, hidden: false, name: hide, oldValue: 0,
+        type: boolean, value: 0}
+      - {comment: Allow to control brick in all modes, defaultValue: 0, hidden: false,
+        name: instanceAllowAlways, oldValue: 0, type: boolean, value: 0}
+      - {comment: Allow to control brick in slave mode, defaultValue: 0, hidden: false,
+        name: instanceAllowConnected, oldValue: 0, type: boolean, value: 0}
+      - {comment: '', defaultValue: '', hidden: false, name: led_size, oldValue: '',
+        type: string, value: '25'}
+      - {comment: '', defaultValue: '', hidden: false, name: photon_shutter, oldValue: '',
+        type: string, value: /photonshut}
+      - {comment: '', defaultValue: '', hidden: false, name: slow_shutter, oldValue: '',
+        type: string, value: /slowshut}
+      type: Qt4_ALBA_ShuttersBrick
+    - brick: {class: Qt4_ALBA_ActuatorBrick, name: actuator_brick}
+      children: []
+      connections: []
+      name: actuator_brick
+      properties:
+      - {comment: Set fixed height in pixels, defaultValue: -1, hidden: false, name: fixedHeight,
+        oldValue: -1, type: integer, value: -1}
+      - {comment: Set fixed width in pixels, defaultValue: -1, hidden: false, name: fixedWidth,
+        oldValue: -1, type: integer, value: -1}
+      - {comment: '', defaultValue: '9', hidden: false, name: fontSize, oldValue: '9',
+        type: string, value: '9'}
+      - {comment: Draw a frame around the widget, defaultValue: 0, hidden: false,
+        name: frame, oldValue: 0, type: boolean, value: 0}
+      - {comment: Hide widget, defaultValue: 0, hidden: false, name: hide, oldValue: 0,
+        type: boolean, value: 0}
+      - {comment: '', defaultValue: '', hidden: false, name: in_cmd_name, oldValue: '',
+        type: string, value: Open}
+      - {comment: Allow to control brick in all modes, defaultValue: 0, hidden: false,
+        name: instanceAllowAlways, oldValue: 0, type: boolean, value: 0}
+      - {comment: Allow to control brick in slave mode, defaultValue: 0, hidden: false,
+        name: instanceAllowConnected, oldValue: 0, type: boolean, value: 0}
+      - {comment: '', defaultValue: '', hidden: false, name: mnemonic, oldValue: '',
+        type: string, value: /photonshut}
+      - {comment: '', defaultValue: '', hidden: false, name: out_cmd_name, oldValue: '',
+        type: string, value: Close}
+      type: Qt4_ALBA_ActuatorBrick
+    connections: []
+    name: vbox2
+    properties:
+    - choices: [none, top center, top left, top right, bottom center, bottom left,
+        bottom right, center, hcenter, vcenter, left, right]
+      comment: ''
+      defaultValue: none
+      hidden: false
+      name: alignment
+      oldValue: null
+      type: combo
+      value: none
+    - {comment: '', defaultValue: null, hidden: false, name: color, oldValue: null,
+      type: color, value: null}
+    - {comment: '', defaultValue: -1, hidden: false, name: fixedheight, oldValue: null,
+      type: integer, value: -1}
+    - {comment: '', defaultValue: -1, hidden: false, name: fixedwidth, oldValue: null,
+      type: integer, value: -1}
+    - choices: [Box, Panel, StyledPanel, HLine, VLine, default]
+      comment: ''
+      defaultValue: default
+      hidden: false
+      name: frameshape
+      oldValue: null
+      type: combo
+      value: default
+    - choices: [fixed, expanding, default]
+      comment: ''
+      defaultValue: default
+      hidden: false
+      name: hsizepolicy
+      oldValue: null
+      type: combo
+      value: default
+    - {comment: '', defaultValue: '', hidden: false, name: icon, oldValue: null, type: string,
+      value: ''}
+    - {comment: '', defaultValue: '', hidden: false, name: label, oldValue: null,
+      type: string, value: ''}
+    - {comment: '', defaultValue: 2, hidden: false, name: margin, oldValue: null,
+      type: integer, value: 2}
+    - choices: [plain, raised, sunken, default]
+      comment: ''
+      defaultValue: default
+      hidden: false
+      name: shadowstyle
+      oldValue: null
+      type: combo
+      value: default
+    - {comment: '', defaultValue: 2, hidden: false, name: spacing, oldValue: null,
+      type: integer, value: 2}
+    - choices: [fixed, expanding, default]
+      comment: ''
+      defaultValue: default
+      hidden: false
+      name: vsizepolicy
+      oldValue: null
+      type: combo
+      value: default
+    type: vbox
+  connections: []
+  name: window0
+  properties:
+  - choices: [none, top center, top left, top right, bottom center, bottom left, bottom
+        right, center, hcenter, vcenter, left, right]
+    comment: ''
+    defaultValue: none
+    hidden: false
+    name: alignment
+    oldValue: null
+    type: combo
+    value: none
+  - {comment: '', defaultValue: '', hidden: false, name: caption, oldValue: null,
+    type: string, value: ''}
+  - {comment: '', defaultValue: 1, hidden: false, name: closeOnExit, oldValue: null,
+    type: boolean, value: 1}
+  - {comment: '', defaultValue: tonic, hidden: false, name: expertPwd, oldValue: null,
+    type: string, value: tonic}
+  - {comment: '', defaultValue: 0, hidden: false, name: menubar, oldValue: null, type: boolean,
+    value: 0}
+  - comment: ''
+    defaultValue: &id002 {}
+    hidden: true
+    name: menudata
+    oldValue: null
+    type: undefined
+    value: *id002
+  - {comment: '', defaultValue: 1, hidden: false, name: show, oldValue: null, type: boolean,
+    value: 1}
+  - {comment: '', defaultValue: 0, hidden: false, name: statusbar, oldValue: null,
+    type: boolean, value: 0}
+  signals:
+    enableExpertMode: !!python/tuple []
     isHidden: !!python/tuple []
     isShown: !!python/tuple []
     quit: !!python/tuple []
