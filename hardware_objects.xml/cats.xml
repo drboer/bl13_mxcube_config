@@ -18,7 +18,7 @@
   <command type="tango" tangoname="bl13/eh/supervisor" name="go_transfer">GoTransferPhase</command>
   <command type="tango" tangoname="bl13/eh/supervisor" name="go_sampleview">GoSampleViewPhase</command>
   <channel type="tango" tangoname="bl13/eh/supervisor" name="phase">CurrentPhase</channel>
-  <channel type="tango" tangoname="bl13/eh/supervisor" name="super_abort">Abort</channel>
+  <command type="tango" tangoname="bl13/eh/supervisor" name="super_abort">Abort</command>
   <channel type="tango" tangoname="bl13/eh/supervisor" name="super_state">State</channel>
   <channel type="tango" tangoname="bl13/eh/supervisor" name="detdist_position">DetDistance</channel>
 
