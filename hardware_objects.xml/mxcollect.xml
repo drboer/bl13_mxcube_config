@@ -31,10 +31,16 @@
   <channel type="tango" tangoname="bl13/ct/variables" name="beamx">beamx</channel>
   <channel type="tango" tangoname="bl13/ct/variables" name="beamy">beamy</channel>
 
-  <undulator>
+  <monochromator>Channel-cut Si(111)</monochromator>
+  <focusing_optic>KB mirrors (VFM and HFM in Kirkpatrick-Baez configuration)</focusing_optic>
+  <polarisation>0.99</polarisation>
+
+  <undulators>
+    <undulator>
      <type>ivu21</type>
      <device_uri></device_uri>
      <gap_index>0</gap_index>
-  </undulator>
+    </undulator>
+  </undulators>
 
 </object>
