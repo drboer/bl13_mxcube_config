@@ -56,7 +56,7 @@
 
   <!-- Default values for an acquisition -->
   <default_acquisition_values>
-    <exposure_time>0.3</exposure_time>
+    <exposure_time>0.1</exposure_time>
     <start_angle>0.0</start_angle>
     <range>0.1</range>
     <number_of_passes>1</number_of_passes>
@@ -87,9 +87,9 @@
 
   <!-- Default values for a characterization -->
   <default_characterisation_values>
-    <exposure_time>0.3</exposure_time>
+    <exposure_time>0.15</exposure_time>
     <start_angle>0.0</start_angle>
-    <range>1</range>
+    <range>0.5</range>
     <number_of_passes>1</number_of_passes>
     <start_image_number>1</start_image_number>
     <run_number>1</run_number>
@@ -109,4 +109,12 @@
     <number_of_images>100</number_of_images>
     <detector_mode>1</detector_mode>
   </default_advanced_values>
+
+  <default_confirm_dialog_configuration>
+     <snapshot_options_default>0,1,2,4</snapshot_options_default>
+     <snapshot_options_plate_mode>0,1</snapshot_options_plate_mode>
+     <default_snapshots_standard>1</default_snapshots_standard>
+     <default_snapshots_characterization>1</default_snapshots_characterization>
+  </default_confirm_dialog_configuration>
+
  </object>

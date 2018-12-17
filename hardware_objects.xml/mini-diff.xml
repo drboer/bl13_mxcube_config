@@ -3,7 +3,7 @@
   <taurusname>bl13/eh/diff</taurusname>
 
   <!-- Specific for Xaloc -->
-  <object role="calibration" hwrid="/calibration"></object>
+  <object role="calibration" hwrid="/calibration"/>
 
   <!-- doorname>door/mxcube/1</doorname>
   <command type="sardana" name="startAutoFocus">autofocus</command -->
@@ -35,7 +35,7 @@
 
   <!-- zoom_centre>{"x": 348,"y": 260}</zoom_centre -->
 
-  <omegaReference>{"motor_name": "phiz", "position":-0.0175, "camera_axis":"y","direction": -1}</omegaReference>
+  <omegaReference>{'camera_axis': 'y', 'motor_name': 'phiz', 'direction': -1, 'position': 0.012}</omegaReference>
   <gridDirection>{"fast": (1, 0), "slow": (0, -1)}</gridDirection>
   <reversingRotation>True</reversingRotation>
 

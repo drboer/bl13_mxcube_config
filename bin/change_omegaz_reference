@@ -28,7 +28,7 @@ for value in root.iter('omegaReference'):
 
 tree.write(filename)
 print "Now is: {0}".format(omegaz_ref['position'])
-print "You need to restart MXCuBE for the changes to take effect""
+print "You need to restart MXCuBE for the changes to take effect."
 
 
 

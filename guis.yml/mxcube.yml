@@ -240,9 +240,10 @@
                     - {comment: '', defaultValue: 2, hidden: false, name: decimals,
                       oldValue: 2, type: integer, value: 2}
                     - {comment: '', defaultValue: 180 90 45 30 10, hidden: false,
-                      name: defaultSteps, oldValue: '', type: string, value: '45'}
+                      name: defaultSteps, oldValue: 180 90 45 30 10, type: string,
+                      value: '45'}
                     - {comment: '', defaultValue: '', hidden: false, name: delta,
-                      oldValue: '45', type: string, value: '1'}
+                      oldValue: '', type: string, value: '1'}
                     - {comment: '', defaultValue: 0, hidden: false, name: enableSliderTracking,
                       oldValue: 0, type: boolean, value: 0}
                     - {comment: Set fixed height in pixels, defaultValue: -1, hidden: false,
@@ -939,57 +940,6 @@
                     - {comment: '', defaultValue: '', hidden: false, name: mnemonic,
                       oldValue: '', type: string, value: /beam-info}
                     type: Qt4_BeamSizeBrick
-                  - brick: {class: Qt4_SlitsBrick, name: slits_brick}
-                    children: []
-                    connections: []
-                    name: slits_brick
-                    properties:
-                    - {comment: Set fixed height in pixels, defaultValue: -1, hidden: false,
-                      name: fixedHeight, oldValue: -1, type: integer, value: -1}
-                    - {comment: Set fixed width in pixels, defaultValue: -1, hidden: false,
-                      name: fixedWidth, oldValue: -1, type: integer, value: -1}
-                    - {comment: '', defaultValue: '9', hidden: false, name: fontSize,
-                      oldValue: '9', type: string, value: '9'}
-                    - {comment: '', defaultValue: '###', formatString: '%3.0f', formatStringLength: 4,
-                      hidden: false, name: formatString, oldValue: '###', type: formatString,
-                      value: '###'}
-                    - {comment: Draw a frame around the widget, defaultValue: 0, hidden: false,
-                      name: frame, oldValue: 0, type: boolean, value: 0}
-                    - {comment: Hide widget, defaultValue: 0, hidden: false, name: hide,
-                      oldValue: 0, type: boolean, value: 0}
-                    - {comment: Allow to control brick in all modes, defaultValue: 0,
-                      hidden: false, name: instanceAllowAlways, oldValue: 0, type: boolean,
-                      value: 0}
-                    - {comment: Allow to control brick in slave mode, defaultValue: 0,
-                      hidden: false, name: instanceAllowConnected, oldValue: 0, type: boolean,
-                      value: 0}
-                    - {comment: '', defaultValue: '', hidden: false, name: mnemonic,
-                      oldValue: '', type: string, value: ''}
-                    type: Qt4_SlitsBrick
-                  - brick: {class: Qt4_MDApertureBrick, name: aperture_brick}
-                    children: []
-                    connections: []
-                    name: aperture_brick
-                    properties:
-                    - {comment: Set fixed height in pixels, defaultValue: -1, hidden: false,
-                      name: fixedHeight, oldValue: -1, type: integer, value: -1}
-                    - {comment: Set fixed width in pixels, defaultValue: -1, hidden: false,
-                      name: fixedWidth, oldValue: -1, type: integer, value: -1}
-                    - {comment: '', defaultValue: '9', hidden: false, name: fontSize,
-                      oldValue: '9', type: string, value: '9'}
-                    - {comment: Draw a frame around the widget, defaultValue: 0, hidden: false,
-                      name: frame, oldValue: 0, type: boolean, value: 0}
-                    - {comment: Hide widget, defaultValue: 0, hidden: false, name: hide,
-                      oldValue: 0, type: boolean, value: 0}
-                    - {comment: Allow to control brick in all modes, defaultValue: 0,
-                      hidden: false, name: instanceAllowAlways, oldValue: 0, type: boolean,
-                      value: 0}
-                    - {comment: Allow to control brick in slave mode, defaultValue: 0,
-                      hidden: false, name: instanceAllowConnected, oldValue: 0, type: boolean,
-                      value: 0}
-                    - {comment: '', defaultValue: '', hidden: false, name: mnemonic,
-                      oldValue: '', type: string, value: ''}
-                    type: Qt4_MDApertureBrick
                   - children: []
                     connections: []
                     name: hspacer1
