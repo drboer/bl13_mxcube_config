@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 # Launcher application template.
 # Copy and rename this file with the gui file name without extension.
+source /homelocal/sicilia/production/bl13_mxcube_config/MXCUBE-prod.rc
+
 if [ -z "$MXCUBE_ROOT" ]; then
     echo "MXCUBE_ROOT does not exists -> Exiting"
     exit -1
