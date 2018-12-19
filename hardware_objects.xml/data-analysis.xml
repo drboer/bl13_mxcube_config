@@ -5,7 +5,9 @@
   <!-- edna_default_file>/beamlines/bl13/controls/processing/edna-mx/input_plugin_templates/XSDataInputMXCuBE.xml</edna_default_file-->
 
   <edna_command>/users/blissadm/local/bin/edna_script.sh</edna_command>
-  <edna_default_file>/homelocal/sicilia/MXCuBE/local/hardware_objects.xml/edna_defaults.xml</edna_default_file>
+  <!--<edna_default_file>/homelocal/sicilia/MXCuBE/local/hardware_objects.xml/edna_defaults.xml</edna_default_file>-->
+  <!--<edna_default_file>/homelocal/sicilia/staging/MXCuBE-prod/bl13_config/hardware_objects.xml/edna_defaults.xml</edna_default_file>-->
+  <edna_default_file>/homelocal/sicilia/staging/bl13_processing/edna-mx/XSDataInput_templates/mxcube/edna_defaults.xml</edna_default_file>
   <object href="/mxcollect" role="collect" />
 
   <template_dir>/beamlines/bl13/commissioning/templates</template_dir>
