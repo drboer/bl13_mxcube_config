@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+echo "MXCUBE-git.rc: Exporting MXCuBE specific variables" 1>&2
+
+export MXCUBE_BASE=/homelocal/sicilia/git
+export MXCUBE_ROOT=$MXCUBE_BASE/mxcube
+export MXCUBE_SITE=ALBA
+export MXCUBE_XML_PATH=$MXCUBE_BASE/bl13_mxcube_config/hardware_objects.xml
+export MXCUBE_GUI_PATH=$MXCUBE_BASE/bl13_mxcube_config/guis.yml
+export MXCUBE_LOG_PATH=/tmp/mxcube-git
+export INSTITUTE=$MXCUBE_SITE
+
+export PYTHONPATH=$MXCUBE_ROOT:$PYTHONPATH
+
+# Post processing scripts
+export POST_PROCESSING_SCRIPTS_ROOT=/homelocal/sicilia/staging/bl13_processing
+
+# Include XALOC specific python code needed by MXCuBE
+export PYTHONPATH=$PYTHONPATH:$MXCUBE_ROOT/Bricks/widgets/QLed
+
+# Export binaries path
+export PATH=$MXCUBE_BASE/bl13_mxcube_config/bin:$PATH
+
+# Install non packaged modules as user
+export PYTHONPATH=$PYTHONPATH:/homelocal/sicilia/.local/lib/python2.7/site-packages
