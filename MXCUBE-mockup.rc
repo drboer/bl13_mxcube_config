@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+echo "MXCUBE-mockup.rc: Exporting MXCuBE specific variables" 1>&2
+
+export MXCUBE_BASE=/homelocal/sicilia/staging/MXCuBE-mockup
+export MXCUBE_ROOT=$MXCUBE_BASE/mxcube
+export MXCUBE_SITE=ALBA
+export MXCUBE_XML_PATH=$MXCUBE_ROOT/HardwareRepository/configuration/xml-qt
+export MXCUBE_GUI_PATH=$MXCUBE_ROOT/ExampleFiles/
+export MXCUBE_LOG_PATH=/tmp/mxcube
+export INSTITUTE=$MXCUBE_SITE
+
+export PYTHONPATH=$MXCUBE_ROOT:$PYTHONPATH
+
+# Include XALOC specific python code needed by MXCuBE
+#export PYTHONPATH=$PYTHONPATH:$MXCUBE_ROOT/Bricks/widgets/QLed
+
+# Export binaries path
+export PATH=$MXCUBE_BASE/bl13_config/bin:$PATH
+
