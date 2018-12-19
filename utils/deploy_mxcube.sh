@@ -29,3 +29,8 @@ pushd "HardwareRepository"
   $DEPLOY $HWREPDIR
 
 popd
+
+pushd ../bl13_mxcube_config
+
+$DEPLOY $PRODDIR
+
