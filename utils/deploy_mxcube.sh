@@ -18,7 +18,7 @@ if [[ $NAME != "mxcube" ]]; then
   exit -1
 fi
 
-DEPLOY="/homelocal/sicilia/staging/MXCuBE-prod/bl13_config/utils/deploy_from_git.sh"
+DEPLOY="/homelocal/sicilia/staging/MXCuBE-devel/bl13_config/utils/deploy_from_git.sh"
 
 $DEPLOY $PRODDIR
 
