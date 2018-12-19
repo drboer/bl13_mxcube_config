@@ -1,9 +1,0 @@
-<device class="LimaVideo">
-   <type>basler</type>
-   <address>84.89.227.72</address>
-   <mirror>(False, False)</mirror>
-   <!-- <scaleFactor>1.5</scaleFactor> -->
-   <imageType>bayer:16</imageType>
-   <interval>30</interval>
-</device>
-

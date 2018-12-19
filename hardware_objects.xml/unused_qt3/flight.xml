@@ -1,5 +1,0 @@
-<device class="XalocIOR">
-  <username>Front Light</username>
-  <taurusname>flight</taurusname>
-  <channel type="sardana" name="ior" polling="1000">Value</channel>
-</device>

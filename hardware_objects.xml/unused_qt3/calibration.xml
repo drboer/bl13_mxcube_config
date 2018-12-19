@@ -1,8 +1,0 @@
-<device class="XalocCalibration">
-  <username>Calibration</username>
-  <tangoname>bl13/ct/variables</tangoname>
-  <channel type="tango" name="calibx">OAV_PIXELSIZE_X</channel>
-  <channel type="tango" name="caliby">OAV_PIXELSIZE_Y</channel>
-  <interval>200</interval>
-  <threshold>0.001</threshold>
-</device>

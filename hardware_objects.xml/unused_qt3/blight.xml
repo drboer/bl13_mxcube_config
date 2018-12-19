@@ -1,5 +1,0 @@
-<device class="XalocIOR">
-  <username>Back Light</username>
-  <taurusname>blight</taurusname>
-  <channel type="sardana" name="ior" polling="events">Value</channel>
-</device>

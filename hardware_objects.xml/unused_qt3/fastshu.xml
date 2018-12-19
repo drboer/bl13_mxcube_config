@@ -1,5 +1,0 @@
-<device class="XalocIOR">
-  <username>Fast Shutter</username>
-  <taurusname>fastshu</taurusname>
-  <channel type="sardana" name="ior" polling="1000">Value</channel>
-</device>

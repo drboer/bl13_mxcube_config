@@ -1,6 +1,0 @@
-<equipment class="XalocBeamStop">
-  <username>Beam Stop</username>
-  <device role="vertical" hwrid="/bstopz"></device>
-  <inposition>0</inposition>
-  <outposition>-96</outposition>
-</equipment>

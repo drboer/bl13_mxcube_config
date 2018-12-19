@@ -1,5 +1,0 @@
-<device class="XalocLightMotor">
-  <username>Front Light Motor</username>
-  <taurusname>flight</taurusname>
-  <channel type="sardana" name="intensity" polling="1000">Brightness</channel>
-</device>
