@@ -9,25 +9,42 @@
 ##############################################################################
 
 # Log into the mxcube root repository
-GITDIR=$HOME/git
-DEPLOYER=$HOME/staging/MXCuBE-devel/bl13_config/utils/deploy_from_git.sh
-MXCUBE_REPO=$GITDIR/mxcube
-HWREPO_REPO=$GITDIR/mxcube/HardwareRepository
-CONFIG_REPO=$GITDIR/bl13_mxcube_config
-DEST=$HOME/production
+GIT_PATH=${HOME}/git
+DEPLOY_SCRIPT=${HOME}/staging/MXCuBE-devel/bl13_config/utils/deploy_from_git.sh
+MX3_REPO=${GIT_PATH}/mxcube
+HWR_REPO=${GIT_PATH}/mxcube/HardwareRepository
+SUBMODULE="HardwareRepository"
+CONFIG_REPO=${GIT_PATH}/bl13_mxcube_config
+DEST=${HOME}/production
+
+# Start deployment
+echo "*** Deploying MXCuBE ***"
+
+# Test if there are local changes in the production folder (it is a git repo)
+pushd ${DEST} > /dev/null
+  if [[ ! -z "$(git status --untracked-files=no --porcelain)" ]]; then
+    echo "Local changes found in production folder. Aborting!"
+    exit -1
+  fi
+popd > /dev/null
 
 # Start deploying the mxcube project (mxcube + hwrepo + bl13_config)
-for REPO in $MXCUBE_REPO $HWREPO_REPO $CONFIG_REPO
+for REPO in ${MX3_REPO} ${HWR_REPO} ${CONFIG_REPO}
 do
-  pushd $REPO > /dev/null
-    $DEPLOYER $DEST
+  pushd ${REPO} > /dev/null
+    ${DEPLOY_SCRIPT} ${DEST}
   popd > /dev/null
 done
 
 # Create a link from mxcube/HardwareRepository to HardwareRepository deployed
-SUBMODULE="HardwareRepository"
-pushd $DEST/mxcube > /dev/null
-  rm -r $SUBMODULE
-  DEPLOYED_HWREPO=`readlink -f $DEST/HardwareRepository`
-  ln -s $DEPLOYED_HWREPO $SUBMODULE
+pushd ${DEST}/mxcube > /dev/null
+  rm -r ${SUBMODULE}
+  DEPLOYED_HWR=`readlink -f $DEST/HardwareRepository`
+  ln -s ${DEPLOYED_HWR} ${SUBMODULE}
 popd > /dev/null
+
+# Commit deployed files
+echo "Committing deployed version"
+git add .
+git commit -m'New version deployed' > /dev/null
+echo "*** Done ***"

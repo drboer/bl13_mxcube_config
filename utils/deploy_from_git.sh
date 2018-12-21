@@ -18,18 +18,18 @@ if ([[ -z "$1" ]] || [[ ! -d $1 ]])
 fi
 
 # Set the deployment folder
-DEPLOYDIR=$1
+DEPLOY_PATH=$1
 
 # Check we are in a git repository.
 ROOT=$(git rev-parse --show-toplevel)
 
-if [[ $ROOT == *"fatal"* ]]; then
+if [[ ${ROOT} == *"fatal"* ]]; then
   echo "We are not into a valid git repository. Existing!"
   exit -1
 fi
 
 # Get the repository folder root name.
-REPONAME=$(basename $ROOT)
+REPO_NAME=$(basename ${ROOT})
 
 # Get the hash of the latest commit.
 HASH=$(git log --pretty=format:'%h' -n 1)
@@ -38,21 +38,20 @@ HASH=$(git log --pretty=format:'%h' -n 1)
 DATE=`date '+%Y%m%d_%H%M%S'`
 #DATE=`date '+%Y%m%d'`
 
-NAME=$REPONAME-$DATE-$HASH
-TARGZFILE=$NAME.tar.gz
+NAME=${DATE}-${REPO_NAME}-${HASH}
+TAR_GZ_FILE=${NAME}.tar.gz
 
 # Archive the repository to a tar-gz file
-echo "Archiving repository $REPONAME as $TARGZFILE"
-git archive --format=tar --prefix=$NAME/ HEAD | gzip >$TARGZFILE
+echo "Archiving $REPO_NAME repository: $TAR_GZ_FILE"
+git archive --format=tar --prefix=${NAME}/ HEAD | gzip >${TAR_GZ_FILE}
 
 # Extract the archived code to production folder
-echo "Deploying repository $REPONAME to $DEPLOYDIR"
-mv $TARGZFILE $DEPLOYDIR
-pushd $DEPLOYDIR > /dev/null
-    tar -xf $TARGZFILE
-    if [[ -L $REPONAME ]]; then
-        rm -r $REPONAME
+echo "Deploying $REPO_NAME: $DEPLOY_PATH"
+mv ${TAR_GZ_FILE} ${DEPLOY_PATH}
+pushd ${DEPLOY_PATH} > /dev/null
+    tar -xf ${TAR_GZ_FILE}
+    if [[ -L ${REPO_NAME} ]]; then
+        rm -r ${REPO_NAME}
     fi
-    ln -s $NAME $REPONAME
+    ln -s ${NAME} ${REPO_NAME}
 popd > /dev/null
-echo "Done."
