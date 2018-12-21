@@ -43,11 +43,11 @@ TAR_GZ_FILE=${NAME}.tar.gz
 
 # Archive the repository to a tar-gz file
 echo "Archiving $REPO_NAME repository: $TAR_GZ_FILE"
-git archive --format=tar --prefix=${NAME}/ HEAD | gzip >${TAR_GZ_FILE}
+git archive --format=tar --prefix=${NAME}/ HEAD | gzip >${DEPLOY_PATH}/${TAR_GZ_FILE}
 
 # Extract the archived code to production folder
-echo "Deploying $REPO_NAME: $DEPLOY_PATH"
-mv ${TAR_GZ_FILE} ${DEPLOY_PATH}
+echo "Extracting $REPO_NAME: $DEPLOY_PATH"
+#mv ${TAR_GZ_FILE} ${DEPLOY_PATH}
 pushd ${DEPLOY_PATH} > /dev/null
     tar -xf ${TAR_GZ_FILE}
     if [[ -L ${REPO_NAME} ]]; then
