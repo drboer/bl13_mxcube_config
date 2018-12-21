@@ -24,8 +24,10 @@ do
   popd > /dev/null
 done
 
-# Create a link from mxcube/HardwareRepository to HardwareRepository
+# Create a link from mxcube/HardwareRepository to HardwareRepository deployed
+SUBMODULE="HardwareRepository"
 pushd $DEST/mxcube > /dev/null
-  rm -r "HardwareRepository"
-  ln -s $DEST/HardwareRepository
+  rm -r $SUBMODULE
+  DEPLOYED_HWREPO=`readlink -f $DEST/HardwareRepository`
+  ln -s $DEPLOYED_HWREPO $SUBMODULE
 popd > /dev/null
