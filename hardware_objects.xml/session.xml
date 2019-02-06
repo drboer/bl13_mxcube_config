@@ -4,8 +4,8 @@
   <!--      base_directory, base_process_directory, base_archive_directory -->
   <!--   check the code in ALBA/ALBAISPyBClient.py -->
   <synchrotron_name>ALBA</synchrotron_name>
-  <endstation_name>MX-XALOC</endstation_name>
-  <beamline_name>MX-XALOC</beamline_name>
+  <endstation_name>MX-BL13</endstation_name>
+  <beamline_name>MX-BL13</beamline_name>
 
   <file_info>
      <file_suffix>cbf</file_suffix>

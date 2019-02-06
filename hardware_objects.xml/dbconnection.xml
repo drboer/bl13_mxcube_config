@@ -24,7 +24,7 @@
        mxCuBE 1.0 works with the new xml files (ie. cherry picking
        commits from master to 1.0 or merging)
   -->
-  <beamline_name>MX-XALOC</beamline_name>
+  <beamline_name>MX-BL13</beamline_name>
   <proposals>
      <proposal>
        <code>mx</code>
