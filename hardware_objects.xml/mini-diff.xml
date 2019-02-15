@@ -17,8 +17,7 @@
   <object href="/centx" role="sampx"/>
   <object href="/centy" role="sampy"/>
   <object href="/kappa" role="kappa"/>
-
-  <!--object href="/kappaphi" role="kappa_phi"/-->
+  <object href="/kappaphi" role="kappa_phi"/>
 
   <object href="/centring-math" role="centring"/>
 
