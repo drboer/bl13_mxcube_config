@@ -16,6 +16,7 @@ export POST_PROCESSING_SCRIPTS_ROOT=/homelocal/sicilia/staging/bl13_processing
 
 # Include XALOC specific python code needed by MXCuBE
 export PYTHONPATH=$PYTHONPATH:$MXCUBE_ROOT/Bricks/widgets/QLed
+export PYTHONPATH=$PYTHONPATH:/beamlines/bl13/controls/devel/pycharm
 
 # Export binaries path
 export PATH=$MXCUBE_BASE/bl13_config/bin:$PATH
