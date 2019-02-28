@@ -1,4 +1,5 @@
 <equipment class="ALBABeamInfo">
+    <username>BeamInfo</username>
     <taurusname>bl13/ct/variables</taurusname>
   
     <channel type="sardana" name="BeamPositionHorizontal">ImageCenterX</channel>

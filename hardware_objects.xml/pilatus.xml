@@ -1,5 +1,5 @@
 <object class="ALBAPilatus">
-
+  <username>PilatusDetector</username>
   <object href="/detector-distance" role="distance_motor"/>
   <taurusname>bl13/eh/pilatuslima</taurusname>
 

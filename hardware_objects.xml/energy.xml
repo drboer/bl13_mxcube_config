@@ -2,5 +2,4 @@
   <username>Energy</username>
   <object href="/energy_motor" role="energy"/>
   <object href="/wavelength_motor" role="wavelength"/>
-  <!-- interval>500</interval -->
 </device>

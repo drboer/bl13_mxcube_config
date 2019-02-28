@@ -5,9 +5,6 @@
   <!-- Specific for Xaloc -->
   <object role="calibration" hwrid="/calibration"/>
 
-  <!-- doorname>door/mxcube/1</doorname>
-  <command type="sardana" name="startAutoFocus">autofocus</command -->
-
   <object href="/limavideo" role="camera"/>
   <object href="/omega" role="phi"/>
   <object href="/omegaz" role="phiz"/>
@@ -20,18 +17,13 @@
   <object href="/kappaphi" role="kappa_phi"/>
 
   <object href="/centring-math" role="centring"/>
-
   <object href="/cats" role="sample-changer"/>
-
   <object href="/supervisor" role="beamline-supervisor"/>
-
   <object href="/beam-info" role="beam_info"/>
   
   <sample_centring>True</sample_centring>
 
   <!--object href="/minikappa-correction" role="minikappa_correction"/-->
-  <!-- beaminfo>/beam-info</beaminfo -->
-
   <!-- zoom_centre>{"x": 348,"y": 260}</zoom_centre -->
 
   <omegaReference>{'camera_axis': 'y', 'motor_name': 'phiz', 'direction': -1, 'position': 0.012}</omegaReference>
@@ -41,7 +33,6 @@
   <phase_list>("Transfer", "Centring", "Collect", "BeamView")</phase_list>
 
   <channel type="sardana" taurusname="bl13/eh/supervisor" name="CurrentPhase">CurrentPhase</channel>
-
   <channel type="sardana" taurusname="bl13/eh/diff" polling="500" name="State">State</channel>
   <used_channels>State,CurrentPhase</used_channels>
 

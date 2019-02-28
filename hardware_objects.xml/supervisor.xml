@@ -1,5 +1,5 @@
 <equipment class="ALBASupervisor">
-    <username>Beamline Supervisor</username>
+    <username>BeamlineSupervisor</username>
     <taurusname>bl13/eh/supervisor</taurusname>
     <channel type="sardana" name="detector_cover_open" polling="1000">DetCoverOpen</channel>
     <channel type="sardana" name="phase" polling="1000">CurrentPhase</channel>
