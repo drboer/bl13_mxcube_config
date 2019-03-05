@@ -11,21 +11,7 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
-   mxcube.rst
-   features.rst
-   instrumentation.rst
-   diffractometer.rst
-   samplechanger.rst
-   supervisor.rst
-   data_analysis.rst
-   data_storage.rst
-   ispyb.rst
+   overview.rst
+   users_guide.rst
+   developers_guide.rst
    troubleshooting.rst
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-
