@@ -4,9 +4,11 @@ Configuration and Deployment
 ---------------------------
 Current production version
 ---------------------------
-The current version of `MXCuBE` for XALOC is running `ctbl1301.cells.es` machine. However,
-the application is launched from `pcbl1305.cells.es` machine through a `ssh` connection by
-using an `alias` defined in the `.bash.rc` file for `opbl13` user.
+The current version of `MXCuBE` for XALOC runs at `ctbl1301.cells.es` machine. However,
+the users use a launcher script from `pcbl1305` machine which runs a production instance
+of the application in the `ctbl1301 server`::
+
+    /homelocal/sicilia/bin/mxcube (in pcbl1305.cells.es)
 
 .. image:: ../_images/deploy_diagram.png
    :scale: 100%
@@ -48,7 +50,7 @@ The deployment of a production version is done by executing the automatic deploy
 
     deploy_mxcube
 
-from within the `mxcube` repository in the git folder. This is in fact an alias also
+from within the `mxcube` repository in the git folder. This is, in fact, an alias also
 defined in the same `.bash_local.rc` file.
 
 The deployment procedure
@@ -63,8 +65,8 @@ using the alias::
 
 This defines the `handmade` deployment schema for MXCuBE at XALOC:
 
-    #. Update the `git` version to the desired deployment version.
-    #. Run the deployment script to install the new version and backup the old version.
+    #. Update the `git` repository to the desired deployment version.
+    #. Run the deployment script to install the new version and backup the old one.
 
 
 The`.bash_local.rc` file
@@ -84,12 +86,12 @@ to run `MXCuBE` in different modes:
     # MXCuBE executables
     alias mxcube='/homelocal/sicilia/production/bl13_mxcube_config/bin/mxcube --pyqt4'
     alias mxcube-git='/homelocal/sicilia/git/bl13_mxcube_config/bin/mxcube-git --pyqt4'
-    alias mxcube-devel='/homelocal/sicilia/staging/MXCuBE-devel/bl13_config/bin/mxcube-devel --pyqt4'
-    alias mxcube-mockup='/homelocal/sicilia/staging/MXCuBE-mockup/bl13_config/bin/example_mxcube_qt4 --pyqt4'
+    alias mxcube-devel='/homelocal/sicilia/devel/pycharm/MXCuBE-devel/bl13_config/bin/mxcube-devel --pyqt4'
+    alias mxcube-mockup='/homelocal/sicilia/devel/pycharm/MXCuBE-mockup/bl13_config/bin/example_mxcube_qt4 --pyqt4'
 
     # Deployment from git tools
-    alias deploy_mxcube='/homelocal/sicilia/staging/MXCuBE-devel/bl13_config/utils/deploy_mxcube.sh'
-    alias deploy_from_git='/homelocal/sicilia/staging/MXCuBE-devel/bl13_config/utils/deploy_from_git.sh'
+    alias deploy_mxcube='/homelocal/sicilia/devel/pycharm/MXCuBE-devel/bl13_config/utils/deploy_mxcube.sh'
+    alias deploy_from_git='/homelocal/sicilia/devel/pycharm/MXCuBE-devel/bl13_config/utils/deploy_from_git.sh'
 
     # Cluster access machine
     export CLA=claxaloc01

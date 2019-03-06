@@ -9,3 +9,4 @@ The current release of the application at the `XALOC` beamline (pcbl1305), makes
 of the application as easy as typing in the command line::
 
     mxcube
+
