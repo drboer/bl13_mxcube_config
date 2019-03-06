@@ -17,7 +17,7 @@ export CLA=claxaloc01
 
 # Include XALOC specific python code needed by MXCuBE
 export PYTHONPATH=$PYTHONPATH:$MXCUBE_ROOT/Bricks/widgets/QLed
-export PYTHONPATH=$PYTHONPATH:/beamlines/bl13/controls/production
+export PYTHONPATH=$PYTHONPATH:/beamlines/bl13/controls/production/pycharm
 
 # Export binaries path
 export PATH=$MXCUBE_BASE/bl13_mxcube_config/bin:$PATH
