@@ -10,7 +10,7 @@
 
 # Log into the mxcube root repository
 GIT_PATH=${HOME}/git
-DEPLOY_SCRIPT=${HOME}/staging/MXCuBE-devel/bl13_config/utils/deploy_from_git.sh
+DEPLOY_SCRIPT=${HOME}/devel/pycharm/MXCuBE-devel/bl13_config/utils/deploy_from_git.sh
 MX3_REPO=${GIT_PATH}/mxcube
 HWR_REPO=${GIT_PATH}/mxcube/HardwareRepository
 SUBMODULE="HardwareRepository"
@@ -44,7 +44,9 @@ pushd ${DEST}/mxcube > /dev/null
 popd > /dev/null
 
 # Commit deployed files
-echo "Committing deployed version"
-git add .
-git commit -m'New version deployed' > /dev/null
-echo "*** Done ***"
+pushd ${DEST}> /dev/null
+  echo "Committing deployed version"
+  git add .
+  git commit -m'New version deployed' > /dev/null
+  echo "*** Done ***"
+popd > /dev/null
