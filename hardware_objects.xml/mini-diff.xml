@@ -9,7 +9,7 @@
   <object href="/omega" role="phi"/>
   <object href="/omegaz" role="phiz"/>
   <object href="/omegax" role="phiy"/>
-  <object href="/zoom" role="zoom"/>
+  <object href="/zoom-auto" role="zoom"/>
   <object href="/omegay" role="focus"/>
   <object href="/centx" role="sampx"/>
   <object href="/centy" role="sampy"/>
