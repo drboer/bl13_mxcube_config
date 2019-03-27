@@ -10,3 +10,19 @@ of the application as easy as typing in the command line::
 
     mxcube
 
+-----------------
+Current Features
+-----------------
+
+* Assisted sample mounting (CATS IRELEC sample changer).
+
+* Three-click centring.
+* Automatic Optical Centring.
+
+* Standard Data Collection.
+* Test Crystal Collection.
+
+* Strategy Calculation Pipeline (EDNA plugin).
+* EDNA processing pipeline (EDNA plugin).
+
+* Integration with ISPyB database.
