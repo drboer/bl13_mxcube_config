@@ -28,6 +28,7 @@ Contains the checkout of the MXCuBE repositories (and also the ones for those co
 that cannot be installed via `apt-get`, `pip`, etc... for instance, the centring library `lucid2`)::
 
     /homelocal/sicilia/git/mxcube
+    /homelocal/sicilia/git/lucid2
     /homelocal/sicilia/git/bl13_mxcube_config
 
 The aim of these checkouts is to provide a tracked copy of the MXCuBE code for development

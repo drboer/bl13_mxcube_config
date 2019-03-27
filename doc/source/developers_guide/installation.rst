@@ -56,9 +56,9 @@ for the XALOC beamline:
 +-----------------------+----------------------------------------------------+----------------------+
 | ALBAClusterClient     | https://git.cells.es/controls/ALBAClusterClient    | No package available |
 +-----------------------+----------------------------------------------------+----------------------+
-| lucid                 | https://github.com/mxcube/lucid2                   | No package available |
+| lucid2                | https://github.com/mxcube/lucid2                   | No package available |
 +-----------------------+----------------------------------------------------+----------------------+
-| EDNA-MX               | https://github.com/ALBA-Synchrotron/edna-mx        | No package available |
+| edna-mx               | https://github.com/ALBA-Synchrotron/edna-mx        | No package available |
 +-----------------------+----------------------------------------------------+----------------------+
 
 Additionally, the execution of the GPhL workflow requires two extra python modules to be installed:
@@ -71,17 +71,18 @@ The non packaged modules has been installed manually (basically a git clone or a
 using `PyCharm`) in two different locations, depending if the code need to be accessible only
 for the `MXCuBE` application or need also to be accessed by other software in a different machine:
 
-+-------------------+---------------------------------------------+-----------------------+
-| Package           | Non standard location                       | Required by           |
-+===================+=============================================+=======================+
-| bl13_processing   | /beamlines/bl13/controls/production/pycharm | ctbl1305 / claxaloc01 |
-+-------------------+---------------------------------------------+-----------------------+
-| ALBAClusterClient | /beamlines/bl13/controls/production/pycharm | ctbl1305              |
-+-------------------+---------------------------------------------+-----------------------+
-| lucid2            | /homelocal/sicilia/git                      | ctbl1305              |
-+-------------------+---------------------------------------------+-----------------------+
-| EDNA-MX           | /beamlines/bl13/controls/production/pycharm | claxaloc01            |
-+-------------------+---------------------------------------------+-----------------------+
++-------------------+------------------------------------------------+-----------------------+
+| Package           | Non standard location                          | Required by           |
++===================+================================================+=======================+
+| bl13_processing   | /beamlines/bl13/controls/production/pycharm    | ctbl1305 / claxaloc01 |
++-------------------+------------------------------------------------+-----------------------+
+| ALBAClusterClient | /beamlines/bl13/controls/production/pycharm    | ctbl1305              |
++-------------------+------------------------------------------------+-----------------------+
+| lucid2            | /homelocal/sicilia/.local (installed from git) | ctbl1305              |
++-------------------+------------------------------------------------+-----------------------+
+| edna-mx           | /beamlines/bl13/controls/production/pycharm    | claxaloc01            |
++-------------------+------------------------------------------------+-----------------------+
+
 
 Besides from the modules required by the application itself, there are some other software
 required by the correct operation of the beamlines. Two of them are used to control and monitor
