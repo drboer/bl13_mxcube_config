@@ -95,8 +95,10 @@ to Hardware Objects with which the Brick will interact. I also includes the list
 signal/slot connections between bricks.
 
 The application configuration file can be edited with a text editor, but in a much
-more convenient way by starting `mxcube` in design mode (add the -d flag when starting
-the application).
+more convenient way by starting `mxcube` in design mode::
+
+    mxcube -d
+
 
 There we can rearrange an configure the individual Brick and store the new configuration
 in the `yaml` file.

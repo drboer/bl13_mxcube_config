@@ -61,4 +61,3 @@ Demo
 run::
 
     docker run -d -e HARDWARE_REPOSITORY_SERVER=/MXCuBE/mxcube/ExampleFiles/HardwareObjects.xml -e DISPLAY=$DISPLAY -e QT_X11_NO_MITSHM=1 -v /tmp/.X11-unix:/tmp/.X11-unix mx3_deb9_qt4_master_demo
-    1abea021cf6aa7cf92669a62576e82840578b599f1464790e0b4d11bb70f2484

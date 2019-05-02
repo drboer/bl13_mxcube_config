@@ -31,7 +31,7 @@ Sample mounting
 .. image:: ../_images/sample_tree.png
    :scale: 100%
 
-On startup **mxcube** will request the **PyCats** sample changer for samples present in the sample changer dewar. With this information **mxcube** will
+On startup **mxcube** will request the **PyCats** Tango DS for reporting the samples present in the sample changer dewar. With this information **mxcube** will
 present available samples both in the *Sample Tree* in the left panel of the graphical interface
 and at the same time in the pane that is presented when clicking on the *SC Details* button.
 
@@ -51,14 +51,26 @@ Sample centring
 .. image:: ../_images/sample_centring.png
    :scale: 50%
 
+Current version of MXCuBE provides 2 different methods for automatic sample centring:
+
+* *Three-click-centring:* User clicks several times while the motors are moved automatically to center the sample.
+* *Semi-automatic centring:* This procedure tries to locate the holder loop and if it is found, the sample is automatically centered.
+
 -----------------
 Data collections
 -----------------
 .. image:: ../_images/collections.png
    :scale: 100%
 
-Standard Collection, Characterization, Helical collection, Mesh / Grid, EnergyScan,
-Advanced Methods.
+You can configure the different data collections in the Data collections tab.
+The available tabs are:
+
+* Standard Collection
+* Characterization
+* Helical collection (`Not available yet`)
+* Mesh / Grid (`Not available yet`)
+* EnergyScan (`Not available yet`)
+* Advanced Methods (`Not available yet`)
 
 
 -------------
@@ -67,11 +79,15 @@ Machine info
 .. image:: ../_images/machine_info.png
    :scale: 100%
 
+Information related to the machine operation and beam conditions.
+
 -------------
 Energy setup
 -------------
 .. image:: ../_images/parameters.png
    :scale: 100%
+
+Thre are the main parameters adjustable from this tab.
 
 energy
 ---------
@@ -111,3 +127,5 @@ Shutters
 -------------
 .. image:: ../_images/shutters.png
    :scale: 100%
+
+The beamlines is equipped with 4 different shutters: `Front-End` , `Photon shutter`, `Fast shutter` and `Slow shutter`.

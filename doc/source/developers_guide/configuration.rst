@@ -54,24 +54,24 @@ The deployment of a production version is done by executing the automatic deploy
 from within the `mxcube` repository in the git folder. This is, in fact, an alias also
 defined in the same `.bash_local.rc` file.
 
-The deployment procedure
 -------------------------
-This deployment procedure will `archive` the current status (i.e. latest committed
-changes) of the MXCuBE repositories and create `gzipped` files indexed by the
-corresponding hash. Then the script automatically uncompress the code to the
-`production` folder in such a way the MXCUBE application deployed can be launched by
-using the alias::
+Deploying a new version
+-------------------------
 
-    mxcube
+An specific script is provided in the `bl13_config_mxcube` repository to deploy newer
+versions of the application while new features and hot fixes are applied.
+This script is based on the local `git` repositories of the application and configuration files.
 
-This defines the `handmade` deployment schema for MXCuBE at XALOC:
+This script acts as follows:
 
-    #. Update the `git` repository to the desired deployment version.
-    #. Run the deployment script to install the new version and backup the old one.
-
+#. Update the local `git` repositories to the desired version to be deployed.
+#. `archive` the target version from the repository (i.e. latest committed changes of the MXCuBE repositories) and create `gzipped` files indexed by the corresponding hash.
+#. backup the current version in the production folder.
+#. Copy these file and automatically uncompress them to the `production` folder.
+#. Commit the changes on the production folder for `hot fixes` changes in the production folder.
 
 The`.bash_local.rc` file
-========================
+------------------------
 
 This is an example of the local `bash_local.rc` file containing all required definitions and export
 to run `MXCuBE` in different modes:
