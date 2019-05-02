@@ -2,11 +2,11 @@
 echo "MXCUBE-mockup.rc: Exporting MXCuBE specific variables" 1>&2
 
 export MXCUBE_BASE=/homelocal/sicilia/devel/pycharm/MXCuBE-mockup
-export MXCUBE_ROOT=$MXCUBE_BASE/mxcube
+export MXCUBE_ROOT=$MXCUBE_BASE/mxcube3
 export MXCUBE_SITE=ALBA
 export MXCUBE_XML_PATH=$MXCUBE_ROOT/HardwareRepository/configuration/xml-qt
 export MXCUBE_GUI_PATH=$MXCUBE_ROOT/ExampleFiles/
-export MXCUBE_LOG_PATH=/tmp/mxcube
+export MXCUBE_LOG_PATH=/tmp/mxcube3
 export INSTITUTE=$MXCUBE_SITE
 
 export PYTHONPATH=$MXCUBE_ROOT:$PYTHONPATH
