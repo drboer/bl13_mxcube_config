@@ -47,7 +47,7 @@ copyright = u'Jordi Andreu'
 # built documents.
 #
 # The short X.Y version.
-version = 'xaloc-2.0.0 (March 2019)'
+version = 'xaloc-2.0.1 (May 2019)'
 # The full version, including alpha/beta/rc tags.
 release = ''
 
