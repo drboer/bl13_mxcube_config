@@ -35,6 +35,7 @@
   <channel type="sardana" name="acq_expo_time">acq_expo_time</channel>
   <channel type="sardana" name="latency_time">latency_time</channel>
 
+  <channel type="sardana" taurusname="bl13/eh/pilatusspecific" name="energy_threshold">energy_threshold</channel>
   <channel type="sardana" taurusname="bl13/eh/pilatusspecific" name="threshold">threshold</channel>
   <channel type="sardana" taurusname="bl13/eh/pilatusspecific" name="threshold_gain">threshold_gain</channel>
   <channel type="sardana" taurusname="bl13/eh/pilatusspecific" name="cam_state">cam_state</channel>
