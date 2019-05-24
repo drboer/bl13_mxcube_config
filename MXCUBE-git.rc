@@ -24,3 +24,14 @@ export PATH=$MXCUBE_BASE/bl13_mxcube_config/bin:$PATH
 
 # Install non packaged modules as user
 export PYTHONPATH=$PYTHONPATH:/homelocal/sicilia/.local/lib/python2.7/site-packages
+
+# Display current branches
+pushd $MXCUBE_ROOT >/dev/null
+echo "****************************************************"
+echo "   Current MXCuBE branch:" `git branch | grep \* | cut -d ' ' -f2`
+popd > /dev/null
+pushd $MXCUBE_ROOT/HardwareRepository > /dev/null
+echo "   Current Hardware Repository branch:" `git branch | grep \* | cut -d ' ' -f2`
+popd > /dev/null
+echo "****************************************************"
+
