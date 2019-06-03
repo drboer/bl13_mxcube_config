@@ -27,11 +27,16 @@ export PYTHONPATH=$PYTHONPATH:/homelocal/sicilia/.local/lib/python2.7/site-packa
 
 # Display current branches
 pushd $MXCUBE_ROOT >/dev/null
-echo "****************************************************"
+echo "****************************************************************"
 echo "   Current MXCuBE branch:" `git branch | grep \* | cut -d ' ' -f2`
 popd > /dev/null
 pushd $MXCUBE_ROOT/HardwareRepository > /dev/null
 echo "   Current Hardware Repository branch:" `git branch | grep \* | cut -d ' ' -f2`
 popd > /dev/null
-echo "****************************************************"
+echo "****************************************************************"
+echo
+echo "Set this variable to True to avoid checking the shutters"
+echo "****************************************************************"
+echo "  MXCUBE_NO_SHUTTERS:" $MXCUBE_NO_SHUTTERS
+echo "****************************************************************"
 
