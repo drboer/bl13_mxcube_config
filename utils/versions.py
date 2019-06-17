@@ -16,6 +16,7 @@ import jsonpickle
 import pydispatch
 import PIL
 import enum
+import cv2
 
 from lxml import etree
 from PyQt4.QtCore import QT_VERSION_STR
@@ -31,6 +32,7 @@ print("gevent: {}".format(gevent.__version__))
 print("pydispatch: {}".format(pydispatch.__version__))
 print("PyQt: {}".format(QT_VERSION_STR))
 print("PIL: {}".format(PIL.__version__))
+print("opencv: {}".format(cv2.__version__))
 print("numpy: {}".format(numpy.__version__))
 print("scipy: {}".format(scipy.__version__))
 print("matplotlib: {}".format(matplotlib.__version__))
