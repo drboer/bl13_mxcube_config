@@ -82,7 +82,7 @@
 
   <acquisition_limit_values>
     <osc_range>-2165,2165</osc_range>
-    <exposure_time>0.003,6000</exposure_time>
+    <exposure_time>0.08,6000</exposure_time>
     <number_of_images>1,9999</number_of_images>
   </acquisition_limit_values>
 
