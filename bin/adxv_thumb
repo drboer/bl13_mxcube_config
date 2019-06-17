@@ -1,0 +1,3 @@
+#!/bin/bash
+adxv=/beamlines/bl13/commissioning/software/adxv/adxv.x86_64RHEL5 
+$adxv -sa -jpeg_scale $1 $2 $3
