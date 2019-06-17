@@ -34,6 +34,9 @@ pushd $MXCUBE_ROOT/HardwareRepository > /dev/null
 echo "   Current Hardware Repository branch:" `git branch | grep \* | cut -d ' ' -f2`
 popd > /dev/null
 echo "****************************************************************"
+
+# Simulation mode => MXCUBE_NO_SHUTTERS=True
+export MXCUBE_NO_SHUTTERS=True
 echo
 echo "Set this variable to True to avoid checking the shutters"
 echo "****************************************************************"
