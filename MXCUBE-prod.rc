@@ -24,3 +24,11 @@ export PATH=$MXCUBE_BASE/bl13_mxcube_config/bin:$PATH
 
 # Install non packaged modules as user
 export PYTHONPATH=$PYTHONPATH:/homelocal/sicilia/.local/lib/python2.7/site-packages
+
+# Simulation mode => MXCUBE_NO_SHUTTERS=True
+export MXCUBE_NO_SHUTTERS=False
+echo
+echo "Set this variable to True to avoid checking the shutters"
+echo "****************************************************************"
+echo "  MXCUBE_NO_SHUTTERS:" $MXCUBE_NO_SHUTTERS
+echo "****************************************************************"
