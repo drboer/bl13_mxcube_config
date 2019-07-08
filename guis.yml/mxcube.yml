@@ -3,234 +3,276 @@
     - children:
       - children:
         - children:
-          - brick: {class: Qt4_ALBA_LoginBrick, name: Qt4_ALBA_LoginBrick0}
-            children: []
-            connections:
-            - {receiver: tree_brick, receiverWindow: mxCuBE, signal: loggedIn, slot: logged_in}
-            - {receiver: task_tollbox_brick, receiverWindow: mxCuBE, signal: loggedIn,
-              slot: logged_in}
-            - {receiver: task_tollbox_brick, receiverWindow: mxCuBE, signal: userGroupSaved,
-              slot: user_group_saved}
-            - {receiver: tree_brick, receiverWindow: mxCuBE, signal: loggedIn, slot: logged_in}
-            - {receiver: task_tollbox_brick, receiverWindow: mxCuBE, signal: loggedIn,
-              slot: logged_in}
-            - {receiver: task_tollbox_brick, receiverWindow: mxCuBE, signal: userGroupSaved,
-              slot: user_group_saved}
-            - {receiver: tree_brick, receiverWindow: mxCuBE, signal: sessionSelected,
-              slot: set_session}
-            - {receiver: task_tollbox_brick, receiverWindow: mxCuBE, signal: sessionSelected,
-              slot: set_session}
-            name: Qt4_ALBA_LoginBrick0
+          - children: []
+            connections: []
+            name: login_tab
             properties:
-            - {comment: '', defaultValue: '', hidden: false, name: autoSessionUsers,
-              oldValue: '', type: string, value: ''}
-            - {comment: '', defaultValue: fx ifx ih im ix ls mx opid, hidden: false,
-              name: codes, oldValue: fx ifx ih im ix ls mx opid, type: string, value: mx
-                u uind-}
-            - {comment: '', defaultValue: '', hidden: false, name: dbConnection, oldValue: '',
-              type: string, value: /dbconnection}
-            - {comment: Set fixed height in pixels, defaultValue: -1, hidden: false,
-              name: fixedHeight, oldValue: -1, type: integer, value: -1}
-            - {comment: Set fixed width in pixels, defaultValue: -1, hidden: false,
-              name: fixedWidth, oldValue: -1, type: integer, value: -1}
-            - {comment: '', defaultValue: '9', hidden: false, name: fontSize, oldValue: '9',
-              type: string, value: '9'}
-            - {comment: Draw a frame around the widget, defaultValue: 0, hidden: false,
-              name: frame, oldValue: 0, type: boolean, value: 0}
-            - {comment: Hide widget, defaultValue: 0, hidden: false, name: hide, oldValue: 0,
-              type: boolean, value: 0}
-            - {comment: '', defaultValue: '', hidden: false, name: icons, oldValue: '',
-              type: string, value: Login2 Logout2}
-            - {comment: Allow to control brick in all modes, defaultValue: 0, hidden: false,
-              name: instanceAllowAlways, oldValue: 0, type: boolean, value: 0}
-            - {comment: Allow to control brick in slave mode, defaultValue: 0, hidden: false,
-              name: instanceAllowConnected, oldValue: 0, type: boolean, value: 1}
-            - {comment: '', defaultValue: '', hidden: false, name: instanceServer,
-              oldValue: '', type: string, value: /instanceconnection}
-            - {comment: '', defaultValue: '', hidden: false, name: localLogin, oldValue: '',
-              type: string, value: /locallogin}
-            - {comment: '', defaultValue: '', hidden: false, name: secondaryProposals,
-              oldValue: '', type: string, value: ''}
-            - {comment: '', defaultValue: 500, hidden: false, name: serverStartDelay,
-              oldValue: 500, type: integer, value: 500}
-            - {comment: '', defaultValue: /session, hidden: false, name: session,
-              oldValue: /session, type: string, value: /session}
-            - {comment: '', defaultValue: '', hidden: false, name: titlePrefix, oldValue: '',
-              type: string, value: MXCuBE}
-            type: Qt4_ALBA_LoginBrick
-          - brick: {class: Qt4_TreeBrick, name: tree_brick}
-            children: []
-            connections:
-            - {receiver: task_tollbox_brick, receiverWindow: mxCuBE, signal: selection_changed,
-              slot: selection_changed}
-            - {receiver: parameters_tab, receiverWindow: mxCuBE, signal: hide_sample_centring_tab,
-              slot: hidePage_Sample_centring}
-            - {receiver: parameters_tab, receiverWindow: mxCuBE, signal: hide_sample_tab,
-              slot: hidePage_Sample}
-            - {receiver: parameters_tab, receiverWindow: mxCuBE, signal: hide_dc_parameters_tab,
-              slot: hidePage_Data_collection}
-            - {receiver: parameters_tab, receiverWindow: mxCuBE, signal: hide_dcg_tab,
-              slot: hidePage_Data_collection_group}
-            - {receiver: parameters_tab, receiverWindow: mxCuBE, signal: hide_char_parameters_tab,
-              slot: hidePage_Characterisation}
-            - {receiver: parameters_tab, receiverWindow: mxCuBE, signal: hide_energy_scan_tab,
-              slot: hidePage_Energy_scan}
-            - {receiver: parameters_tab, receiverWindow: mxCuBE, signal: hide_advanced_tab,
-              slot: hidePage_Advanced}
-            - {receiver: parameters_tab, receiverWindow: mxCuBE, signal: hide_xrf_spectrum_tab,
-              slot: hidePage_XRF_spectrum}
-            - {receiver: dc_parameters_brick, receiverWindow: mxCuBE, signal: populate_dc_parameter_widget,
-              slot: populate_dc_parameter_widget}
-            - {receiver: dcgroup_brick, receiverWindow: mxCuBE, signal: populate_dc_group_widget,
-              slot: populate_dc_group_widget}
-            - {receiver: sample_details_brick, receiverWindow: mxCuBE, signal: populate_sample_details,
-              slot: populate_sample_details}
-            - {receiver: char_parameters_brick, receiverWindow: mxCuBE, signal: populate_char_parameter_widget,
-              slot: populate_char_parameter_widget}
-            - {receiver: energy_scan_brick, receiverWindow: mxCuBE, signal: populate_energy_scan_widget,
-              slot: populate_parameter_widget}
-            - {receiver: xrf_spectrum_parameters, receiverWindow: mxCuBE, signal: populate_xrf_spectrum_widget,
-              slot: populate_xrf_widget}
-            - {receiver: advanced_brick, receiverWindow: mxCuBE, signal: populate_advanced_widget,
-              slot: populate_advanced_widget}
-            - {receiver: parameters_tab, receiverWindow: mxCuBE, signal: hide_sample_changer_tab,
-              slot: hidePage_Sample_Changer}
-            - {receiver: parameters_tab, receiverWindow: mxCuBE, signal: hide_plate_manipulator_tab,
-              slot: hidePage_Plate_Manipulator}
-            - {receiver: task_tollbox_brick, receiverWindow: mxCuBE, signal: get_tree_brick,
-              slot: set_tree_brick}
-            - {receiver: aperture_brick, receiverWindow: mxCuBE, signal: enable_widgets,
-              slot: enable_widget}
-            - {receiver: attenuators_brick, receiverWindow: mxCuBE, signal: enable_widgets,
-              slot: enable_widget}
-            - {receiver: energy_brick, receiverWindow: mxCuBE, signal: enable_widgets,
-              slot: enable_widget}
-            - {receiver: omega_brick, receiverWindow: mxCuBE, signal: enable_widgets,
-              slot: enable_widget}
-            - {receiver: phase_brick, receiverWindow: mxCuBE, signal: enable_widgets,
-              slot: enable_widget}
-            - {receiver: plate_brick, receiverWindow: mxCuBE, signal: enable_widgets,
-              slot: enable_widget}
-            - {receiver: resolution_brick, receiverWindow: mxCuBE, signal: enable_widgets,
-              slot: enable_widget}
-            - {receiver: cats_simple_brick, receiverWindow: mxCuBE, signal: enable_widgets,
-              slot: enable_widget}
-            - {receiver: shutters_brick, receiverWindow: mxCuBE, signal: enable_widgets,
-              slot: enable_widget}
-            - {receiver: slits_brick, receiverWindow: mxCuBE, signal: enable_widgets,
-              slot: enable_widget}
-            - {receiver: Qt4_ALBA_LoginBrick0, receiverWindow: mxCuBE, signal: enable_widgets,
-              slot: enable_widget}
-            name: tree_brick
-            properties:
-            - {comment: '', defaultValue: /beamline-setup, hidden: false, name: beamline_setup,
-              oldValue: /beamline-setup, type: string, value: /beamline-setup}
-            - {comment: '', defaultValue: 1, hidden: false, name: enableQueueAutoSave,
-              oldValue: 1, type: boolean, value: 1}
-            - {comment: Set fixed height in pixels, defaultValue: -1, hidden: false,
-              name: fixedHeight, oldValue: -1, type: integer, value: -1}
-            - {comment: Set fixed width in pixels, defaultValue: -1, hidden: false,
-              name: fixedWidth, oldValue: -1, type: integer, value: -1}
-            - {comment: '', defaultValue: '9', hidden: false, name: fontSize, oldValue: '9',
-              type: string, value: '9'}
-            - {comment: Draw a frame around the widget, defaultValue: 0, hidden: false,
-              name: frame, oldValue: 0, type: boolean, value: 0}
-            - {comment: Hide widget, defaultValue: 0, hidden: false, name: hide, oldValue: 0,
-              type: boolean, value: 0}
-            - {comment: '', defaultValue: '', hidden: false, name: hwobj_state_machine,
-              oldValue: '', type: string, value: ''}
-            - {comment: '', defaultValue: '', hidden: false, name: hwobj_unittest,
-              oldValue: '', type: string, value: ''}
-            - {comment: Allow to control brick in all modes, defaultValue: 0, hidden: false,
-              name: instanceAllowAlways, oldValue: 0, type: boolean, value: 0}
-            - {comment: Allow to control brick in slave mode, defaultValue: 0, hidden: false,
-              name: instanceAllowConnected, oldValue: 0, type: boolean, value: 0}
-            - {comment: '', defaultValue: /queue, hidden: false, name: queue, oldValue: /queue,
-              type: string, value: /queue}
-            - {comment: '', defaultValue: /queue-model, hidden: false, name: queue_model,
-              oldValue: /queue-model, type: string, value: /queue-model}
-            - {comment: '', defaultValue: /redis, hidden: false, name: redis_client,
-              oldValue: /redis, type: string, value: /redis}
-            - {comment: '', defaultValue: Sample changer, hidden: false, name: scOneName,
-              oldValue: Sample changer, type: string, value: Sample changer}
-            - {comment: '', defaultValue: Plate, hidden: false, name: scTwoName, oldValue: Plate,
-              type: string, value: Plate}
-            - {comment: '', defaultValue: 1, hidden: false, name: useCentringMethods,
-              oldValue: 1, type: boolean, value: 1}
-            - {comment: '', defaultValue: 1, hidden: false, name: useFilterWidget,
-              oldValue: 1, type: boolean, value: 1}
-            - {comment: '', defaultValue: 1, hidden: false, name: useHistoryView,
-              oldValue: 1, type: boolean, value: 1}
-            - {comment: '', defaultValue: 0, hidden: false, name: usePlateNavigator,
-              oldValue: 0, type: boolean, value: 0}
-            - {comment: '', defaultValue: 1, hidden: false, name: useSampleWidget,
-              oldValue: 1, type: boolean, value: 1}
-            - {comment: '', defaultValue: /xml_rpc_server, hidden: false, name: xml_rpc_server,
-              oldValue: /xml_rpc_server, type: string, value: /xml-rpc-server}
-            type: Qt4_TreeBrick
-          connections: []
-          name: login_tab
-          properties:
-          - choices: [none, top center, top left, top right, bottom center, bottom
-                left, bottom right, center, hcenter, vcenter, left, right]
-            comment: ''
-            defaultValue: none
-            hidden: false
-            name: alignment
-            oldValue: null
-            type: combo
-            value: none
-          - {comment: '', defaultValue: null, hidden: false, name: color, oldValue: null,
-            type: color, value: null}
-          - {comment: '', defaultValue: -1, hidden: false, name: fixedheight, oldValue: null,
-            type: integer, value: -1}
-          - {comment: '', defaultValue: -1, hidden: false, name: fixedwidth, oldValue: null,
-            type: integer, value: -1}
-          - choices: [Box, Panel, StyledPanel, HLine, VLine, default]
-            comment: ''
-            defaultValue: default
-            hidden: false
-            name: frameshape
-            oldValue: null
-            type: combo
-            value: default
-          - choices: [fixed, expanding, default]
-            comment: ''
-            defaultValue: default
-            hidden: false
-            name: hsizepolicy
-            oldValue: null
-            type: combo
-            value: default
-          - {comment: '', defaultValue: '', hidden: false, name: icon, oldValue: null,
-            type: string, value: ''}
-          - {comment: '', defaultValue: '', hidden: false, name: label, oldValue: null,
-            type: string, value: ''}
-          - {comment: '', defaultValue: 1, hidden: false, name: margin, oldValue: null,
-            type: integer, value: 1}
-          - choices: [plain, raised, sunken, default]
-            comment: ''
-            defaultValue: default
-            hidden: false
-            name: shadowstyle
-            oldValue: null
-            type: combo
-            value: default
-          - {comment: '', defaultValue: 1, hidden: false, name: spacing, oldValue: null,
-            type: integer, value: 1}
-          - choices: [fixed, expanding, default]
-            comment: ''
-            defaultValue: default
-            hidden: false
-            name: vsizepolicy
-            oldValue: null
-            type: combo
-            value: default
-          type: vbox
-        - children:
+            - choices: [none, top center, top left, top right, bottom center, bottom
+                  left, bottom right, center, hcenter, vcenter, left, right]
+              comment: ''
+              defaultValue: none
+              hidden: false
+              name: alignment
+              oldValue: null
+              type: combo
+              value: none
+            - {comment: '', defaultValue: null, hidden: false, name: color, oldValue: null,
+              type: color, value: null}
+            - {comment: '', defaultValue: -1, hidden: false, name: fixedheight, oldValue: null,
+              type: integer, value: -1}
+            - {comment: '', defaultValue: -1, hidden: false, name: fixedwidth, oldValue: null,
+              type: integer, value: -1}
+            - choices: [Box, Panel, StyledPanel, HLine, VLine, default]
+              comment: ''
+              defaultValue: default
+              hidden: false
+              name: frameshape
+              oldValue: null
+              type: combo
+              value: default
+            - choices: [fixed, expanding, default]
+              comment: ''
+              defaultValue: default
+              hidden: false
+              name: hsizepolicy
+              oldValue: null
+              type: combo
+              value: default
+            - {comment: '', defaultValue: '', hidden: false, name: icon, oldValue: null,
+              type: string, value: ''}
+            - {comment: '', defaultValue: '', hidden: false, name: label, oldValue: null,
+              type: string, value: ''}
+            - {comment: '', defaultValue: 1, hidden: false, name: margin, oldValue: null,
+              type: integer, value: 1}
+            - choices: [plain, raised, sunken, default]
+              comment: ''
+              defaultValue: default
+              hidden: false
+              name: shadowstyle
+              oldValue: null
+              type: combo
+              value: default
+            - {comment: '', defaultValue: 1, hidden: false, name: spacing, oldValue: null,
+              type: integer, value: 1}
+            - choices: [fixed, expanding, default]
+              comment: ''
+              defaultValue: default
+              hidden: false
+              name: vsizepolicy
+              oldValue: null
+              type: combo
+              value: default
+            type: vbox
           - children:
             - children:
               - children:
+                - children:
+                  - brick: {class: Qt4_ALBA_LoginBrick, name: Qt4_ALBA_LoginBrick0}
+                    children: []
+                    connections:
+                    - {receiver: tree_brick, receiverWindow: mxCuBE, signal: loggedIn,
+                      slot: logged_in}
+                    - {receiver: task_tollbox_brick, receiverWindow: mxCuBE, signal: loggedIn,
+                      slot: logged_in}
+                    - {receiver: task_tollbox_brick, receiverWindow: mxCuBE, signal: userGroupSaved,
+                      slot: user_group_saved}
+                    - {receiver: tree_brick, receiverWindow: mxCuBE, signal: loggedIn,
+                      slot: logged_in}
+                    - {receiver: task_tollbox_brick, receiverWindow: mxCuBE, signal: loggedIn,
+                      slot: logged_in}
+                    - {receiver: task_tollbox_brick, receiverWindow: mxCuBE, signal: userGroupSaved,
+                      slot: user_group_saved}
+                    - {receiver: tree_brick, receiverWindow: mxCuBE, signal: sessionSelected,
+                      slot: set_session}
+                    - {receiver: task_tollbox_brick, receiverWindow: mxCuBE, signal: sessionSelected,
+                      slot: set_session}
+                    name: Qt4_ALBA_LoginBrick0
+                    properties:
+                    - {comment: '', defaultValue: '', hidden: false, name: autoSessionUsers,
+                      oldValue: '', type: string, value: ''}
+                    - {comment: '', defaultValue: fx ifx ih im ix ls mx opid, hidden: false,
+                      name: codes, oldValue: fx ifx ih im ix ls mx opid, type: string,
+                      value: mx u uind-}
+                    - {comment: '', defaultValue: '', hidden: false, name: dbConnection,
+                      oldValue: '', type: string, value: /dbconnection}
+                    - {comment: Set fixed height in pixels, defaultValue: -1, hidden: false,
+                      name: fixedHeight, oldValue: -1, type: integer, value: -1}
+                    - {comment: Set fixed width in pixels, defaultValue: -1, hidden: false,
+                      name: fixedWidth, oldValue: -1, type: integer, value: -1}
+                    - {comment: '', defaultValue: '9', hidden: false, name: fontSize,
+                      oldValue: '9', type: string, value: '9'}
+                    - {comment: Draw a frame around the widget, defaultValue: 0, hidden: false,
+                      name: frame, oldValue: 0, type: boolean, value: 0}
+                    - {comment: Hide widget, defaultValue: 0, hidden: false, name: hide,
+                      oldValue: 0, type: boolean, value: 0}
+                    - {comment: '', defaultValue: '', hidden: false, name: icons,
+                      oldValue: '', type: string, value: Login2 Logout2}
+                    - {comment: Allow to control brick in all modes, defaultValue: 0,
+                      hidden: false, name: instanceAllowAlways, oldValue: 0, type: boolean,
+                      value: 0}
+                    - {comment: Allow to control brick in slave mode, defaultValue: 0,
+                      hidden: false, name: instanceAllowConnected, oldValue: 0, type: boolean,
+                      value: 1}
+                    - {comment: '', defaultValue: '', hidden: false, name: instanceServer,
+                      oldValue: '', type: string, value: /instanceconnection}
+                    - {comment: '', defaultValue: '', hidden: false, name: localLogin,
+                      oldValue: '', type: string, value: /locallogin}
+                    - {comment: '', defaultValue: '', hidden: false, name: secondaryProposals,
+                      oldValue: '', type: string, value: ''}
+                    - {comment: '', defaultValue: 500, hidden: false, name: serverStartDelay,
+                      oldValue: 500, type: integer, value: 500}
+                    - {comment: '', defaultValue: /session, hidden: false, name: session,
+                      oldValue: /session, type: string, value: /session}
+                    - {comment: '', defaultValue: '', hidden: false, name: titlePrefix,
+                      oldValue: '', type: string, value: MXCuBE}
+                    type: Qt4_ALBA_LoginBrick
+                  - brick: {class: Qt4_BeamSizeBrick, name: beam_size_brick}
+                    children: []
+                    connections: []
+                    name: beam_size_brick
+                    properties:
+                    - {comment: Set fixed height in pixels, defaultValue: -1, hidden: false,
+                      name: fixedHeight, oldValue: -1, type: integer, value: -1}
+                    - {comment: Set fixed width in pixels, defaultValue: -1, hidden: false,
+                      name: fixedWidth, oldValue: -1, type: integer, value: -1}
+                    - {comment: '', defaultValue: '9', hidden: false, name: fontSize,
+                      oldValue: '9', type: string, value: '9'}
+                    - {comment: '', defaultValue: '#.#', formatString: '%3.0f', formatStringLength: 4,
+                      hidden: false, name: formatString, oldValue: '#.#', type: formatString,
+                      value: '###'}
+                    - {comment: Draw a frame around the widget, defaultValue: 0, hidden: false,
+                      name: frame, oldValue: 0, type: boolean, value: 0}
+                    - {comment: Hide widget, defaultValue: 0, hidden: false, name: hide,
+                      oldValue: 0, type: boolean, value: 0}
+                    - {comment: Allow to control brick in all modes, defaultValue: 0,
+                      hidden: false, name: instanceAllowAlways, oldValue: 0, type: boolean,
+                      value: 0}
+                    - {comment: Allow to control brick in slave mode, defaultValue: 0,
+                      hidden: false, name: instanceAllowConnected, oldValue: 0, type: boolean,
+                      value: 0}
+                    - {comment: '', defaultValue: '', hidden: false, name: mnemonic,
+                      oldValue: '', type: string, value: /beam-info}
+                    type: Qt4_BeamSizeBrick
+                  - brick: {class: Qt4_MDPhaseBrick, name: phase_brick}
+                    children: []
+                    connections: []
+                    name: phase_brick
+                    properties:
+                    - {comment: Set fixed height in pixels, defaultValue: -1, hidden: false,
+                      name: fixedHeight, oldValue: -1, type: integer, value: -1}
+                    - {comment: Set fixed width in pixels, defaultValue: -1, hidden: false,
+                      name: fixedWidth, oldValue: -1, type: integer, value: -1}
+                    - {comment: '', defaultValue: '9', hidden: false, name: fontSize,
+                      oldValue: '9', type: string, value: '9'}
+                    - {comment: Draw a frame around the widget, defaultValue: 0, hidden: false,
+                      name: frame, oldValue: 0, type: boolean, value: 0}
+                    - {comment: Hide widget, defaultValue: 0, hidden: false, name: hide,
+                      oldValue: 0, type: boolean, value: 0}
+                    - {comment: Allow to control brick in all modes, defaultValue: 0,
+                      hidden: false, name: instanceAllowAlways, oldValue: 0, type: boolean,
+                      value: 0}
+                    - {comment: Allow to control brick in slave mode, defaultValue: 0,
+                      hidden: false, name: instanceAllowConnected, oldValue: 0, type: boolean,
+                      value: 0}
+                    - {comment: '', defaultValue: '', hidden: false, name: mnemonic,
+                      oldValue: '', type: string, value: /mini-diff}
+                    type: Qt4_MDPhaseBrick
+                  - children: []
+                    connections: []
+                    name: hspacer1
+                    properties:
+                    - choices: [none, top center, top left, top right, bottom center,
+                        bottom left, bottom right, center, hcenter, vcenter, left,
+                        right]
+                      comment: ''
+                      defaultValue: none
+                      hidden: false
+                      name: alignment
+                      oldValue: null
+                      type: combo
+                      value: none
+                    - {comment: '', defaultValue: 0, hidden: false, name: fixed_size,
+                      oldValue: null, type: boolean, value: 0}
+                    - {comment: '', defaultValue: 100, hidden: false, name: size,
+                      oldValue: null, type: integer, value: 100}
+                    type: hspacer
+                  connections: []
+                  name: beam_def_hbox
+                  properties:
+                  - choices: [none, top center, top left, top right, bottom center,
+                      bottom left, bottom right, center, hcenter, vcenter, left, right]
+                    comment: ''
+                    defaultValue: none
+                    hidden: false
+                    name: alignment
+                    oldValue: null
+                    type: combo
+                    value: none
+                  - {comment: '', defaultValue: null, hidden: false, name: color,
+                    oldValue: null, type: color, value: null}
+                  - {comment: '', defaultValue: -1, hidden: false, name: fixedheight,
+                    oldValue: null, type: integer, value: -1}
+                  - {comment: '', defaultValue: -1, hidden: false, name: fixedwidth,
+                    oldValue: null, type: integer, value: -1}
+                  - choices: [Box, Panel, StyledPanel, HLine, VLine, default]
+                    comment: ''
+                    defaultValue: default
+                    hidden: false
+                    name: frameshape
+                    oldValue: null
+                    type: combo
+                    value: default
+                  - choices: [fixed, expanding, default]
+                    comment: ''
+                    defaultValue: default
+                    hidden: false
+                    name: hsizepolicy
+                    oldValue: null
+                    type: combo
+                    value: default
+                  - {comment: '', defaultValue: '', hidden: false, name: icon, oldValue: null,
+                    type: string, value: ''}
+                  - {comment: '', defaultValue: '', hidden: false, name: label, oldValue: null,
+                    type: string, value: ''}
+                  - {comment: '', defaultValue: 5, hidden: false, name: margin, oldValue: null,
+                    type: integer, value: 5}
+                  - choices: [plain, raised, sunken, default]
+                    comment: ''
+                    defaultValue: default
+                    hidden: false
+                    name: shadowstyle
+                    oldValue: null
+                    type: combo
+                    value: default
+                  - {comment: '', defaultValue: 5, hidden: false, name: spacing, oldValue: null,
+                    type: integer, value: 5}
+                  - choices: [fixed, expanding, default]
+                    comment: ''
+                    defaultValue: default
+                    hidden: false
+                    name: vsizepolicy
+                    oldValue: null
+                    type: combo
+                    value: default
+                  type: hbox
+                - children: []
+                  connections: []
+                  name: vspacer2
+                  properties:
+                  - choices: [none, top center, top left, top right, bottom center,
+                      bottom left, bottom right, center, hcenter, vcenter, left, right]
+                    comment: ''
+                    defaultValue: none
+                    hidden: false
+                    name: alignment
+                    oldValue: null
+                    type: combo
+                    value: none
+                  - {comment: '', defaultValue: 0, hidden: false, name: fixed_size,
+                    oldValue: null, type: boolean, value: 0}
+                  - {comment: '', defaultValue: 100, hidden: false, name: size, oldValue: null,
+                    type: integer, value: 100}
+                  type: vspacer
                 - children:
                   - brick: {class: Qt4_MotorSpinBoxBrick, name: omega_brick}
                     children: []
@@ -956,156 +998,180 @@
                     type: combo
                     value: default
                   type: hgroupbox
-                - children: []
-                  connections: []
-                  name: vspacer2
-                  properties:
-                  - choices: [none, top center, top left, top right, bottom center,
-                      bottom left, bottom right, center, hcenter, vcenter, left, right]
-                    comment: ''
-                    defaultValue: none
-                    hidden: false
-                    name: alignment
-                    oldValue: null
-                    type: combo
-                    value: none
-                  - {comment: '', defaultValue: 0, hidden: false, name: fixed_size,
-                    oldValue: null, type: boolean, value: 0}
-                  - {comment: '', defaultValue: 100, hidden: false, name: size, oldValue: null,
-                    type: integer, value: 100}
-                  type: vspacer
-                - children:
-                  - brick: {class: Qt4_BeamSizeBrick, name: beam_size_brick}
-                    children: []
-                    connections: []
-                    name: beam_size_brick
-                    properties:
-                    - {comment: Set fixed height in pixels, defaultValue: -1, hidden: false,
-                      name: fixedHeight, oldValue: -1, type: integer, value: -1}
-                    - {comment: Set fixed width in pixels, defaultValue: -1, hidden: false,
-                      name: fixedWidth, oldValue: -1, type: integer, value: -1}
-                    - {comment: '', defaultValue: '9', hidden: false, name: fontSize,
-                      oldValue: '9', type: string, value: '9'}
-                    - {comment: '', defaultValue: '#.#', formatString: '%3.0f', formatStringLength: 4,
-                      hidden: false, name: formatString, oldValue: '#.#', type: formatString,
-                      value: '###'}
-                    - {comment: Draw a frame around the widget, defaultValue: 0, hidden: false,
-                      name: frame, oldValue: 0, type: boolean, value: 0}
-                    - {comment: Hide widget, defaultValue: 0, hidden: false, name: hide,
-                      oldValue: 0, type: boolean, value: 0}
-                    - {comment: Allow to control brick in all modes, defaultValue: 0,
-                      hidden: false, name: instanceAllowAlways, oldValue: 0, type: boolean,
-                      value: 0}
-                    - {comment: Allow to control brick in slave mode, defaultValue: 0,
-                      hidden: false, name: instanceAllowConnected, oldValue: 0, type: boolean,
-                      value: 0}
-                    - {comment: '', defaultValue: '', hidden: false, name: mnemonic,
-                      oldValue: '', type: string, value: /beam-info}
-                    type: Qt4_BeamSizeBrick
-                  - children: []
-                    connections: []
-                    name: hspacer1
-                    properties:
-                    - choices: [none, top center, top left, top right, bottom center,
-                        bottom left, bottom right, center, hcenter, vcenter, left,
-                        right]
-                      comment: ''
-                      defaultValue: none
-                      hidden: false
-                      name: alignment
-                      oldValue: null
-                      type: combo
-                      value: none
-                    - {comment: '', defaultValue: 0, hidden: false, name: fixed_size,
-                      oldValue: null, type: boolean, value: 0}
-                    - {comment: '', defaultValue: 100, hidden: false, name: size,
-                      oldValue: null, type: integer, value: 100}
-                    type: hspacer
-                  - brick: {class: Qt4_MDPhaseBrick, name: phase_brick}
-                    children: []
-                    connections: []
-                    name: phase_brick
-                    properties:
-                    - {comment: Set fixed height in pixels, defaultValue: -1, hidden: false,
-                      name: fixedHeight, oldValue: -1, type: integer, value: -1}
-                    - {comment: Set fixed width in pixels, defaultValue: -1, hidden: false,
-                      name: fixedWidth, oldValue: -1, type: integer, value: -1}
-                    - {comment: '', defaultValue: '9', hidden: false, name: fontSize,
-                      oldValue: '9', type: string, value: '9'}
-                    - {comment: Draw a frame around the widget, defaultValue: 0, hidden: false,
-                      name: frame, oldValue: 0, type: boolean, value: 0}
-                    - {comment: Hide widget, defaultValue: 0, hidden: false, name: hide,
-                      oldValue: 0, type: boolean, value: 0}
-                    - {comment: Allow to control brick in all modes, defaultValue: 0,
-                      hidden: false, name: instanceAllowAlways, oldValue: 0, type: boolean,
-                      value: 0}
-                    - {comment: Allow to control brick in slave mode, defaultValue: 0,
-                      hidden: false, name: instanceAllowConnected, oldValue: 0, type: boolean,
-                      value: 0}
-                    - {comment: '', defaultValue: '', hidden: false, name: mnemonic,
-                      oldValue: '', type: string, value: /mini-diff}
-                    type: Qt4_MDPhaseBrick
-                  connections: []
-                  name: beam_def_hbox
-                  properties:
-                  - choices: [none, top center, top left, top right, bottom center,
-                      bottom left, bottom right, center, hcenter, vcenter, left, right]
-                    comment: ''
-                    defaultValue: none
-                    hidden: false
-                    name: alignment
-                    oldValue: null
-                    type: combo
-                    value: none
-                  - {comment: '', defaultValue: null, hidden: false, name: color,
-                    oldValue: null, type: color, value: null}
-                  - {comment: '', defaultValue: -1, hidden: false, name: fixedheight,
-                    oldValue: null, type: integer, value: -1}
-                  - {comment: '', defaultValue: -1, hidden: false, name: fixedwidth,
-                    oldValue: null, type: integer, value: -1}
-                  - choices: [Box, Panel, StyledPanel, HLine, VLine, default]
-                    comment: ''
-                    defaultValue: default
-                    hidden: false
-                    name: frameshape
-                    oldValue: null
-                    type: combo
-                    value: default
-                  - choices: [fixed, expanding, default]
-                    comment: ''
-                    defaultValue: default
-                    hidden: false
-                    name: hsizepolicy
-                    oldValue: null
-                    type: combo
-                    value: default
-                  - {comment: '', defaultValue: '', hidden: false, name: icon, oldValue: null,
-                    type: string, value: ''}
-                  - {comment: '', defaultValue: '', hidden: false, name: label, oldValue: null,
-                    type: string, value: ''}
-                  - {comment: '', defaultValue: 5, hidden: false, name: margin, oldValue: null,
-                    type: integer, value: 5}
-                  - choices: [plain, raised, sunken, default]
-                    comment: ''
-                    defaultValue: default
-                    hidden: false
-                    name: shadowstyle
-                    oldValue: null
-                    type: combo
-                    value: default
-                  - {comment: '', defaultValue: 5, hidden: false, name: spacing, oldValue: null,
-                    type: integer, value: 5}
-                  - choices: [fixed, expanding, default]
-                    comment: ''
-                    defaultValue: default
-                    hidden: false
-                    name: vsizepolicy
-                    oldValue: null
-                    type: combo
-                    value: default
-                  type: hbox
                 connections: []
                 name: vbox0
+                properties:
+                - choices: [none, top center, top left, top right, bottom center,
+                    bottom left, bottom right, center, hcenter, vcenter, left, right]
+                  comment: ''
+                  defaultValue: none
+                  hidden: false
+                  name: alignment
+                  oldValue: null
+                  type: combo
+                  value: none
+                - {comment: '', defaultValue: null, hidden: false, name: color, oldValue: null,
+                  type: color, value: null}
+                - {comment: '', defaultValue: -1, hidden: false, name: fixedheight,
+                  oldValue: null, type: integer, value: -1}
+                - {comment: '', defaultValue: -1, hidden: false, name: fixedwidth,
+                  oldValue: null, type: integer, value: -1}
+                - choices: [Box, Panel, StyledPanel, HLine, VLine, default]
+                  comment: ''
+                  defaultValue: default
+                  hidden: false
+                  name: frameshape
+                  oldValue: null
+                  type: combo
+                  value: default
+                - choices: [fixed, expanding, default]
+                  comment: ''
+                  defaultValue: default
+                  hidden: false
+                  name: hsizepolicy
+                  oldValue: null
+                  type: combo
+                  value: default
+                - {comment: '', defaultValue: '', hidden: false, name: icon, oldValue: null,
+                  type: string, value: ''}
+                - {comment: '', defaultValue: '', hidden: false, name: label, oldValue: null,
+                  type: string, value: ''}
+                - {comment: '', defaultValue: 2, hidden: false, name: margin, oldValue: null,
+                  type: integer, value: 2}
+                - choices: [plain, raised, sunken, default]
+                  comment: ''
+                  defaultValue: default
+                  hidden: false
+                  name: shadowstyle
+                  oldValue: null
+                  type: combo
+                  value: default
+                - {comment: '', defaultValue: 2, hidden: false, name: spacing, oldValue: null,
+                  type: integer, value: 2}
+                - choices: [fixed, expanding, default]
+                  comment: ''
+                  defaultValue: default
+                  hidden: false
+                  name: vsizepolicy
+                  oldValue: null
+                  type: combo
+                  value: default
+                type: vbox
+              - children:
+                - brick: {class: Qt4_TreeBrick, name: tree_brick}
+                  children: []
+                  connections:
+                  - {receiver: task_tollbox_brick, receiverWindow: mxCuBE, signal: selection_changed,
+                    slot: selection_changed}
+                  - {receiver: parameters_tab, receiverWindow: mxCuBE, signal: hide_sample_centring_tab,
+                    slot: hidePage_Sample_centring}
+                  - {receiver: parameters_tab, receiverWindow: mxCuBE, signal: hide_sample_tab,
+                    slot: hidePage_Sample}
+                  - {receiver: parameters_tab, receiverWindow: mxCuBE, signal: hide_dc_parameters_tab,
+                    slot: hidePage_Data_collection}
+                  - {receiver: parameters_tab, receiverWindow: mxCuBE, signal: hide_dcg_tab,
+                    slot: hidePage_Data_collection_group}
+                  - {receiver: parameters_tab, receiverWindow: mxCuBE, signal: hide_char_parameters_tab,
+                    slot: hidePage_Characterisation}
+                  - {receiver: parameters_tab, receiverWindow: mxCuBE, signal: hide_energy_scan_tab,
+                    slot: hidePage_Energy_scan}
+                  - {receiver: parameters_tab, receiverWindow: mxCuBE, signal: hide_advanced_tab,
+                    slot: hidePage_Advanced}
+                  - {receiver: parameters_tab, receiverWindow: mxCuBE, signal: hide_xrf_spectrum_tab,
+                    slot: hidePage_XRF_spectrum}
+                  - {receiver: dc_parameters_brick, receiverWindow: mxCuBE, signal: populate_dc_parameter_widget,
+                    slot: populate_dc_parameter_widget}
+                  - {receiver: dcgroup_brick, receiverWindow: mxCuBE, signal: populate_dc_group_widget,
+                    slot: populate_dc_group_widget}
+                  - {receiver: sample_details_brick, receiverWindow: mxCuBE, signal: populate_sample_details,
+                    slot: populate_sample_details}
+                  - {receiver: char_parameters_brick, receiverWindow: mxCuBE, signal: populate_char_parameter_widget,
+                    slot: populate_char_parameter_widget}
+                  - {receiver: energy_scan_brick, receiverWindow: mxCuBE, signal: populate_energy_scan_widget,
+                    slot: populate_parameter_widget}
+                  - {receiver: xrf_spectrum_parameters, receiverWindow: mxCuBE, signal: populate_xrf_spectrum_widget,
+                    slot: populate_xrf_widget}
+                  - {receiver: advanced_brick, receiverWindow: mxCuBE, signal: populate_advanced_widget,
+                    slot: populate_advanced_widget}
+                  - {receiver: parameters_tab, receiverWindow: mxCuBE, signal: hide_sample_changer_tab,
+                    slot: hidePage_Sample_Changer}
+                  - {receiver: parameters_tab, receiverWindow: mxCuBE, signal: hide_plate_manipulator_tab,
+                    slot: hidePage_Plate_Manipulator}
+                  - {receiver: task_tollbox_brick, receiverWindow: mxCuBE, signal: get_tree_brick,
+                    slot: set_tree_brick}
+                  - {receiver: aperture_brick, receiverWindow: mxCuBE, signal: enable_widgets,
+                    slot: enable_widget}
+                  - {receiver: attenuators_brick, receiverWindow: mxCuBE, signal: enable_widgets,
+                    slot: enable_widget}
+                  - {receiver: energy_brick, receiverWindow: mxCuBE, signal: enable_widgets,
+                    slot: enable_widget}
+                  - {receiver: omega_brick, receiverWindow: mxCuBE, signal: enable_widgets,
+                    slot: enable_widget}
+                  - {receiver: phase_brick, receiverWindow: mxCuBE, signal: enable_widgets,
+                    slot: enable_widget}
+                  - {receiver: plate_brick, receiverWindow: mxCuBE, signal: enable_widgets,
+                    slot: enable_widget}
+                  - {receiver: resolution_brick, receiverWindow: mxCuBE, signal: enable_widgets,
+                    slot: enable_widget}
+                  - {receiver: cats_simple_brick, receiverWindow: mxCuBE, signal: enable_widgets,
+                    slot: enable_widget}
+                  - {receiver: shutters_brick, receiverWindow: mxCuBE, signal: enable_widgets,
+                    slot: enable_widget}
+                  - {receiver: slits_brick, receiverWindow: mxCuBE, signal: enable_widgets,
+                    slot: enable_widget}
+                  - {receiver: Qt4_ALBA_LoginBrick0, receiverWindow: mxCuBE, signal: enable_widgets,
+                    slot: enable_widget}
+                  name: tree_brick
+                  properties:
+                  - {comment: '', defaultValue: /beamline-setup, hidden: false, name: beamline_setup,
+                    oldValue: /beamline-setup, type: string, value: /beamline-setup}
+                  - {comment: '', defaultValue: 1, hidden: false, name: enableQueueAutoSave,
+                    oldValue: 1, type: boolean, value: 1}
+                  - {comment: Set fixed height in pixels, defaultValue: -1, hidden: false,
+                    name: fixedHeight, oldValue: -1, type: integer, value: -1}
+                  - {comment: Set fixed width in pixels, defaultValue: -1, hidden: false,
+                    name: fixedWidth, oldValue: -1, type: integer, value: -1}
+                  - {comment: '', defaultValue: '9', hidden: false, name: fontSize,
+                    oldValue: '9', type: string, value: '9'}
+                  - {comment: Draw a frame around the widget, defaultValue: 0, hidden: false,
+                    name: frame, oldValue: 0, type: boolean, value: 0}
+                  - {comment: Hide widget, defaultValue: 0, hidden: false, name: hide,
+                    oldValue: 0, type: boolean, value: 0}
+                  - {comment: '', defaultValue: '', hidden: false, name: hwobj_state_machine,
+                    oldValue: '', type: string, value: ''}
+                  - {comment: '', defaultValue: '', hidden: false, name: hwobj_unittest,
+                    oldValue: '', type: string, value: ''}
+                  - {comment: Allow to control brick in all modes, defaultValue: 0,
+                    hidden: false, name: instanceAllowAlways, oldValue: 0, type: boolean,
+                    value: 0}
+                  - {comment: Allow to control brick in slave mode, defaultValue: 0,
+                    hidden: false, name: instanceAllowConnected, oldValue: 0, type: boolean,
+                    value: 0}
+                  - {comment: '', defaultValue: /queue, hidden: false, name: queue,
+                    oldValue: /queue, type: string, value: /queue}
+                  - {comment: '', defaultValue: /queue-model, hidden: false, name: queue_model,
+                    oldValue: /queue-model, type: string, value: /queue-model}
+                  - {comment: '', defaultValue: /redis, hidden: false, name: redis_client,
+                    oldValue: /redis, type: string, value: /redis}
+                  - {comment: '', defaultValue: Sample changer, hidden: false, name: scOneName,
+                    oldValue: Sample changer, type: string, value: Sample changer}
+                  - {comment: '', defaultValue: Plate, hidden: false, name: scTwoName,
+                    oldValue: Plate, type: string, value: Plate}
+                  - {comment: '', defaultValue: 1, hidden: false, name: useCentringMethods,
+                    oldValue: 1, type: boolean, value: 1}
+                  - {comment: '', defaultValue: 1, hidden: false, name: useFilterWidget,
+                    oldValue: 1, type: boolean, value: 1}
+                  - {comment: '', defaultValue: 1, hidden: false, name: useHistoryView,
+                    oldValue: 1, type: boolean, value: 1}
+                  - {comment: '', defaultValue: 0, hidden: false, name: usePlateNavigator,
+                    oldValue: 0, type: boolean, value: 0}
+                  - {comment: '', defaultValue: 1, hidden: false, name: useSampleWidget,
+                    oldValue: 1, type: boolean, value: 1}
+                  - {comment: '', defaultValue: /xml_rpc_server, hidden: false, name: xml_rpc_server,
+                    oldValue: /xml_rpc_server, type: string, value: /xml-rpc-server}
+                  type: Qt4_TreeBrick
+                connections: []
+                name: vbox3
                 properties:
                 - choices: [none, top center, top left, top right, bottom center,
                     bottom left, bottom right, center, hcenter, vcenter, left, right]
@@ -2179,6 +2245,8 @@
             oldValue: null
             type: combo
             value: none
+          - {comment: '', defaultValue: 0, hidden: false, name: closable_, oldValue: null,
+            type: boolean, value: 0}
           - {comment: '', defaultValue: 1, hidden: false, name: closable_Advanced,
             oldValue: null, type: boolean, value: 1}
           - {comment: '', defaultValue: 1, hidden: false, name: closable_Characterisation,
@@ -2229,6 +2297,8 @@
             type: string, value: ''}
           - {comment: '', defaultValue: 1, hidden: false, name: margin, oldValue: null,
             type: integer, value: 1}
+          - {comment: '', defaultValue: 0, hidden: false, name: newdialog_, oldValue: null,
+            type: boolean, value: 0}
           - {comment: '', defaultValue: 0, hidden: false, name: newdialog_Advanced,
             oldValue: null, type: boolean, value: 0}
           - {comment: '', defaultValue: 0, hidden: false, name: newdialog_Characterisation,
