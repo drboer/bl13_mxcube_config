@@ -10,7 +10,7 @@
 
 # Log into the mxcube root repository
 GIT_PATH=${HOME}/git
-DEPLOY_SCRIPT=${HOME}/devel/pycharm/MXCuBE-devel/bl13_config/utils/deploy_from_git.sh
+DEPLOY_SCRIPT=${GIT_PATH}/bl13_mxcube_config/utils/deploy_from_git.sh
 MX3_REPO=${GIT_PATH}/mxcube
 HWR_REPO=${GIT_PATH}/mxcube/HardwareRepository
 SUBMODULE="HardwareRepository"
