@@ -18,11 +18,11 @@
           - {comment: '', defaultValue: 1, hidden: false, name: displayScale, oldValue: 1,
             type: boolean, value: 1}
           - {comment: Set fixed height in pixels, defaultValue: -1, hidden: false,
-            name: fixedHeight, oldValue: -1, type: integer, value: 670}
+            name: fixedHeight, oldValue: -1, type: integer, value: 1080}
           - {comment: '', defaultValue: '', hidden: false, name: fixedSize, oldValue: '',
             type: string, value: '-1'}
           - {comment: Set fixed width in pixels, defaultValue: -1, hidden: false,
-            name: fixedWidth, oldValue: -1, type: integer, value: 900}
+            name: fixedWidth, oldValue: -1, type: integer, value: 1280}
           - {comment: '', defaultValue: '9', hidden: false, name: fontSize, oldValue: '9',
             type: string, value: '9'}
           - {comment: Draw a frame around the widget, defaultValue: 0, hidden: false,
