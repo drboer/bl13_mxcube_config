@@ -2,33 +2,31 @@
 
 <object class="BeamlineSetup" role="BeamlineSetup">
   <object href="/Qt4_graphics-manager" role="shape_history"/>
-  <!-- Objects directly associatd with hardware -->
-  <object href="/transmission" role="transmission"/>
-  <object href="/beam-info" role="beam_info"/>
-  <object href="/mini-diff" role="diffractometer"/>
-  <object href="/omega" role="omega_axis"/>
-  <object href="/kappa" role="kappa_axis"/>
-  <object href="/kappaphi" role="kappa_phi_axis"/>
-  <object href="/cats" role="sample_changer"/>    
-  <!-- object href="/plate-manipulator" role="plate_manipulator"/ -->
-  <object href="/resolution" role="resolution"/>
-  <object href="/energy" role="energy"/>
-  <object href="/flux" role="flux"/>
+<!--  &lt;!&ndash; Objects directly associatd with hardware &ndash;&gt;-->
+<!--  <object href="/transmission" role="transmission"/>-->
+<!--  <object href="/beam-info" role="beam_info"/>-->
+<!--  <object href="/mini-diff" role="diffractometer"/>-->
+<!--  <object href="/omega" role="omega_axis"/>-->
+<!--  <object href="/kappa" role="kappa_axis"/>-->
+<!--  <object href="/kappaphi" role="kappa_phi_axis"/>-->
+<!--  <object href="/cats" role="sample_changer"/>    -->
+<!--  &lt;!&ndash; object href="/plate-manipulator" role="plate_manipulator"/ &ndash;&gt;-->
+<!--  <object href="/resolution" role="resolution"/>-->
+<!--  <object href="/energy" role="energy"/>-->
+<!--  <object href="/flux" role="flux"/>-->
 
   <!-- Software (abstract) concepts -->
-  <object href="/session" role="session"/>
-  <object href="/dbconnection" role="lims_client"/>
-  <object href="/data-analysis" role="data_analysis"/>
+<!--  <object href="/session" role="session"/>-->
+<!--  <object href="/dbconnection" role="lims_client"/>-->
+<!--  <object href="/data-analysis" role="data_analysis"/>-->
   <!--<object href="/workflow-mockup" role="workflow"/> -->
-  <object href="/gphl-setup" role="gphl_connection"/>
-  <object href="/gphl-workflow" role="gphl_workflow"/>
-
+ 
   <!-- Procedures and routines -->
-  <object href="/energyscan-mockup" role="energyscan"/>
-  <object href="/mxcollect" role="collect"/>
-  <object href="/parallel-processing" role="parallel_processing"/>
-  <object href="/xrf-spectrum-mockup" role="xrf_spectrum"/>
-  <object href="/pilatus" role="detector"/>
+<!--  <object href="/energyscan-mockup" role="energyscan"/>-->
+<!--  <object href="/mxcollect" role="collect"/>-->
+<!--  <object href="/parallel-processing" role="parallel_processing"/>-->
+<!--  <object href="/xrf-spectrum-mockup" role="xrf_spectrum"/>-->
+<!--  <object href="/pilatus" role="detector"/>-->
 
   <!-- advanced methods are defined as a list with method names.
        Each name is then converted to class name.
