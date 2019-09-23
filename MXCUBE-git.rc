@@ -35,11 +35,12 @@ echo "   Current Hardware Repository branch:" `git branch | grep \* | cut -d ' '
 popd > /dev/null
 echo "****************************************************************"
 
-# Simulation mode => MXCUBE_NO_SHUTTERS=True
-export MXCUBE_NO_SHUTTERS=True
+# Simulation mode => MXCUBE_BYPASS_SHUTTERS=True
+# If it does not exist, set to False by default
+[[ -z "${MXCUBE_BYPASS_SHUTTERS}" ]] && MXCUBE_BYPASS_SHUTTERS=False
 echo
 echo "Set this variable to True to avoid checking the shutters"
 echo "****************************************************************"
-echo "  MXCUBE_NO_SHUTTERS:" $MXCUBE_NO_SHUTTERS
+echo "  MXCUBE_BYPASS_SHUTTERS:" $MXCUBE_BYPASS_SHUTTERS
 echo "****************************************************************"
 
