@@ -50,3 +50,12 @@ pushd ${DEST}> /dev/null
   git commit -m'New version deployed' > /dev/null
   echo "*** Done ***"
 popd > /dev/null
+
+# Fix permissions for diffractometer configuration
+pushd ${DEST}> /dev/null
+  echo "Fixing permissions"
+  chmod 777 bl13_mxcube_config/hardware_objects.xml/mini-diff.xml
+  echo "*** Done ***"
+popd > /dev/null
+
+
