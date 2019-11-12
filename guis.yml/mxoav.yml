@@ -2,45 +2,128 @@
   - children:
     - children:
       - children:
-        - brick: {class: Qt4_CameraBrick, name: camera_brick}
+        - brick:
+            class: Qt4_CameraBrick
+            name: camera_brick
           children: []
           connections: []
           name: camera_brick
           properties:
-          - {comment: '', defaultValue: 0, hidden: false, name: beamDefiner, oldValue: 0,
-            type: boolean, value: 1}
-          - {comment: '', defaultValue: 0, hidden: false, name: cameraControls, oldValue: 0,
-            type: boolean, value: 1}
-          - {comment: '', defaultValue: 1, hidden: false, name: displayBeam, oldValue: 1,
-            type: boolean, value: 1}
-          - {comment: '', defaultValue: 1, hidden: false, name: displayOmegaAxis,
-            oldValue: 1, type: boolean, value: 1}
-          - {comment: '', defaultValue: 1, hidden: false, name: displayScale, oldValue: 1,
-            type: boolean, value: 1}
-          - {comment: Set fixed height in pixels, defaultValue: -1, hidden: false,
-            name: fixedHeight, oldValue: -1, type: integer, value: 1080}
-          - {comment: '', defaultValue: '', hidden: false, name: fixedSize, oldValue: '',
-            type: string, value: '-1'}
-          - {comment: Set fixed width in pixels, defaultValue: -1, hidden: false,
-            name: fixedWidth, oldValue: -1, type: integer, value: 1280}
-          - {comment: '', defaultValue: '9', hidden: false, name: fontSize, oldValue: '9',
-            type: string, value: '9'}
-          - {comment: Draw a frame around the widget, defaultValue: 0, hidden: false,
-            name: frame, oldValue: 0, type: boolean, value: 0}
-          - {comment: Hide widget, defaultValue: 0, hidden: false, name: hide, oldValue: 0,
-            type: boolean, value: 0}
-          - {comment: Allow to control brick in all modes, defaultValue: 0, hidden: false,
-            name: instanceAllowAlways, oldValue: 0, type: boolean, value: 0}
-          - {comment: Allow to control brick in slave mode, defaultValue: 0, hidden: false,
-            name: instanceAllowConnected, oldValue: 0, type: boolean, value: 0}
-          - {comment: '', defaultValue: /Qt4_graphics-manager, hidden: false, name: mnemonic,
-            oldValue: /Qt4_graphics-manager, type: string, value: /Qt4_graphics-manager}
+          - comment: ''
+            defaultValue: 0
+            hidden: false
+            name: beamDefiner
+            oldValue: 0
+            type: boolean
+            value: 1
+          - comment: ''
+            defaultValue: 0
+            hidden: false
+            name: cameraControls
+            oldValue: 0
+            type: boolean
+            value: 1
+          - comment: ''
+            defaultValue: 1
+            hidden: false
+            name: displayBeam
+            oldValue: 1
+            type: boolean
+            value: 1
+          - comment: ''
+            defaultValue: 1
+            hidden: false
+            name: displayOmegaAxis
+            oldValue: 1
+            type: boolean
+            value: 1
+          - comment: ''
+            defaultValue: 1
+            hidden: false
+            name: displayScale
+            oldValue: 1
+            type: boolean
+            value: 1
+          - comment: Set fixed height in pixels
+            defaultValue: -1
+            hidden: false
+            name: fixedHeight
+            oldValue: -1
+            type: integer
+            value: 1080
+          - comment: ''
+            defaultValue: ''
+            hidden: false
+            name: fixedSize
+            oldValue: ''
+            type: string
+            value: '-1'
+          - comment: Set fixed width in pixels
+            defaultValue: -1
+            hidden: false
+            name: fixedWidth
+            oldValue: -1
+            type: integer
+            value: 1280
+          - comment: ''
+            defaultValue: '10'
+            hidden: false
+            name: fontSize
+            oldValue: '10'
+            type: string
+            value: '9'
+          - comment: Draw a frame around the widget
+            defaultValue: 0
+            hidden: false
+            name: frame
+            oldValue: 0
+            type: boolean
+            value: 0
+          - comment: Hide widget
+            defaultValue: 0
+            hidden: false
+            name: hide
+            oldValue: 0
+            type: boolean
+            value: 0
+          - comment: Allow to control brick in all modes
+            defaultValue: 0
+            hidden: false
+            name: instanceAllowAlways
+            oldValue: 0
+            type: boolean
+            value: 0
+          - comment: Allow to control brick in slave mode
+            defaultValue: 0
+            hidden: false
+            name: instanceAllowConnected
+            oldValue: 0
+            type: boolean
+            value: 0
+          - comment: ''
+            defaultValue: /Qt4_graphics-manager
+            hidden: false
+            name: mnemonic
+            oldValue: /Qt4_graphics-manager
+            type: string
+            value: /Qt4_graphics-manager
           type: Qt4_CameraBrick
         connections: []
         name: vbox1
         properties:
-        - choices: [none, top center, top left, top right, bottom center, bottom left,
-            bottom right, center, hcenter, vcenter, left, right]
+        - choices:
+          - none
+          - top center
+          - top left
+          - top right
+          - bottom center
+          - bottom left
+          - bottom right
+          - center
+          - hcenter
+          - vcenter
+          - left
+          - right
           comment: ''
           defaultValue: none
           hidden: false
@@ -48,13 +131,34 @@
           oldValue: null
           type: combo
           value: none
-        - {comment: '', defaultValue: null, hidden: false, name: color, oldValue: null,
-          type: color, value: null}
-        - {comment: '', defaultValue: -1, hidden: false, name: fixedheight, oldValue: null,
-          type: integer, value: -1}
-        - {comment: '', defaultValue: -1, hidden: false, name: fixedwidth, oldValue: null,
-          type: integer, value: -1}
-        - choices: [Box, Panel, StyledPanel, HLine, VLine, default]
+        - comment: ''
+          defaultValue: null
+          hidden: false
+          name: color
+          oldValue: null
+          type: color
+          value: null
+        - comment: ''
+          defaultValue: -1
+          hidden: false
+          name: fixedheight
+          oldValue: null
+          type: integer
+          value: -1
+        - comment: ''
+          defaultValue: -1
+          hidden: false
+          name: fixedwidth
+          oldValue: null
+          type: integer
+          value: -1
+        - choices:
+          - Box
+          - Panel
+          - StyledPanel
+          - HLine
+          - VLine
+          - default
           comment: ''
           defaultValue: default
           hidden: false
@@ -62,21 +166,43 @@
           oldValue: null
           type: combo
           value: default
-        - choices: [fixed, expanding, default]
+        - choices:
+          - fixed
+          - expanding
+          - default
           comment: ''
           defaultValue: default
           hidden: false
           name: hsizepolicy
-          oldValue: default
+          oldValue: null
           type: combo
-          value: expanding
-        - {comment: '', defaultValue: '', hidden: false, name: icon, oldValue: null,
-          type: string, value: ''}
-        - {comment: '', defaultValue: '', hidden: false, name: label, oldValue: null,
-          type: string, value: ''}
-        - {comment: '', defaultValue: 0, hidden: false, name: margin, oldValue: null,
-          type: integer, value: 0}
-        - choices: [plain, raised, sunken, default]
+          value: default
+        - comment: ''
+          defaultValue: ''
+          hidden: false
+          name: icon
+          oldValue: null
+          type: string
+          value: ''
+        - comment: ''
+          defaultValue: ''
+          hidden: false
+          name: label
+          oldValue: null
+          type: string
+          value: ''
+        - comment: ''
+          defaultValue: 0
+          hidden: false
+          name: margin
+          oldValue: null
+          type: integer
+          value: 0
+        - choices:
+          - plain
+          - raised
+          - sunken
+          - default
           comment: ''
           defaultValue: default
           hidden: false
@@ -84,22 +210,41 @@
           oldValue: null
           type: combo
           value: default
-        - {comment: '', defaultValue: 0, hidden: false, name: spacing, oldValue: null,
-          type: integer, value: 0}
-        - choices: [fixed, expanding, default]
+        - comment: ''
+          defaultValue: 0
+          hidden: false
+          name: spacing
+          oldValue: null
+          type: integer
+          value: 0
+        - choices:
+          - fixed
+          - expanding
+          - default
           comment: ''
           defaultValue: default
           hidden: false
           name: vsizepolicy
-          oldValue: default
+          oldValue: null
           type: combo
-          value: expanding
+          value: default
         type: vbox
       connections: []
       name: sample_video_groupbox
       properties:
-      - choices: [none, top center, top left, top right, bottom center, bottom left,
-          bottom right, center, hcenter, vcenter, left, right]
+      - choices:
+        - none
+        - top center
+        - top left
+        - top right
+        - bottom center
+        - bottom left
+        - bottom right
+        - center
+        - hcenter
+        - vcenter
+        - left
+        - right
         comment: ''
         defaultValue: none
         hidden: false
@@ -107,13 +252,34 @@
         oldValue: null
         type: combo
         value: none
-      - {comment: '', defaultValue: null, hidden: false, name: color, oldValue: null,
-        type: color, value: null}
-      - {comment: '', defaultValue: -1, hidden: false, name: fixedheight, oldValue: null,
-        type: integer, value: -1}
-      - {comment: '', defaultValue: -1, hidden: false, name: fixedwidth, oldValue: null,
-        type: integer, value: -1}
-      - choices: [Box, Panel, StyledPanel, HLine, VLine, default]
+      - comment: ''
+        defaultValue: null
+        hidden: false
+        name: color
+        oldValue: null
+        type: color
+        value: null
+      - comment: ''
+        defaultValue: -1
+        hidden: false
+        name: fixedheight
+        oldValue: null
+        type: integer
+        value: -1
+      - comment: ''
+        defaultValue: -1
+        hidden: false
+        name: fixedwidth
+        oldValue: null
+        type: integer
+        value: -1
+      - choices:
+        - Box
+        - Panel
+        - StyledPanel
+        - HLine
+        - VLine
+        - default
         comment: ''
         defaultValue: default
         hidden: false
@@ -121,7 +287,10 @@
         oldValue: null
         type: combo
         value: default
-      - choices: [fixed, expanding, default]
+      - choices:
+        - fixed
+        - expanding
+        - default
         comment: ''
         defaultValue: default
         hidden: false
@@ -129,13 +298,32 @@
         oldValue: null
         type: combo
         value: default
-      - {comment: '', defaultValue: '', hidden: false, name: icon, oldValue: null,
-        type: string, value: ''}
-      - {comment: '', defaultValue: Sample video, hidden: false, name: label, oldValue: null,
-        type: string, value: Sample video}
-      - {comment: '', defaultValue: 0, hidden: false, name: margin, oldValue: null,
-        type: integer, value: 0}
-      - choices: [plain, raised, sunken, default]
+      - comment: ''
+        defaultValue: ''
+        hidden: false
+        name: icon
+        oldValue: null
+        type: string
+        value: ''
+      - comment: ''
+        defaultValue: Sample video
+        hidden: false
+        name: label
+        oldValue: null
+        type: string
+        value: Sample video
+      - comment: ''
+        defaultValue: 0
+        hidden: false
+        name: margin
+        oldValue: null
+        type: integer
+        value: 0
+      - choices:
+        - plain
+        - raised
+        - sunken
+        - default
         comment: ''
         defaultValue: default
         hidden: false
@@ -143,9 +331,17 @@
         oldValue: null
         type: combo
         value: default
-      - {comment: '', defaultValue: 0, hidden: false, name: spacing, oldValue: null,
-        type: integer, value: 0}
-      - choices: [fixed, expanding, default]
+      - comment: ''
+        defaultValue: 0
+        hidden: false
+        name: spacing
+        oldValue: null
+        type: integer
+        value: 0
+      - choices:
+        - fixed
+        - expanding
+        - default
         comment: ''
         defaultValue: default
         hidden: false
@@ -154,11 +350,229 @@
         type: combo
         value: default
       type: hgroupbox
+    - children:
+      - brick:
+          class: Qt4_DigitalZoomBrick
+          name: Qt4_DigitalZoomBrick0
+        children: []
+        connections: []
+        name: Qt4_DigitalZoomBrick0
+        properties:
+        - comment: Set fixed height in pixels
+          defaultValue: -1
+          hidden: false
+          name: fixedHeight
+          oldValue: null
+          type: integer
+          value: -1
+        - comment: Set fixed width in pixels
+          defaultValue: -1
+          hidden: false
+          name: fixedWidth
+          oldValue: null
+          type: integer
+          value: -1
+        - comment: ''
+          defaultValue: '10'
+          hidden: false
+          name: fontSize
+          oldValue: null
+          type: string
+          value: '10'
+        - comment: Draw a frame around the widget
+          defaultValue: 0
+          hidden: false
+          name: frame
+          oldValue: null
+          type: boolean
+          value: 0
+        - comment: Hide widget
+          defaultValue: 0
+          hidden: false
+          name: hide
+          oldValue: null
+          type: boolean
+          value: 0
+        - comment: ''
+          defaultValue: ''
+          hidden: false
+          name: icons
+          oldValue: null
+          type: string
+          value: ''
+        - comment: Allow to control brick in all modes
+          defaultValue: 0
+          hidden: false
+          name: instanceAllowAlways
+          oldValue: null
+          type: boolean
+          value: 0
+        - comment: Allow to control brick in slave mode
+          defaultValue: 0
+          hidden: false
+          name: instanceAllowConnected
+          oldValue: null
+          type: boolean
+          value: 0
+        - comment: ''
+          defaultValue: ''
+          hidden: false
+          name: label
+          oldValue: null
+          type: string
+          value: ''
+        - comment: ''
+          defaultValue: ''
+          hidden: false
+          name: mnemonic
+          oldValue: ''
+          type: string
+          value: digital-zoom
+        - comment: ''
+          defaultValue: 1
+          hidden: false
+          name: showMoveButtons
+          oldValue: null
+          type: boolean
+          value: 1
+        type: Qt4_DigitalZoomBrick
+      connections: []
+      name: vbox2
+      properties:
+      - choices:
+        - none
+        - top center
+        - top left
+        - top right
+        - bottom center
+        - bottom left
+        - bottom right
+        - center
+        - hcenter
+        - vcenter
+        - left
+        - right
+        comment: ''
+        defaultValue: none
+        hidden: false
+        name: alignment
+        oldValue: null
+        type: combo
+        value: none
+      - comment: ''
+        defaultValue: null
+        hidden: false
+        name: color
+        oldValue: null
+        type: color
+        value: null
+      - comment: ''
+        defaultValue: -1
+        hidden: false
+        name: fixedheight
+        oldValue: null
+        type: integer
+        value: -1
+      - comment: ''
+        defaultValue: -1
+        hidden: false
+        name: fixedwidth
+        oldValue: null
+        type: integer
+        value: -1
+      - choices:
+        - Box
+        - Panel
+        - StyledPanel
+        - HLine
+        - VLine
+        - default
+        comment: ''
+        defaultValue: default
+        hidden: false
+        name: frameshape
+        oldValue: null
+        type: combo
+        value: default
+      - choices:
+        - fixed
+        - expanding
+        - default
+        comment: ''
+        defaultValue: default
+        hidden: false
+        name: hsizepolicy
+        oldValue: null
+        type: combo
+        value: default
+      - comment: ''
+        defaultValue: ''
+        hidden: false
+        name: icon
+        oldValue: null
+        type: string
+        value: ''
+      - comment: ''
+        defaultValue: ''
+        hidden: false
+        name: label
+        oldValue: null
+        type: string
+        value: ''
+      - comment: ''
+        defaultValue: 2
+        hidden: false
+        name: margin
+        oldValue: null
+        type: integer
+        value: 2
+      - choices:
+        - plain
+        - raised
+        - sunken
+        - default
+        comment: ''
+        defaultValue: default
+        hidden: false
+        name: shadowstyle
+        oldValue: null
+        type: combo
+        value: default
+      - comment: ''
+        defaultValue: 2
+        hidden: false
+        name: spacing
+        oldValue: null
+        type: integer
+        value: 2
+      - choices:
+        - fixed
+        - expanding
+        - default
+        comment: ''
+        defaultValue: default
+        hidden: false
+        name: vsizepolicy
+        oldValue: null
+        type: combo
+        value: default
+      type: vbox
     connections: []
     name: main
     properties:
-    - choices: [none, top center, top left, top right, bottom center, bottom left,
-        bottom right, center, hcenter, vcenter, left, right]
+    - choices:
+      - none
+      - top center
+      - top left
+      - top right
+      - bottom center
+      - bottom left
+      - bottom right
+      - center
+      - hcenter
+      - vcenter
+      - left
+      - right
       comment: ''
       defaultValue: none
       hidden: false
@@ -166,13 +580,34 @@
       oldValue: null
       type: combo
       value: none
-    - {comment: '', defaultValue: null, hidden: false, name: color, oldValue: null,
-      type: color, value: null}
-    - {comment: '', defaultValue: -1, hidden: false, name: fixedheight, oldValue: null,
-      type: integer, value: -1}
-    - {comment: '', defaultValue: -1, hidden: false, name: fixedwidth, oldValue: null,
-      type: integer, value: -1}
-    - choices: [Box, Panel, StyledPanel, HLine, VLine, default]
+    - comment: ''
+      defaultValue: null
+      hidden: false
+      name: color
+      oldValue: null
+      type: color
+      value: null
+    - comment: ''
+      defaultValue: -1
+      hidden: false
+      name: fixedheight
+      oldValue: null
+      type: integer
+      value: -1
+    - comment: ''
+      defaultValue: -1
+      hidden: false
+      name: fixedwidth
+      oldValue: null
+      type: integer
+      value: -1
+    - choices:
+      - Box
+      - Panel
+      - StyledPanel
+      - HLine
+      - VLine
+      - default
       comment: ''
       defaultValue: default
       hidden: false
@@ -180,7 +615,10 @@
       oldValue: null
       type: combo
       value: default
-    - choices: [fixed, expanding, default]
+    - choices:
+      - fixed
+      - expanding
+      - default
       comment: ''
       defaultValue: default
       hidden: false
@@ -188,13 +626,32 @@
       oldValue: null
       type: combo
       value: default
-    - {comment: '', defaultValue: '', hidden: false, name: icon, oldValue: null, type: string,
-      value: ''}
-    - {comment: '', defaultValue: '', hidden: false, name: label, oldValue: null,
-      type: string, value: ''}
-    - {comment: '', defaultValue: 1, hidden: false, name: margin, oldValue: null,
-      type: integer, value: 1}
-    - choices: [plain, raised, sunken, default]
+    - comment: ''
+      defaultValue: ''
+      hidden: false
+      name: icon
+      oldValue: null
+      type: string
+      value: ''
+    - comment: ''
+      defaultValue: ''
+      hidden: false
+      name: label
+      oldValue: null
+      type: string
+      value: ''
+    - comment: ''
+      defaultValue: 1
+      hidden: false
+      name: margin
+      oldValue: null
+      type: integer
+      value: 1
+    - choices:
+      - plain
+      - raised
+      - sunken
+      - default
       comment: ''
       defaultValue: default
       hidden: false
@@ -202,9 +659,17 @@
       oldValue: null
       type: combo
       value: default
-    - {comment: '', defaultValue: 1, hidden: false, name: spacing, oldValue: null,
-      type: integer, value: 1}
-    - choices: [fixed, expanding, default]
+    - comment: ''
+      defaultValue: 1
+      hidden: false
+      name: spacing
+      oldValue: null
+      type: integer
+      value: 1
+    - choices:
+      - fixed
+      - expanding
+      - default
       comment: ''
       defaultValue: default
       hidden: false
@@ -214,14 +679,29 @@
       value: default
     type: hbox
   connections:
-  - {receiver: cats_maint_brick, receiverWindow: mxCuBE, signal: enableExpertModeSignal,
-    slot: setExpertMode}
-  - {receiver: cats_maint_brick, receiverWindow: mxCuBE, signal: enableExpertModeSignal,
-    slot: setExpertMode}
+  - receiver: cats_maint_brick
+    receiverWindow: mxCuBE
+    signal: enableExpertModeSignal
+    slot: setExpertMode
+  - receiver: cats_maint_brick
+    receiverWindow: mxCuBE
+    signal: enableExpertModeSignal
+    slot: setExpertMode
   name: mxCuBE
   properties:
-  - choices: [none, top center, top left, top right, bottom center, bottom left, bottom
-        right, center, hcenter, vcenter, left, right]
+  - choices:
+    - none
+    - top center
+    - top left
+    - top right
+    - bottom center
+    - bottom left
+    - bottom right
+    - center
+    - hcenter
+    - vcenter
+    - left
+    - right
     comment: ''
     defaultValue: none
     hidden: false
@@ -229,14 +709,34 @@
     oldValue: null
     type: combo
     value: none
-  - {comment: '', defaultValue: '', hidden: false, name: caption, oldValue: null,
-    type: string, value: ''}
-  - {comment: '', defaultValue: 1, hidden: false, name: closeOnExit, oldValue: null,
-    type: boolean, value: 1}
-  - {comment: '', defaultValue: '1234', hidden: false, name: expertPwd, oldValue: null,
-    type: string, value: '1234'}
-  - {comment: '', defaultValue: 1, hidden: false, name: menubar, oldValue: null, type: boolean,
-    value: 1}
+  - comment: ''
+    defaultValue: ''
+    hidden: false
+    name: caption
+    oldValue: null
+    type: string
+    value: ''
+  - comment: ''
+    defaultValue: 1
+    hidden: false
+    name: closeOnExit
+    oldValue: null
+    type: boolean
+    value: 1
+  - comment: ''
+    defaultValue: '1234'
+    hidden: false
+    name: expertPwd
+    oldValue: null
+    type: string
+    value: '1234'
+  - comment: ''
+    defaultValue: 1
+    hidden: false
+    name: menubar
+    oldValue: null
+    type: boolean
+    value: 1
   - comment: ''
     defaultValue: &id001 {}
     hidden: true
@@ -244,10 +744,20 @@
     oldValue: null
     type: undefined
     value: *id001
-  - {comment: '', defaultValue: 1, hidden: false, name: show, oldValue: null, type: boolean,
-    value: 1}
-  - {comment: '', defaultValue: 1, hidden: false, name: statusbar, oldValue: null,
-    type: boolean, value: 1}
+  - comment: ''
+    defaultValue: 1
+    hidden: false
+    name: show
+    oldValue: null
+    type: boolean
+    value: 1
+  - comment: ''
+    defaultValue: 1
+    hidden: false
+    name: statusbar
+    oldValue: null
+    type: boolean
+    value: 1
   signals:
     enableExpertModeSignal: !!python/tuple []
     isHidden: !!python/tuple []
