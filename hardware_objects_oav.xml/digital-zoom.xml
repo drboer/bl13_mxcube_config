@@ -1,0 +1,11 @@
+<device class="ALBADigitalZoom">
+  <username>Zoom</username>
+  <tangoname>md/oav/bzoom</tangoname>
+  <alias>zoom</alias>
+
+  <channel type="tango" polling="200" name="position">video_zoom_idx</channel>
+  <channel type="tango" polling="200" name="state">State</channel>
+
+  <!--  This is the backlight IOR device-->
+<!--  <channel type="sardana" taurusname="ioregister/eh_zoom_tangoior_ctrl/2" name="blight">Value</channel>-->
+</device>
