@@ -1,12 +1,11 @@
 <device class="Qt4_TangoLimaVideo">
 <!-- device class="Qt4_LimaVideo"-->
-   <type>basler</type>
-   <encoding>yuv422p</encoding>
+   <type>bzoom</type>
+   <encoding>rgb24</encoding>
    <!--encoding>y8</encoding-->
    <!--address>84.89.227.6</address-->
 
-   <address>84.89.227.72</address>
-   <tangoname>bl13/eh/basler_oav</tangoname> 
+   <tangoname>bl13/eh/bzoom</tangoname>
 
    <gain>0.24</gain>
    <scale>1</scale>
@@ -15,7 +14,7 @@
    <interval>30</interval>
 
    <!--  overriding values given by the device server -->
-   <width>900</width>
-   <height>670</height>
+   <width>1280</width>
+   <height>1024</height>
 
 </device>
