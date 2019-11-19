@@ -694,36 +694,91 @@
                     - {comment: '', defaultValue: 100, hidden: false, name: size,
                       oldValue: null, type: integer, value: 100}
                     type: hspacer
-                  - brick: {class: Qt4_MotorPredefPosBrick, name: zoom_brick}
+                  - brick:
+                      class: Qt4_DigitalZoomBrick
+                      name: Qt4_DigitalZoomBrick0
                     children: []
                     connections: []
-                    name: zoom_brick
+                    name: Qt4_DigitalZoomBrick0
                     properties:
-                    - {comment: Set fixed height in pixels, defaultValue: -1, hidden: false,
-                      name: fixedHeight, oldValue: -1, type: integer, value: -1}
-                    - {comment: Set fixed width in pixels, defaultValue: -1, hidden: false,
-                      name: fixedWidth, oldValue: -1, type: integer, value: -1}
-                    - {comment: '', defaultValue: '9', hidden: false, name: fontSize,
-                      oldValue: '9', type: string, value: '9'}
-                    - {comment: Draw a frame around the widget, defaultValue: 0, hidden: false,
-                      name: frame, oldValue: 0, type: boolean, value: 0}
-                    - {comment: Hide widget, defaultValue: 0, hidden: false, name: hide,
-                      oldValue: 0, type: boolean, value: 0}
-                    - {comment: '', defaultValue: '', hidden: false, name: icons,
-                      oldValue: '', type: string, value: ''}
-                    - {comment: Allow to control brick in all modes, defaultValue: 0,
-                      hidden: false, name: instanceAllowAlways, oldValue: 0, type: boolean,
-                      value: 0}
-                    - {comment: Allow to control brick in slave mode, defaultValue: 0,
-                      hidden: false, name: instanceAllowConnected, oldValue: 0, type: boolean,
-                      value: 0}
-                    - {comment: '', defaultValue: '', hidden: false, name: label,
-                      oldValue: '', type: string, value: Zoom}
-                    - {comment: '', defaultValue: '', hidden: false, name: mnemonic,
-                      oldValue: '', type: string, value: /zoom-auto}
-                    - {comment: '', defaultValue: 1, hidden: false, name: showMoveButtons,
-                      oldValue: 1, type: boolean, value: 1}
-                    type: Qt4_MotorPredefPosBrick
+                    - comment: Set fixed height in pixels
+                      defaultValue: -1
+                      hidden: false
+                      name: fixedHeight
+                      oldValue: -1
+                      type: integer
+                      value: -1
+                    - comment: Set fixed width in pixels
+                      defaultValue: -1
+                      hidden: false
+                      name: fixedWidth
+                      oldValue: -1
+                      type: integer
+                      value: -1
+                    - comment: ''
+                      defaultValue: '10'
+                      hidden: false
+                      name: fontSize
+                      oldValue: '10'
+                      type: string
+                      value: '10'
+                    - comment: Draw a frame around the widget
+                      defaultValue: 0
+                      hidden: false
+                      name: frame
+                      oldValue: 0
+                      type: boolean
+                      value: 0
+                    - comment: Hide widget
+                      defaultValue: 0
+                      hidden: false
+                      name: hide
+                      oldValue: 0
+                      type: boolean
+                      value: 0
+                    - comment: ''
+                      defaultValue: ''
+                      hidden: false
+                      name: icons
+                      oldValue: ''
+                      type: string
+                      value: ''
+                    - comment: Allow to control brick in all modes
+                      defaultValue: 0
+                      hidden: false
+                      name: instanceAllowAlways
+                      oldValue: 0
+                      type: boolean
+                      value: 0
+                    - comment: Allow to control brick in slave mode
+                      defaultValue: 0
+                      hidden: false
+                      name: instanceAllowConnected
+                      oldValue: 0
+                      type: boolean
+                      value: 0
+                    - comment: ''
+                      defaultValue: ''
+                      hidden: false
+                      name: label
+                      oldValue: ''
+                      type: string
+                      value: ''
+                    - comment: ''
+                      defaultValue: ''
+                      hidden: false
+                      name: mnemonic
+                      oldValue: ''
+                      type: string
+                      value: /digital-zoom
+                    - comment: ''
+                      defaultValue: 1
+                      hidden: false
+                      name: showMoveButtons
+                      oldValue: 1
+                      type: boolean
+                      value: 1
+                    type: Qt4_DigitalZoomBrick
                   connections: []
                   name: hbox3
                   properties:
@@ -790,37 +845,104 @@
                       connections: []
                       name: camera_brick
                       properties:
-                      - {comment: '', defaultValue: 0, hidden: false, name: beamDefiner,
-                        oldValue: 0, type: boolean, value: 1}
-                      - {comment: '', defaultValue: 0, hidden: false, name: cameraControls,
-                        oldValue: 0, type: boolean, value: 1}
-                      - {comment: '', defaultValue: 1, hidden: false, name: displayBeam,
-                        oldValue: 1, type: boolean, value: 1}
-                      - {comment: '', defaultValue: 1, hidden: false, name: displayOmegaAxis,
-                        oldValue: 1, type: boolean, value: 1}
-                      - {comment: '', defaultValue: 1, hidden: false, name: displayScale,
-                        oldValue: 1, type: boolean, value: 1}
-                      - {comment: Set fixed height in pixels, defaultValue: -1, hidden: false,
-                        name: fixedHeight, oldValue: -1, type: integer, value: 670}
-                      - {comment: '', defaultValue: '', hidden: false, name: fixedSize,
-                        oldValue: '', type: string, value: '-1'}
-                      - {comment: Set fixed width in pixels, defaultValue: -1, hidden: false,
-                        name: fixedWidth, oldValue: -1, type: integer, value: 900}
-                      - {comment: '', defaultValue: '9', hidden: false, name: fontSize,
-                        oldValue: '9', type: string, value: '9'}
-                      - {comment: Draw a frame around the widget, defaultValue: 0,
-                        hidden: false, name: frame, oldValue: 0, type: boolean, value: 0}
-                      - {comment: Hide widget, defaultValue: 0, hidden: false, name: hide,
-                        oldValue: 0, type: boolean, value: 0}
-                      - {comment: Allow to control brick in all modes, defaultValue: 0,
-                        hidden: false, name: instanceAllowAlways, oldValue: 0, type: boolean,
-                        value: 0}
-                      - {comment: Allow to control brick in slave mode, defaultValue: 0,
-                        hidden: false, name: instanceAllowConnected, oldValue: 0,
-                        type: boolean, value: 0}
-                      - {comment: '', defaultValue: /Qt4_graphics-manager, hidden: false,
-                        name: mnemonic, oldValue: /Qt4_graphics-manager, type: string,
-                        value: /Qt4_graphics-manager}
+                      - comment: ''
+                        defaultValue: 0
+                        hidden: false
+                        name: beamDefiner
+                        oldValue: 0
+                        type: boolean
+                        value: 1
+                      - comment: ''
+                        defaultValue: 0
+                        hidden: false
+                        name: cameraControls
+                        oldValue: 0
+                        type: boolean
+                        value: 1
+                      - comment: ''
+                        defaultValue: 1
+                        hidden: false
+                        name: displayBeam
+                        oldValue: 1
+                        type: boolean
+                        value: 1
+                      - comment: ''
+                        defaultValue: 1
+                        hidden: false
+                        name: displayOmegaAxis
+                        oldValue: 1
+                        type: boolean
+                        value: 1
+                      - comment: ''
+                        defaultValue: 1
+                        hidden: false
+                        name: displayScale
+                        oldValue: 1
+                        type: boolean
+                        value: 1
+                      - comment: Set fixed height in pixels
+                        defaultValue: -1
+                        hidden: false
+                        name: fixedHeight
+                        oldValue: 1024
+                        type: integer
+                        value: 670
+                      - comment: ''
+                        defaultValue: ''
+                        hidden: false
+                        name: fixedSize
+                        oldValue: ''
+                        type: string
+                        value: '-1'
+                      - comment: Set fixed width in pixels
+                        defaultValue: -1
+                        hidden: false
+                        name: fixedWidth
+                        oldValue: 1280
+                        type: integer
+                        value: 900
+                      - comment: ''
+                        defaultValue: '10'
+                        hidden: false
+                        name: fontSize
+                        oldValue: '10'
+                        type: string
+                        value: '9'
+                      - comment: Draw a frame around the widget
+                        defaultValue: 0
+                        hidden: false
+                        name: frame
+                        oldValue: 0
+                        type: boolean
+                        value: 0
+                      - comment: Hide widget
+                        defaultValue: 0
+                        hidden: false
+                        name: hide
+                        oldValue: 0
+                        type: boolean
+                        value: 0
+                      - comment: Allow to control brick in all modes
+                        defaultValue: 0
+                        hidden: false
+                        name: instanceAllowAlways
+                        oldValue: 0
+                        type: boolean
+                        value: 0
+                      - comment: Allow to control brick in slave mode
+                        defaultValue: 0
+                        hidden: false
+                        name: instanceAllowConnected
+                        oldValue: 0
+                        type: boolean
+                        value: 0
+                      - comment: ''
+                        defaultValue: /Qt4_graphics-manager
+                        hidden: false
+                        name: mnemonic
+                        oldValue: /Qt4_graphics-manager
+                        type: string
+                        value: /Qt4_graphics-manager
                       type: Qt4_CameraBrick
                     - children: []
                       connections: []
@@ -930,34 +1052,104 @@
                     connections: []
                     name: hutchmenu_brick
                     properties:
-                    - {comment: '', defaultValue: 1, hidden: false, name: enableAutoCenter,
-                      oldValue: 1, type: boolean, value: 1}
-                    - {comment: '', defaultValue: 1, hidden: false, name: enableAutoFocus,
-                      oldValue: 1, type: boolean, value: 1}
-                    - {comment: '', defaultValue: 0, hidden: false, name: enableRealignBeam,
-                      oldValue: 0, type: boolean, value: 0}
-                    - {comment: '', defaultValue: 0, hidden: false, name: enableRefreshCamera,
-                      oldValue: 0, type: boolean, value: 1}
-                    - {comment: '', defaultValue: 1, hidden: false, name: enableVisualAlign,
-                      oldValue: 1, type: boolean, value: 1}
-                    - {comment: Set fixed height in pixels, defaultValue: -1, hidden: false,
-                      name: fixedHeight, oldValue: -1, type: integer, value: -1}
-                    - {comment: Set fixed width in pixels, defaultValue: -1, hidden: false,
-                      name: fixedWidth, oldValue: -1, type: integer, value: -1}
-                    - {comment: '', defaultValue: '9', hidden: false, name: fontSize,
-                      oldValue: '9', type: string, value: '9'}
-                    - {comment: Draw a frame around the widget, defaultValue: 0, hidden: false,
-                      name: frame, oldValue: 0, type: boolean, value: 0}
-                    - {comment: '', defaultValue: '', hidden: false, name: graphicsManager,
-                      oldValue: '', type: string, value: /Qt4_graphics-manager}
-                    - {comment: Hide widget, defaultValue: 0, hidden: false, name: hide,
-                      oldValue: 0, type: boolean, value: 0}
-                    - {comment: Allow to control brick in all modes, defaultValue: 0,
-                      hidden: false, name: instanceAllowAlways, oldValue: 0, type: boolean,
-                      value: 0}
-                    - {comment: Allow to control brick in slave mode, defaultValue: 0,
-                      hidden: false, name: instanceAllowConnected, oldValue: 0, type: boolean,
-                      value: 0}
+                    - comment: ''
+                      defaultValue: 1
+                      hidden: false
+                      name: enableAutoCenter
+                      oldValue: 1
+                      type: boolean
+                      value: 1
+                    - comment: ''
+                      defaultValue: 1
+                      hidden: false
+                      name: enableAutoFocus
+                      oldValue: 1
+                      type: boolean
+                      value: 1
+                    - comment: ''
+                      defaultValue: 1
+                      hidden: false
+                      name: enableBeamAlign
+                      oldValue: 1
+                      type: boolean
+                      value: 1
+                    - comment: ''
+                      defaultValue: 0
+                      hidden: false
+                      name: enableRealignBeam
+                      oldValue: 0
+                      type: boolean
+                      value: 0
+                    - comment: ''
+                      defaultValue: 0
+                      hidden: false
+                      name: enableRefreshCamera
+                      oldValue: 0
+                      type: boolean
+                      value: 1
+                    - comment: ''
+                      defaultValue: 1
+                      hidden: false
+                      name: enableVisualAlign
+                      oldValue: 1
+                      type: boolean
+                      value: 1
+                    - comment: Set fixed height in pixels
+                      defaultValue: -1
+                      hidden: false
+                      name: fixedHeight
+                      oldValue: -1
+                      type: integer
+                      value: -1
+                    - comment: Set fixed width in pixels
+                      defaultValue: -1
+                      hidden: false
+                      name: fixedWidth
+                      oldValue: -1
+                      type: integer
+                      value: -1
+                    - comment: ''
+                      defaultValue: '10'
+                      hidden: false
+                      name: fontSize
+                      oldValue: '10'
+                      type: string
+                      value: '9'
+                    - comment: Draw a frame around the widget
+                      defaultValue: 0
+                      hidden: false
+                      name: frame
+                      oldValue: 0
+                      type: boolean
+                      value: 0
+                    - comment: ''
+                      defaultValue: ''
+                      hidden: false
+                      name: graphicsManager
+                      oldValue: ''
+                      type: string
+                      value: /Qt4_graphics-manager
+                    - comment: Hide widget
+                      defaultValue: 0
+                      hidden: false
+                      name: hide
+                      oldValue: 0
+                      type: boolean
+                      value: 0
+                    - comment: Allow to control brick in all modes
+                      defaultValue: 0
+                      hidden: false
+                      name: instanceAllowAlways
+                      oldValue: 0
+                      type: boolean
+                      value: 0
+                    - comment: Allow to control brick in slave mode
+                      defaultValue: 0
+                      hidden: false
+                      name: instanceAllowConnected
+                      oldValue: 0
+                      type: boolean
+                      value: 0
                     type: Qt4_HutchMenuBrick
                   connections: []
                   name: sample_video_groupbox
