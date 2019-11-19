@@ -1823,11 +1823,11 @@
                       value: 100
                     type: hspacer
                   - brick:
-                      class: Qt4_MotorPredefPosBrick
-                      name: zoom_brick
+                      class: Qt4_DigitalZoomBrick
+                      name: Qt4_DigitalZoomBrick0
                     children: []
                     connections: []
-                    name: zoom_brick
+                    name: Qt4_DigitalZoomBrick0
                     properties:
                     - comment: Set fixed height in pixels
                       defaultValue: -1
@@ -1849,7 +1849,7 @@
                       name: fontSize
                       oldValue: '10'
                       type: string
-                      value: '9'
+                      value: '10'
                     - comment: Draw a frame around the widget
                       defaultValue: 0
                       hidden: false
@@ -1891,14 +1891,14 @@
                       name: label
                       oldValue: ''
                       type: string
-                      value: Zoom
+                      value: ''
                     - comment: ''
                       defaultValue: ''
                       hidden: false
                       name: mnemonic
                       oldValue: ''
                       type: string
-                      value: /zoom-auto
+                      value: /digital-zoom
                     - comment: ''
                       defaultValue: 1
                       hidden: false
@@ -1906,7 +1906,7 @@
                       oldValue: 1
                       type: boolean
                       value: 1
-                    type: Qt4_MotorPredefPosBrick
+                    type: Qt4_DigitalZoomBrick
                   connections: []
                   name: hbox3
                   properties:
@@ -2076,7 +2076,7 @@
                         defaultValue: -1
                         hidden: false
                         name: fixedHeight
-                        oldValue: -1
+                        oldValue: 1024
                         type: integer
                         value: 670
                       - comment: ''
@@ -2090,7 +2090,7 @@
                         defaultValue: -1
                         hidden: false
                         name: fixedWidth
-                        oldValue: -1
+                        oldValue: 1280
                         type: integer
                         value: 900
                       - comment: ''
@@ -2378,6 +2378,13 @@
                       defaultValue: 1
                       hidden: false
                       name: enableAutoFocus
+                      oldValue: 1
+                      type: boolean
+                      value: 1
+                    - comment: ''
+                      defaultValue: 1
+                      hidden: false
+                      name: enableBeamAlign
                       oldValue: 1
                       type: boolean
                       value: 1

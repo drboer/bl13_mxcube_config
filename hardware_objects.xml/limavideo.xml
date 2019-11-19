@@ -7,14 +7,16 @@
 
    <tangoname>bl13/eh/bzoom</tangoname>
 
-   <gain>0.24</gain>
+   <!--gain>0.24</gain-->
    <scale>1</scale>
-   <exposure>0.08</exposure>
-   <mirror>(False, False)</mirror>
+   <!--exposure>0.08</exposure-->
+   <mirror>(True, False)</mirror>
    <interval>30</interval>
 
    <!--  overriding values given by the device server -->
-   <width>1280</width>
-   <height>1024</height>
+   <!-- width>1280</width -->
+   <!--height>1024</height -->
+   <width>900</width>
+   <height>670</height>
 
 </device>
