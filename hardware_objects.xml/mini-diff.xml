@@ -26,7 +26,7 @@
   <!--object href="/minikappa-correction" role="minikappa_correction"/-->
   <!-- zoom_centre>{"x": 348,"y": 260}</zoom_centre -->
 
-  <omegaReference>{'camera_axis': 'y', 'motor_name': 'phiz', 'direction': -1, 'position': -0.470057778}</omegaReference>
+  <omegaReference>{'camera_axis': 'y', 'motor_name': 'phiz', 'direction': -1, 'position': -0.458}</omegaReference>
   <gridDirection>{"fast": (1, 0), "slow": (0, -1)}</gridDirection>
   <reversingRotation>True</reversingRotation>
 
