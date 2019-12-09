@@ -2,7 +2,7 @@
 import sys
 from lxml import etree as ET
 
-filename = '/homelocal/sicilia/production/bl13_mxcube_config/hardware_objects.xml/mini-diff.xml' 
+filename = '/homelocal/sicilia/git/bl13_mxcube_config/hardware_objects.xml/mini-diff.xml' 
 
 if len(sys.argv) < 2:
     print "You MUST supply a reference value for omega z! Aborting"
