@@ -12,8 +12,8 @@ export INSTITUTE=$MXCUBE_SITE
 export PYTHONPATH=$MXCUBE_ROOT:$PYTHONPATH
 
 # Post processing scripts
-export POST_PROCESSING_SCRIPTS_ROOT=/beamlines/bl13/controls/production/pycharm/BL13-XALOC/bl13_processing
-export CLA=claxaloc01
+#export POST_PROCESSING_SCRIPTS_ROOT=/beamlines/bl13/controls/production/pycharm/BL13-XALOC/bl13_processing
+#export CLA=claxaloc01
 
 # Include XALOC specific python code needed by MXCuBE
 export PYTHONPATH=$PYTHONPATH:$MXCUBE_ROOT/Bricks/widgets/QLed
