@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# Launcher application template.
+# Copy and rename this file with the gui file name without extension.
+source /beamlines/bl13/controls/devel/pycharm/MXCuBE/bl13_config/MXCUBE-pycharm.rc
+
+if [ -z "$MXCUBE_ROOT" ]; then
+    echo "MXCUBE_ROOT does not exists -> Exiting"
+    exit -1
+fi
+
+export APP_NAME="mxtest"
+$MXCUBE_ROOT/bin/run_app.sh $@
