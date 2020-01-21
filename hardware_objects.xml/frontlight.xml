@@ -1,5 +1,5 @@
 <device class="ALBAFrontLight">
-  <username>Front</username>
+  <username>FrontLight</username>
   <channel type="sardana" taurusname="flight" polling="events" name="light_level">Brightness</channel>
   <channel type="sardana" taurusname="flight" polling="events" name="state">State</channel>
   <limits>0,30</limits>
