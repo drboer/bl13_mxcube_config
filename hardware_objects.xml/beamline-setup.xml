@@ -24,10 +24,10 @@
   <object href="/gphl-workflow" role="gphl_workflow"/>
 
   <!-- Procedures and routines -->
-  <object href="/energyscan-mockup" role="energyscan"/>
+<!--  <object href="/energyscan-mockup" role="energyscan"/>-->
   <object href="/mxcollect" role="collect"/>
   <object href="/parallel-processing" role="parallel_processing"/>
-  <object href="/xrf-spectrum-mockup" role="xrf_spectrum"/>
+<!--  <object href="/xrf-spectrum-mockup" role="xrf_spectrum"/>-->
   <object href="/pilatus" role="detector"/>
 
   <!-- advanced methods are defined as a list with method names.
