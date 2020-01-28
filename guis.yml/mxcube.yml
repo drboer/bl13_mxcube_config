@@ -1416,9 +1416,9 @@
                       defaultValue: '9'
                       hidden: false
                       name: fontSize
-                      oldValue: '9'
+                      oldValue: '10'
                       type: string
-                      value: '10'
+                      value: '9'
                     - comment: Draw a frame around the widget
                       defaultValue: 0
                       hidden: false
@@ -5308,7 +5308,7 @@
               value: none
             - comment: ''
               defaultValue: /homelocal/sicilia/git/mxcube/BlissFramework/Icons
-              filter: /homelocal/sicilia/git/mxcube/BlissFramework/Icons/alba_logo.png
+              filter: /homelocal/sicilia/git/mxcube/BlissFramework/Icons
               hidden: false
               name: filename
               oldValue: null
