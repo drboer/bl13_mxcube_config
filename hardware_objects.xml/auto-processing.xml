@@ -1,6 +1,6 @@
 <object class="ALBAAutoProcessing">
 
-  <template_dir>/beamlines/bl13/commissioning/templates</template_dir>
+  <template_dir>/beamlines/bl13/controls/production/git/bl13_processing/templates</template_dir>
 
   <object href="/detector-distance" role="detector_distance"/>
   <channel type="sardana" taurusname="bl13/ct/variables" polling="events" name="beamx">beamx</channel>
