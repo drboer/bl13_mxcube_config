@@ -1,0 +1,7 @@
+<device class="TestSardana">
+<!--  <doorname>door/test/1</doorname>-->
+<!--  <command type="sardana" name="wm">wm dmot</command>-->
+  <command type="sardana" doorname="door/test/1" name="wm">wm dmot</command>
+  <channel type="sardana" taurusname="motor/dmot_ctrl/1" polling="events" name="position">position</channel>
+  <command type="sardana" taurusname="door/test/1" name="st">status</command>
+</device>
