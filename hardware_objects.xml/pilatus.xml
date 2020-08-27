@@ -31,10 +31,13 @@
   <channel type="sardana" name="saving_format">saving_format</channel>
   <channel type="sardana" name="saving_next_number">saving_next_number</channel>
   <channel type="sardana" name="saving_header_delimiter">saving_header_delimiter</channel>
+  <channel type="sardana" name="saving_statistics">saving_statistics</channel>
 
   <channel type="sardana" name="acq_nb_frames">acq_nb_frames</channel>
   <channel type="sardana" name="acq_trigger_mode">acq_trigger_mode</channel>
   <channel type="sardana" name="acq_expo_time">acq_expo_time</channel>
+  <channel type="sardana" name="acq_status">acq_status</channel>
+  <channel type="sardana" name="acq_status_fault_error">acq_status_fault_error</channel>
   <channel type="sardana" name="latency_time">latency_time</channel>
 
   <channel type="sardana" taurusname="bl13/eh/pilatusspecific" name="energy">energy_threshold</channel>
