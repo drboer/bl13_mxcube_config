@@ -3,7 +3,9 @@ import os
 
 
 class HwObjSkeleton(object):
-
+    """
+    Extract info from xml configuration file
+    """
     def __init__(self, xml_filename):
         self.root = xml.etree.ElementTree.parse(xml_filename).getroot()
         self.category = str(self.root.tag)
@@ -31,11 +33,22 @@ class HwObjSkeleton(object):
         _str += '\n'.join(['* {}'.format(str(s)) for s in self.properties])
         return _str
 
+def get_api():
+    import importlib.util
+
+    path = '/home/jandreu/Development/MXCuBE/mxcube/HardwareRepository/HardwareObjects/ALBA/ALBACollect.py'
+
+    spec = importlib.util.spec_from_file_location("module.name", path)
+    foo = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(foo)
+    foo.MyClass()
+
 
 if __name__ == "__main__":
     #print  HwObjSkeleton('../bl13_config/hardware_objects.xml/cats.xml')
     #hwobj = HwObjSkeleton('../bl13_config/hardware_objects.xml/cats.xml')
     # print hwobj.category
     # print hwobj.klass
-    hwobj = HwObjSkeleton('../bl13_config/hardware_objects.xml/mini-diff.xml')
-    print hwobj
+    ###hwobj = HwObjSkeleton('../hardware_objects.xml/mini-diff.xml')
+    ###print hwobj
+    get_api()
