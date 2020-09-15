@@ -3,5 +3,5 @@
   <taurusname>omega</taurusname>
   <motor_name>Omega</motor_name>
   <guistep>45</guistep>
-  <interval>500</interval>
+  <!-- interval>500</interval -->
 </device>
