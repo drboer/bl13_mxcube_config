@@ -21,9 +21,13 @@
   <object href="/mach-info" role="machine_info"/>
   <object href="/beam-info" role="beam_info"/>
 
+  Not necessary anmore
   <doorname>bl13/door/05</doorname>
   <command type="sardana" name="ni_configure">ni660x_configure_collect</command>
   <command type="sardana" name="ni_unconfigure">ni660x_unconfigure_collect</command>
+  sardana collect
+  <command type="sardana" name="ascanct">ascanct</command>
+  <command type="sardana" name="set_pilatus_saving_pattern ">set_pilatus_saving_pattern</command>
 
   <object href="/flux" role="flux"/>
   <channel type="tango" tangoname="kappa" name="kappapos">position</channel>
