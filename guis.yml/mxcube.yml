@@ -1404,19 +1404,19 @@
                       name: decimals
                       oldValue: 2
                       type: integer
-                      value: 2
+                      value: 3
                     - comment: ''
                       defaultValue: 180 90 45 30 10
                       hidden: false
                       name: defaultSteps
-                      oldValue: 20 10 5 2 1
+                      oldValue: '10'
                       type: string
-                      value: '10'
+                      value: '0.01'
                     - comment: ''
                       defaultValue: ''
                       hidden: false
                       name: delta
-                      oldValue: '10'
+                      oldValue: ''
                       type: string
                       value: ''
                     - comment: ''
