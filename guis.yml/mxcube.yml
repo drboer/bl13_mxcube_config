@@ -1416,7 +1416,7 @@
                       defaultValue: '9'
                       hidden: false
                       name: fontSize
-                      oldValue: '10'
+                      oldValue: '9'
                       type: string
                       value: '9'
                     - comment: Draw a frame around the widget
@@ -2442,6 +2442,14 @@
                     receiverWindow: mxCuBE
                     signal: enable_widgets
                     slot: enable_widget
+                  - receiver: Qt4_ParallelProcessingPreviewBrick0
+                    receiverWindow: mxCuBE
+                    signal: populate_dc_parameter_widget
+                    slot: populate_widget
+                  - receiver: Qt4_ParallelProcessingPreviewBrick0
+                    receiverWindow: mxCuBE
+                    signal: populate_advanced_widget
+                    slot: populate_widget
                   name: tree_brick
                   properties:
                   - comment: ''
@@ -2599,6 +2607,70 @@
                     type: string
                     value: /xml-rpc-server
                   type: Qt4_TreeBrick
+                - brick:
+                    class: Qt4_ParallelProcessingPreviewBrick
+                    name: Qt4_ParallelProcessingPreviewBrick0
+                  children: []
+                  connections: []
+                  name: Qt4_ParallelProcessingPreviewBrick0
+                  properties:
+                  - comment: ''
+                    defaultValue: /beamline-setup
+                    hidden: false
+                    name: beamline_setup
+                    oldValue: /beamline-setup
+                    type: string
+                    value: /beamline-setup
+                  - comment: Set fixed height in pixels
+                    defaultValue: -1
+                    hidden: false
+                    name: fixedHeight
+                    oldValue: -1
+                    type: integer
+                    value: -1
+                  - comment: Set fixed width in pixels
+                    defaultValue: -1
+                    hidden: false
+                    name: fixedWidth
+                    oldValue: -1
+                    type: integer
+                    value: -1
+                  - comment: ''
+                    defaultValue: '9'
+                    hidden: false
+                    name: fontSize
+                    oldValue: '9'
+                    type: string
+                    value: '9'
+                  - comment: Draw a frame around the widget
+                    defaultValue: 0
+                    hidden: false
+                    name: frame
+                    oldValue: 0
+                    type: boolean
+                    value: 0
+                  - comment: Hide widget
+                    defaultValue: 0
+                    hidden: false
+                    name: hide
+                    oldValue: 0
+                    type: boolean
+                    value: 0
+                  - comment: Allow to control brick in all modes
+                    defaultValue: 0
+                    hidden: false
+                    name: instanceAllowAlways
+                    oldValue: 0
+                    type: boolean
+                    value: 0
+                  - comment: Allow to control brick in slave mode
+                    defaultValue: 0
+                    hidden: false
+                    name: instanceAllowConnected
+                    oldValue: 0
+                    type: boolean
+                    value: 0
+                  type: Qt4_ParallelProcessingPreviewBrick
                 connections: []
                 name: vbox3
                 properties:
@@ -5281,6 +5353,128 @@
             type: combo
             value: default
           type: tab
+        - children: []
+          connections: []
+          name: vbox4
+          properties:
+          - choices:
+            - none
+            - top center
+            - top left
+            - top right
+            - bottom center
+            - bottom left
+            - bottom right
+            - center
+            - hcenter
+            - vcenter
+            - left
+            - right
+            comment: ''
+            defaultValue: none
+            hidden: false
+            name: alignment
+            oldValue: null
+            type: combo
+            value: none
+          - comment: ''
+            defaultValue: null
+            hidden: false
+            name: color
+            oldValue: null
+            type: color
+            value: null
+          - comment: ''
+            defaultValue: -1
+            hidden: false
+            name: fixedheight
+            oldValue: null
+            type: integer
+            value: -1
+          - comment: ''
+            defaultValue: -1
+            hidden: false
+            name: fixedwidth
+            oldValue: null
+            type: integer
+            value: -1
+          - choices:
+            - Box
+            - Panel
+            - StyledPanel
+            - HLine
+            - VLine
+            - default
+            comment: ''
+            defaultValue: default
+            hidden: false
+            name: frameshape
+            oldValue: null
+            type: combo
+            value: default
+          - choices:
+            - fixed
+            - expanding
+            - default
+            comment: ''
+            defaultValue: default
+            hidden: false
+            name: hsizepolicy
+            oldValue: null
+            type: combo
+            value: default
+          - comment: ''
+            defaultValue: ''
+            hidden: false
+            name: icon
+            oldValue: null
+            type: string
+            value: ''
+          - comment: ''
+            defaultValue: ''
+            hidden: false
+            name: label
+            oldValue: null
+            type: string
+            value: ''
+          - comment: ''
+            defaultValue: 2
+            hidden: false
+            name: margin
+            oldValue: null
+            type: integer
+            value: 2
+          - choices:
+            - plain
+            - raised
+            - sunken
+            - default
+            comment: ''
+            defaultValue: default
+            hidden: false
+            name: shadowstyle
+            oldValue: null
+            type: combo
+            value: default
+          - comment: ''
+            defaultValue: 2
+            hidden: false
+            name: spacing
+            oldValue: null
+            type: integer
+            value: 2
+          - choices:
+            - fixed
+            - expanding
+            - default
+            comment: ''
+            defaultValue: default
+            hidden: false
+            name: vsizepolicy
+            oldValue: null
+            type: combo
+            value: default
+          type: vbox
         - children:
           - children: []
             connections: []
