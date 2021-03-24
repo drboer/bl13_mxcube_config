@@ -1392,6 +1392,198 @@
                       value: 100
                     type: hspacer
                   - brick:
+                      class: Qt4_MotorSpinBoxBrick
+                      name: Qt4_MotorSpinBoxBrick1
+                    children: []
+                    connections: []
+                    name: Qt4_MotorSpinBoxBrick1
+                    properties:
+                    - comment: ''
+                      defaultValue: 2
+                      hidden: false
+                      name: decimals
+                      oldValue: 4
+                      type: integer
+                      value: 3
+                    - comment: ''
+                      defaultValue: 180 90 45 30 10
+                      hidden: false
+                      name: defaultSteps
+                      oldValue: 180 90 45 30 10
+                      type: string
+                      value: '0.005'
+                    - comment: ''
+                      defaultValue: ''
+                      hidden: false
+                      name: delta
+                      oldValue: ''
+                      type: string
+                      value: ''
+                    - comment: ''
+                      defaultValue: 0
+                      hidden: false
+                      name: enableSliderTracking
+                      oldValue: 0
+                      type: boolean
+                      value: 0
+                    - comment: Set fixed height in pixels
+                      defaultValue: -1
+                      hidden: false
+                      name: fixedHeight
+                      oldValue: -1
+                      type: integer
+                      value: -1
+                    - comment: Set fixed width in pixels
+                      defaultValue: -1
+                      hidden: false
+                      name: fixedWidth
+                      oldValue: -1
+                      type: integer
+                      value: -1
+                    - comment: ''
+                      defaultValue: '9'
+                      hidden: false
+                      name: fontSize
+                      oldValue: '9'
+                      type: string
+                      value: '9'
+                    - comment: ''
+                      defaultValue: +##.##
+                      formatString: '%+1.3f'
+                      formatStringLength: 5
+                      hidden: false
+                      name: formatString
+                      oldValue: +#.####
+                      type: formatString
+                      value: +#.###
+                    - comment: Draw a frame around the widget
+                      defaultValue: 0
+                      hidden: false
+                      name: frame
+                      oldValue: 0
+                      type: boolean
+                      value: 0
+                    - comment: ''
+                      defaultValue: ''
+                      hidden: false
+                      name: helpDecrease
+                      oldValue: ''
+                      type: string
+                      value: ''
+                    - comment: ''
+                      defaultValue: ''
+                      hidden: false
+                      name: helpIncrease
+                      oldValue: ''
+                      type: string
+                      value: ''
+                    - comment: Hide widget
+                      defaultValue: 0
+                      hidden: false
+                      name: hide
+                      oldValue: 0
+                      type: boolean
+                      value: 0
+                    - comment: ''
+                      defaultValue: 0
+                      hidden: false
+                      name: hideInUser
+                      oldValue: 0
+                      type: boolean
+                      value: 0
+                    - comment: ''
+                      defaultValue: ''
+                      hidden: false
+                      name: icons
+                      oldValue: ''
+                      type: string
+                      value: ''
+                    - comment: Allow to control brick in all modes
+                      defaultValue: 0
+                      hidden: false
+                      name: instanceAllowAlways
+                      oldValue: 0
+                      type: boolean
+                      value: 0
+                    - comment: Allow to control brick in slave mode
+                      defaultValue: 0
+                      hidden: false
+                      name: instanceAllowConnected
+                      oldValue: 0
+                      type: boolean
+                      value: 0
+                    - comment: ''
+                      defaultValue: 0
+                      hidden: false
+                      name: invertButtons
+                      oldValue: 0
+                      type: boolean
+                      value: 0
+                    - comment: ''
+                      defaultValue: ''
+                      hidden: false
+                      name: label
+                      oldValue: ''
+                      type: string
+                      value: Focus
+                    - comment: ''
+                      defaultValue: ''
+                      hidden: false
+                      name: mnemonic
+                      oldValue: ''
+                      type: string
+                      value: /omegay
+                    - comment: ''
+                      defaultValue: 1
+                      hidden: false
+                      name: showLabel
+                      oldValue: 1
+                      type: boolean
+                      value: 1
+                    - comment: ''
+                      defaultValue: 1
+                      hidden: false
+                      name: showMoveButtons
+                      oldValue: 1
+                      type: boolean
+                      value: 0
+                    - comment: ''
+                      defaultValue: 1
+                      hidden: false
+                      name: showPosition
+                      oldValue: 1
+                      type: boolean
+                      value: 1
+                    - comment: ''
+                      defaultValue: 0
+                      hidden: false
+                      name: showSlider
+                      oldValue: 0
+                      type: boolean
+                      value: 0
+                    - comment: ''
+                      defaultValue: 1
+                      hidden: false
+                      name: showStep
+                      oldValue: 1
+                      type: boolean
+                      value: 1
+                    - comment: ''
+                      defaultValue: 0
+                      hidden: false
+                      name: showStepList
+                      oldValue: 0
+                      type: boolean
+                      value: 0
+                    - comment: ''
+                      defaultValue: 1
+                      hidden: false
+                      name: showStop
+                      oldValue: 1
+                      type: boolean
+                      value: 1
+                    type: Qt4_MotorSpinBoxBrick
+                  - brick:
                       class: Qt4_DigitalZoomBrick
                       name: Qt4_DigitalZoomBrick0
                     children: []
@@ -1942,7 +2134,7 @@
                       name: enableAutoCenter
                       oldValue: 1
                       type: boolean
-                      value: 0
+                      value: 1
                     - comment: ''
                       defaultValue: 1
                       hidden: false
