@@ -21,11 +21,21 @@
   <channel type="tango" tangoname="bl13/eh/supervisor" name="detdist_position">DetDistance</channel>
 
   <channel type="tango" name="_chnSampleIsDetected" polling="1000">di_PRI4_SOM</channel>
+  <channel type="tango" name="_chnRecoveryNeeded" polling="1000">RecoveryNeeded</channel>
   <channel type="tango" name="_chnPathSafe" polling="1000">PathSafe</channel>
+  <channel type="tango" name="_chnCollisionSensorOK" polling="1000">di_CollisonSensorOK</channel>
+  <channel type="tango" name="_chnIsCatsIdle" polling="1000">do_PRO5_IDL</channel>
+  <channel type="tango" name="_chnIsCatsHome" polling="1000">do_PRO6_RAH</channel>
+  <channel type="tango" name="_chnIsCatsRI1" polling="1000">do_PRO7_RI1</channel>
+  <channel type="tango" name="_chnIsCatsRI2" polling="1000">do_PRO8_RI2</channel>
+  <channel type="tango" name="_chnNBSoakings" polling="1000">CurrentNumberOfSoaking</channel>
+  <channel type="tango" name="_chnLidSampleOnTool" polling="1000">LidSampleOnTool</channel>
+  <channel type="tango" name="_chnNumSampleOnTool" polling="1000">NumSampleOnTool</channel>
 
   <command type="tango" name="_cmdLoadHT">put_HT</command>
   <command type="tango" name="_cmdUnloadHT">get_HT</command>
   <command type="tango" name="_cmdChainedLoadHT">getput_HT</command>
+  <command type="tango" name="_cmdClearMemory">clear_memory</command>
 
   <command type="tango" name="_cmdLoadBarcode">put_bcrd</command>
   <command type="tango" name="_cmdChainedLoadBarcode">getput_bcrd</command>
