@@ -102,9 +102,9 @@
   </default_characterisation_values>
 
   <default_advanced_values>
-    <exposure_time>0.040</exposure_time>
+    <exposure_time>0.10</exposure_time>
     <start_angle>0.0</start_angle>
-    <range>0.5</range>
+    <range>0.0</range>
     <number_of_passes>1</number_of_passes>
     <start_image_number>1</start_image_number>
     <run_number>1</run_number>
