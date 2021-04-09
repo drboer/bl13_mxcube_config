@@ -2,5 +2,5 @@
   <username>Energy</username>
   <object href="/energy_motor" role="energy"/>
   <object href="/wavelength_motor" role="wavelength"/>
-  <tunable_energy>True</tunable_energy>
+  <!-- interval>500</interval -->
 </device>

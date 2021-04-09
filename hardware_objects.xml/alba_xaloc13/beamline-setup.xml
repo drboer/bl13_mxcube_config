@@ -8,26 +8,27 @@
   <object href="/mini-diff" role="diffractometer"/>
   <object href="/omega" role="omega_axis"/>
   <object href="/kappa" role="kappa_axis"/>
-  <object href="/kappaphi" role="kappa_phi_axis"/>
+  <!-- Detector distance needed here for now to be put int  api -->
+  <object href="/detector-distance" role="detector_distance"/>
+<!--  <object href="/kappaphi" role="kappa_phi_axis"/>-->
   <object href="/cats" role="sample_changer"/>    
   <!-- object href="/plate-manipulator" role="plate_manipulator"/ -->
   <object href="/resolution" role="resolution"/>
   <object href="/energy" role="energy"/>
-  <object href="/flux" role="flux"/>
 
   <!-- Software (abstract) concepts -->
   <object href="/session" role="session"/>
   <object href="/dbconnection" role="lims_client"/>
   <object href="/data-analysis" role="data_analysis"/>
   <!--<object href="/workflow-mockup" role="workflow"/> -->
-  <object href="/gphl-setup" role="gphl_connection"/>
-  <object href="/gphl-workflow" role="gphl_workflow"/>
+  <object href="/gphl_beamline_config/gphl-workflow" role="gphl_workflows"/>
+  <object href="/gphl_beamline_config/gphl-connection" role="gphl_connection"/>
 
   <!-- Procedures and routines -->
-<!--  <object href="/energyscan-mockup" role="energyscan"/>-->
+  <object href="/energyscan-mockup" role="energyscan"/>
   <object href="/mxcollect" role="collect"/>
   <object href="/parallel-processing" role="parallel_processing"/>
-<!--  <object href="/xrf-spectrum-mockup" role="xrf_spectrum"/>-->
+  <object href="/xrf-spectrum-mockup" role="xrf_spectrum"/>
   <object href="/pilatus" role="detector"/>
 
   <!-- advanced methods are defined as a list with method names.
@@ -59,7 +60,7 @@
 
   <!-- Default values for an acquisition -->
   <default_acquisition_values>
-    <exposure_time>0.1</exposure_time>
+    <exposure_time>0.3</exposure_time>
     <start_angle>0.0</start_angle>
     <range>0.1</range>
     <number_of_passes>1</number_of_passes>
@@ -71,7 +72,7 @@
   </default_acquisition_values>
 
   <default_helical_values>
-    <exposure_time>0.100</exposure_time>
+    <exposure_time>0.040</exposure_time>
     <start_angle>0.0</start_angle>
     <range>0.1</range>
     <number_of_passes>1</number_of_passes>
@@ -84,15 +85,15 @@
 
   <acquisition_limit_values>
     <osc_range>-2165,2165</osc_range>
-    <exposure_time>0.08,6000</exposure_time>
+    <exposure_time>0.003,6000</exposure_time>
     <number_of_images>1,9999</number_of_images>
   </acquisition_limit_values>
 
   <!-- Default values for a characterization -->
   <default_characterisation_values>
-    <exposure_time>0.15</exposure_time>
+    <exposure_time>0.3</exposure_time>
     <start_angle>0.0</start_angle>
-    <range>0.5</range>
+    <range>1</range>
     <number_of_passes>1</number_of_passes>
     <start_image_number>1</start_image_number>
     <run_number>1</run_number>
@@ -102,9 +103,9 @@
   </default_characterisation_values>
 
   <default_advanced_values>
-    <exposure_time>0.10</exposure_time>
+    <exposure_time>0.040</exposure_time>
     <start_angle>0.0</start_angle>
-    <range>0.0</range>
+    <range>0.5</range>
     <number_of_passes>1</number_of_passes>
     <start_image_number>1</start_image_number>
     <run_number>1</run_number>
@@ -112,12 +113,4 @@
     <number_of_images>100</number_of_images>
     <detector_mode>1</detector_mode>
   </default_advanced_values>
-
-  <default_confirm_dialog_configuration>
-     <snapshot_options_default>0,1,2,4</snapshot_options_default>
-     <snapshot_options_plate_mode>0,1</snapshot_options_plate_mode>
-     <default_snapshots_standard>1</default_snapshots_standard>
-     <default_snapshots_characterization>1</default_snapshots_characterization>
-  </default_confirm_dialog_configuration>
-
  </object>
