@@ -11,6 +11,9 @@
 
   <px>0.172</px>
   <py>0.172</py>
+  <width>2463</width>
+  <height>2527</height>
+
 
   <default_exposure_time>0.1</default_exposure_time>
   <minimum_exposure_time>0.08</minimum_exposure_time>
