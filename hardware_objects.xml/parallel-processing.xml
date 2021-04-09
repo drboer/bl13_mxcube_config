@@ -2,7 +2,7 @@
   <object href="/mxcollect" role="collect"/>
   <object href="/mini-diff" role="diffractometer"/>
   <object href="/beamstop-mockup" role="beamstop"/>
-  <processing_command>/beamlines/bl13/controls/devel/tmp/dozor_launcher.sh > /beamlines/bl13/controls/devel/tmp/log.txt</processing_command>
+  <processing_command>/beamlines/bl13/controls/devel/tmp/dozor_launcher.sh</processing_command>
 <!--  <result_type>random</result_type>-->
 <!--  <run_as_mockup>True</run_as_mockup>-->
 </object>
