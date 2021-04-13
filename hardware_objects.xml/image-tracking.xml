@@ -1,6 +1,6 @@
 <equipment class="ALBAImageTracking">
    <executable>adxv</executable>
-   <host>ctbl1301</host>
+<!--   <host>ctbl1302</host>-->
    <port>8100</port>
    <autofront>True</autofront>
 </equipment>
