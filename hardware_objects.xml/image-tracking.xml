@@ -1,6 +1,7 @@
 <equipment class="ALBAImageTracking">
-   <taurusname>bl13/adxv_notify/pilatus</taurusname>
-<!--   <channel type="sardana" name="state">state</channel>-->
+   <taurusname>bl13/ct/pilatus</taurusname>
+
+   <!--   <channel type="sardana" name="state">state</channel>-->
 <!--   <channel type="sardana" name="status">status</channel>-->
 <!--   <command type="sardana" name="start">start</command>-->
 <!--   <command type="sardana" name="stop">stop</command>-->
