@@ -27,6 +27,7 @@
 <!--  <object href="/energyscan-mockup" role="energyscan"/>-->
   <object href="/mxcollect" role="collect"/>
   <object href="/parallel-processing" role="parallel_processing"/>
+  <object href="/image-tracking" role="image_tracking"/>
 <!--  <object href="/xrf-spectrum-mockup" role="xrf_spectrum"/>-->
   <object href="/pilatus" role="detector"/>
 
