@@ -22,6 +22,7 @@
   <command type="sardana" name="prepare_acq">prepareAcq</command>
   <command type="sardana" name="start_acq">startAcq</command>
   <command type="sardana" name="abort_acq">abortAcq</command>
+  <command type="sardana" name="reset">reset</command>
   <command type="sardana" name="reset_common_header">resetCommonHeader</command>
   <command type="sardana" name="reset_frame_headers">resetFrameHeaders</command>
   <command type="sardana" name="set_image_header">setImageHeader</command>
