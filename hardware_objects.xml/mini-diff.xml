@@ -34,6 +34,7 @@
 
   <channel type="sardana" taurusname="bl13/eh/supervisor" name="CurrentPhase">CurrentPhase</channel>
   <channel type="sardana" taurusname="bl13/eh/diff" polling="500" name="State">State</channel>
+  <channel type="sardana" taurusname="bl13/eh/diff" polling="500" name="omegazReference">OmegaZReference</channel>
   <used_channels>State,CurrentPhase</used_channels>
 
   <delay_state_polling>0.2</delay_state_polling>
