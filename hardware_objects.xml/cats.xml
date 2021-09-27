@@ -19,6 +19,7 @@
   <channel type="tango" tangoname="bl13/eh/supervisor" name="super_phase">CurrentPhase</channel>
   <channel type="tango" tangoname="bl13/eh/diff" name="diff_phase">CurrentPhase</channel>
   <channel type="tango" tangoname="bl13/eh/diff" name="diff_state">State</channel>
+  <channel type="tango" tangoname="bl13/eh/diff" name="ApertureInOut">AperturePosition</channel>
   <channel type="tango" tangoname="bl13/eh/supervisor" name="DetDistanceSafe">DetDistanceSafe</channel>
   <command type="tango" tangoname="bl13/eh/supervisor" name="super_abort">Abort</command>
   <channel type="tango" tangoname="bl13/eh/supervisor" name="super_state">State</channel>
