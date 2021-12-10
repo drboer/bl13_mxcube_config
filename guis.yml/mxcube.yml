@@ -612,9 +612,9 @@
                       defaultValue: ''
                       hidden: false
                       name: mnemonic
-                      oldValue: ''
+                      oldValue: /kappa
                       type: string
-                      value: /kappa
+                      value: /kappaalign
                     - comment: ''
                       defaultValue: 1
                       hidden: false
@@ -804,9 +804,9 @@
                       defaultValue: ''
                       hidden: false
                       name: mnemonic
-                      oldValue: ''
+                      oldValue: /kappaphi
                       type: string
-                      value: /kappaphi
+                      value: /kappaphialign
                     - comment: ''
                       defaultValue: 1
                       hidden: false
@@ -1402,7 +1402,7 @@
                       defaultValue: 2
                       hidden: false
                       name: decimals
-                      oldValue: 4
+                      oldValue: 2
                       type: integer
                       value: 3
                     - comment: ''
@@ -1453,7 +1453,7 @@
                       formatStringLength: 5
                       hidden: false
                       name: formatString
-                      oldValue: +#.####
+                      oldValue: +##.##
                       type: formatString
                       value: +#.###
                     - comment: Draw a frame around the widget
