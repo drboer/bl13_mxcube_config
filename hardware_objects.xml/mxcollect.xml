@@ -26,7 +26,8 @@
   <command type="sardana" name="ni_unconfigure">ni660x_unconfigure_collect</command>
   <command type="sardana" name="meshct">meshct</command>
   <command type="sardana" name="ascanct">ascanct</command>
-  <command type="sardana" name="set_pilatus_saving_pattern">set_pilatus_saving_pattern</command>
+  <!--command type="sardana" name="set_pilatus_saving_pattern">set_pilatus_saving_pattern</command-->
+  <command type="sardana" name="set_pilatus_saving_pattern">set_meas_conf</command>
   <command type="sardana" name="senv">senv</command>
 
   <object href="/flux" role="flux"/>
