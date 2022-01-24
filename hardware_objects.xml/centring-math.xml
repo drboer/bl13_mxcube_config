@@ -52,4 +52,7 @@
         <direction>[0, 0, -1]</direction>
      </axis>
   </cameraAxes>
+  <!-- Number of images and total angle range used in automatic centering  -->
+  <numCentringImages>3</numCentringImages>
+  <centringAngleRange>180</centringAngleRange>
 </procedure>
