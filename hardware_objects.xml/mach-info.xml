@@ -1,7 +1,7 @@
 <equipment class="ALBAMachineInfo">
     <username>MachineInfo</username>
-    <taurusname>mach/ct/gateway</taurusname>
+    <taurusname>pc/mach_attrpc_ctrl/1</taurusname>
     <channel type="sardana" name="MachStatus" polling="1000">State</channel>
-    <channel type="sardana" name="MachCurrent" polling="1000">Current</channel>
+    <channel type="sardana" name="MachCurrent" polling="1000">Value</channel>
     <channel type="sardana" name="TopUpRemaining" polling="1000">TopUpRemaining</channel>
 </equipment>
