@@ -612,7 +612,7 @@
                       defaultValue: ''
                       hidden: false
                       name: mnemonic
-                      oldValue: /kappa
+                      oldValue: ''
                       type: string
                       value: /kappaalign
                     - comment: ''
@@ -804,7 +804,7 @@
                       defaultValue: ''
                       hidden: false
                       name: mnemonic
-                      oldValue: /kappaphi
+                      oldValue: ''
                       type: string
                       value: /kappaphialign
                     - comment: ''
@@ -6837,6 +6837,86 @@
               type: boolean
               value: 1
             type: Qt4_MotorSpinBoxBrick
+          - brick:
+              class: Qt4_ALBA_SerialPumpBrick
+              name: Qt4_ALBA_SerialPumpBrick0
+            children: []
+            connections: []
+            name: Qt4_ALBA_SerialPumpBrick0
+            properties:
+            - comment: Set fixed height in pixels
+              defaultValue: -1
+              hidden: false
+              name: fixedHeight
+              oldValue: -1
+              type: integer
+              value: -1
+            - comment: Set fixed width in pixels
+              defaultValue: -1
+              hidden: false
+              name: fixedWidth
+              oldValue: -1
+              type: integer
+              value: -1
+            - comment: ''
+              defaultValue: '9'
+              hidden: false
+              name: fontSize
+              oldValue: '9'
+              type: string
+              value: '9'
+            - comment: ''
+              defaultValue: '###.#'
+              formatString: '%3.1f'
+              formatStringLength: 5
+              hidden: false
+              name: formatString
+              oldValue: '###.#'
+              type: formatString
+              value: '###.#'
+            - comment: Draw a frame around the widget
+              defaultValue: 0
+              hidden: false
+              name: frame
+              oldValue: 0
+              type: boolean
+              value: 0
+            - comment: Hide widget
+              defaultValue: 0
+              hidden: false
+              name: hide
+              oldValue: 0
+              type: boolean
+              value: 0
+            - comment: Allow to control brick in all modes
+              defaultValue: 0
+              hidden: false
+              name: instanceAllowAlways
+              oldValue: 0
+              type: boolean
+              value: 0
+            - comment: Allow to control brick in slave mode
+              defaultValue: 0
+              hidden: false
+              name: instanceAllowConnected
+              oldValue: 0
+              type: boolean
+              value: 0
+            - comment: ''
+              defaultValue: ''
+              hidden: false
+              name: mnemonic
+              oldValue: ''
+              type: string
+              value: /serialpump
+            - comment: ''
+              defaultValue: ''
+              hidden: false
+              name: setpoint
+              oldValue: null
+              type: string
+              value: ''
+            type: Qt4_ALBA_SerialPumpBrick
           - children: []
             connections: []
             name: vspacer1

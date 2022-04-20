@@ -1,0 +1,34 @@
+#!/usr/bin/env bash
+echo "MXCUBE-prod.rc: Exporting MXCuBE specific variables" 1>&2
+
+export MXCUBE_BASE=/beamlines/bl13/inhouse/icrespo/devel/git/mxcube
+export MXCUBE_ROOT=$MXCUBE_BASE/mxcube
+export MXCUBE_SITE=ALBA
+export MXCUBE_XML_PATH=$MXCUBE_BASE/bl13_mxcube_config/hardware_objects.xml
+export MXCUBE_GUI_PATH=$MXCUBE_BASE/bl13_mxcube_config/guis.yml
+export MXCUBE_LOG_PATH=/tmp/mxcube-git
+export INSTITUTE=$MXCUBE_SITE
+
+export PYTHONPATH=$MXCUBE_ROOT:$PYTHONPATH
+
+# Post processing scripts
+#export POST_PROCESSING_SCRIPTS_ROOT=/beamlines/bl13/controls/production/pycharm/bl13_processing
+#export CLA=claxaloc01
+
+# Include XALOC specific python code needed by MXCuBE
+export PYTHONPATH=$PYTHONPATH:$MXCUBE_ROOT/Bricks/widgets/QLed
+export PYTHONPATH=$PYTHONPATH:/beamlines/bl13/controls/production/pycharm
+
+# Export binaries path
+export PATH=$MXCUBE_BASE/bl13_mxcube_config/bin:$PATH
+
+# Install non packaged modules as user
+#export PYTHONPATH=$PYTHONPATH:/homelocal/sicilia/.local/lib/python2.7/site-packages
+
+# Simulation mode => MXCUBE_BYPASS_SHUTTERS=True
+# If it does not exist, set to False by default
+[[ -z "${MXCUBE_BYPASS_SHUTTERS}" ]] && MXCUBE_BYPASS_SHUTTERS=False
+echo
+echo "Set this variable to True to avoid checking the shutters"
+echo "****************************************************************"
+echo "  MXCUBE_BYPASS_SHUTTERS:" $MXCUBE_BYPASS_SHUTTERS
